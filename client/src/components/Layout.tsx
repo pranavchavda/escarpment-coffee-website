@@ -11,7 +11,6 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   const navItems = [
     { label: "Home", href: "/" },
     { label: "Our Coffees", href: "/coffees" },
-    { label: "Equipment", href: "/equipment" },
     { label: "Subscriptions", href: "/subscriptions" },
     { label: "About", href: "/about" },
   ];
@@ -24,13 +23,11 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           {/* Logo */}
           <Link href="/">
             <a className="flex items-center gap-2 group">
-              <div className="relative w-10 h-10 rounded-full border-2 border-primary overflow-hidden bg-muted flex items-center justify-center group-hover:border-accent transition-colors duration-300">
-                <span className="font-sans font-bold text-xl text-primary group-hover:text-accent">E</span>
-              </div>
-              <div className="flex flex-col">
-                <span className="font-sans font-bold text-xl tracking-wide uppercase leading-none text-foreground group-hover:text-primary transition-colors">Escarpment</span>
-                <span className="font-mono text-xs text-muted-foreground tracking-widest uppercase">Coffee Roasters</span>
-              </div>
+              <img 
+                src="/images/logo-wide.png" 
+                alt="Escarpment Coffee Roasters" 
+                className="h-12 w-auto object-contain transition-opacity duration-300 hover:opacity-90"
+              />
             </a>
           </Link>
 
@@ -127,7 +124,6 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               <h3 className="font-sans font-bold text-lg mb-4 uppercase tracking-wider text-primary">Shop</h3>
               <ul className="space-y-2 text-sm text-muted-foreground">
                 <li><a href="/coffees" className="hover:text-primary transition-colors">All Coffees</a></li>
-                <li><a href="/equipment" className="hover:text-primary transition-colors">Equipment</a></li>
                 <li><a href="/subscriptions" className="hover:text-primary transition-colors">Subscriptions</a></li>
                 <li><a href="#" className="hover:text-primary transition-colors">Gift Cards</a></li>
               </ul>

@@ -12,6 +12,7 @@ interface ProductCardProps {
   isNew?: boolean;
   onAddToCart?: () => void;
   className?: string;
+  productUrl?: string;
 }
 
 export default function ProductCard({ 
@@ -22,7 +23,8 @@ export default function ProductCard({
   tags, 
   isNew, 
   onAddToCart,
-  className 
+  className,
+  productUrl = "https://idrinkcoffee.com/collections/coffee"
 }: ProductCardProps) {
   return (
     <Card className={cn("group overflow-hidden border-border bg-card transition-all duration-300 hover:shadow-lg hover:border-primary/50 flex flex-col h-full", className)}>
@@ -41,12 +43,13 @@ export default function ProductCard({
         
         {/* Quick Add Overlay */}
         <div className="absolute bottom-0 left-0 right-0 translate-y-full transition-transform duration-300 group-hover:translate-y-0 p-4 bg-background/90 backdrop-blur-sm border-t border-border">
-          <Button 
-            className="w-full font-sans uppercase tracking-wider text-xs font-bold" 
-            onClick={onAddToCart}
-          >
-            Add to Cart
-          </Button>
+          <a href={productUrl} target="_blank" rel="noopener noreferrer">
+            <Button 
+              className="w-full font-sans uppercase tracking-wider text-xs font-bold" 
+            >
+              View on iDrinkCoffee
+            </Button>
+          </a>
         </div>
       </div>
       

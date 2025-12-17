@@ -88,7 +88,7 @@ export default function Home() {
       <section className="relative h-[85vh] w-full overflow-hidden flex items-center justify-center">
         <div className="absolute inset-0 z-0">
           <img 
-            src="/images/hero-escarpment.jpg" 
+            src="/images/hero-bg.webp" 
             alt="Niagara Escarpment in Autumn" 
             className="h-full w-full object-cover"
           />
@@ -105,9 +105,11 @@ export default function Home() {
             From the rugged escarpment to your morning cup.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-in slide-in-from-bottom-10 duration-1000 delay-300">
-            <Button size="lg" className="font-sans uppercase tracking-widest text-base px-8 py-6 bg-primary hover:bg-primary/90 text-white border-none rounded-none">
-              Shop Coffees
-            </Button>
+            <a href="https://idrinkcoffee.com/collections/coffee" target="_blank" rel="noopener noreferrer">
+              <Button size="lg" className="font-sans uppercase tracking-widest text-base px-8 py-6 bg-primary hover:bg-primary/90 text-white border-none rounded-none">
+                Shop Coffees
+              </Button>
+            </a>
             <Button size="lg" variant="outline" className="font-sans uppercase tracking-widest text-base px-8 py-6 bg-transparent hover:bg-white/10 text-white border-2 border-white rounded-none backdrop-blur-sm">
               Our Story
             </Button>
@@ -161,50 +163,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Feature Split Section */}
-      <section className="grid grid-cols-1 md:grid-cols-2 min-h-[600px]">
-        <div className="relative h-full min-h-[400px]">
-          <img 
-            src="/images/brewing-process.jpg" 
-            alt="Pour over brewing" 
-            className="absolute inset-0 w-full h-full object-cover"
-          />
-          <div className="absolute inset-0 bg-black/20" />
-        </div>
-        <div className="bg-card flex flex-col justify-center p-12 md:p-20">
-          <span className="font-mono text-primary text-sm uppercase tracking-[0.2em] mb-4">The Craft</span>
-          <h2 className="font-sans font-bold text-4xl md:text-5xl mb-6 uppercase text-foreground">Precision Brewing</h2>
-          <p className="text-muted-foreground text-lg leading-relaxed mb-8">
-            Great coffee deserves great equipment. We've curated a selection of the finest brewing gear 
-            to help you extract every nuance of flavor from our beans. From precision scales to 
-            hand-crafted brewers, elevate your daily ritual.
-          </p>
-          <Button className="self-start font-sans uppercase tracking-widest px-8 py-6 rounded-none">
-            Shop Equipment
-          </Button>
-        </div>
-      </section>
 
-      {/* Equipment Showcase */}
-      <section className="py-20 bg-background">
-        <div className="container">
-          <div className="text-center mb-16">
-            <h2 className="font-sans font-bold text-3xl md:text-4xl uppercase text-foreground mb-4">Brewing Essentials</h2>
-            <p className="font-mono text-muted-foreground max-w-2xl mx-auto">
-              Tools of the trade for the home barista.
-            </p>
-          </div>
-          
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            {equipment.map((item) => (
-              <ProductCard 
-                key={item.id}
-                {...item}
-              />
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* Features Grid */}
       <section className="py-20 bg-secondary/20 border-y border-border">
