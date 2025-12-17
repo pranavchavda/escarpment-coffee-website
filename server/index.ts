@@ -18,6 +18,21 @@ async function startServer() {
 
   app.use(express.static(staticPath));
 
+  // Proxy endpoint for coffee data
+  app.get("/api/coffee-products", async (_req, res) => {
+    try {
+      const response = await fetch("https://idrinkcoffee.com/collections/coffee.json");
+      if (!response.ok) {
+        throw new Error(`Upstream API responded with ${response.status}`);
+      }
+      const data = await response.json();
+      res.json(data);
+    } catch (error) {
+      console.error("Proxy error:", error);
+      res.status(500).json({ error: "Failed to fetch coffee products" });
+    }
+  });
+
   // Handle client-side routing - serve index.html for all routes
   app.get("*", (_req, res) => {
     res.sendFile(path.join(staticPath, "index.html"));
