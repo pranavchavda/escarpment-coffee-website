@@ -88,7 +88,7 @@ export default function Home() {
       <section className="relative h-[85vh] w-full overflow-hidden flex items-center justify-center">
         <div className="absolute inset-0 z-0">
           <img 
-            src="/images/hero-bg.webp" 
+            src="/images/hero-bg-2.webp" 
             alt="Niagara Escarpment in Autumn" 
             className="h-full w-full object-cover"
           />
