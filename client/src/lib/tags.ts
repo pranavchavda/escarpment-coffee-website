@@ -55,7 +55,7 @@ export function shouldDisplayTag(tag: string): boolean {
     'bfcm', 'bw', 'cd', 'coffee', 'consumer', 'easter', 'eos', 'escarpment', 
     'espresso', 'fathersday', 'fd', 'free', 'is-us', 'NC_', 'ncd', 'oversell', 
     'prime', 'tg', 'tier', 'under', 'WAR', 'YGroup', '5x', '68box', '75box',
-    'box', 'bts', 'canada', 'featured'
+    'box', 'bts', 'canada', 'featured', '13tier', '35days'
   ];
 
   const lowerTag = tag.toLowerCase();
