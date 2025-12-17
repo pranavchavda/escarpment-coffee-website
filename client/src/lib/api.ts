@@ -30,8 +30,8 @@ export interface CollectionResponse {
 
 export async function fetchCoffeeProducts(): Promise<Product[]> {
   try {
-    // Use local proxy endpoint to avoid CORS issues
-    const response = await fetch('/api/coffee-products');
+    // Fetch from statically generated JSON file
+    const response = await fetch('/data/coffee.json');
     if (!response.ok) {
       throw new Error('Failed to fetch coffee products');
     }

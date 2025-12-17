@@ -1,0 +1,4115 @@
+{
+  "collection": {
+    "id": "gid://shopify/Collection/279718657",
+    "handle": "coffee",
+    "title": "Fresh Coffee",
+    "description": "",
+    "descriptionHtml": "",
+    "image": null,
+    "productCount": 42,
+    "products": [
+      {
+        "id": "gid://shopify/Product/7694059077666",
+        "title": "Bolivia La Paz",
+        "handle": "bolivia-la-paz",
+        "description": "La Cooperativa Corpus Cristhy Illampu R.L, located in the Caranavi province of La Paz, Bolivia, produces Fair Trade and Organic certified coffees. The cooperative, founded in 2001, consists of around 40 farms covering 120 hectares. The coffee is grown at elevations of 1250-1700 MASL and undergoes a washed process similar to Colombian specialty producers. The result is a clean cup with fresh apple, mild caramel, and fresh green grape flavours, offering a smooth mouthfeel and fruit-like sweetness. The cooperative focuses on ecological and organic cultivation, ensuring high-quality production.",
+        "vendor": "Escarpment Coffee Roasters",
+        "productType": "Fresh Coffee",
+        "tags": [
+          "bfcm2024-15",
+          "bfcm2025-15",
+          "bw2024-10",
+          "cd202415",
+          "coffeeday2025",
+          "consumer",
+          "easter2025",
+          "ELEVATION-1250-1700 MASL",
+          "eos225",
+          "escarpment-coffee-roasters",
+          "espresso-bean",
+          "freecoffeeday2025",
+          "HARVESTING-December-February",
+          "NC_",
+          "NC_CoffeeandTea",
+          "NC_EspressoCoffee",
+          "NC_FreshCoffee",
+          "ncd2024",
+          "NOTES-Fresh apple#mild caramel#fresh green grape#clean fruit-like sweetness#smooth mouthfeel",
+          "origin-Bolivia",
+          "prime2024",
+          "PROCESSING-Washed",
+          "REGION-La Paz",
+          "ROAST-Medium",
+          "tg24wptt",
+          "VARIETAL-Catuai#Typica",
+          "WAR-CON"
+        ],
+        "availableForSale": true,
+        "featuredImage": {
+          "id": "gid://shopify/ProductImage/33441848688674",
+          "url": "https://cdn.shopify.com/s/files/1/1201/3604/files/118EscarpmentCoffeeJune2024_4NewSeasonalCoffeeLabels-BoliviaLaPaz.png?v=1718802546",
+          "altText": null,
+          "width": 3000,
+          "height": 3000
+        },
+        "priceRange": {
+          "minVariantPrice": {
+            "amount": "18.0",
+            "currencyCode": "CAD"
+          },
+          "maxVariantPrice": {
+            "amount": "18.0",
+            "currencyCode": "CAD"
+          }
+        },
+        "compareAtPriceRange": {
+          "minVariantPrice": {
+            "amount": "0.0",
+            "currencyCode": "CAD"
+          },
+          "maxVariantPrice": {
+            "amount": "0.0",
+            "currencyCode": "CAD"
+          }
+        },
+        "variants": {
+          "totalCount": 1,
+          "nodes": [
+            {
+              "id": "gid://shopify/ProductVariant/42718368923682",
+              "title": "Default Title",
+              "sku": "CF-BOL-LP",
+              "availableForSale": true,
+              "price": {
+                "amount": "18.0",
+                "currencyCode": "CAD"
+              },
+              "compareAtPrice": null
+            }
+          ]
+        },
+        "metafields": {
+          "reviewsAverage": "4.8",
+          "reviewsCount": "17"
+        }
+      },
+      {
+        "id": "gid://shopify/Product/5430912641",
+        "title": "Brazilian Santos",
+        "handle": "brazilian-santos",
+        "description": "This coffee comes to us from the Mogiana region in southern Brazil. It is called Santos which refers to the port from which it is exported. It is a nice easy drinking coffee and has been a favourite of our customers for a long time.",
+        "vendor": "Escarpment Coffee Roasters",
+        "productType": "Fresh Coffee",
+        "tags": [
+          "13tiersale",
+          "35days",
+          "5xcincopromo",
+          "5xpoints",
+          "68box",
+          "75box",
+          "bfcm202015",
+          "bfcm2024-15",
+          "bfcm2025-15",
+          "boxtier1",
+          "boxtier2",
+          "boxtier3",
+          "BREW-Filter",
+          "bts2021",
+          "bw2024-10",
+          "canadaday2023",
+          "cd202415",
+          "coffeeday2023",
+          "coffeeday2025",
+          "coffeedelete",
+          "consumer",
+          "easter2025",
+          "ELEVATION-3200 feet",
+          "eos225",
+          "escarpment-coffee-roasters",
+          "espresso-bean",
+          "fathersday2021",
+          "fathersday2022",
+          "fd2022incl",
+          "freecoffeeday2025",
+          "is-us-eg",
+          "NC_CoffeeandTea",
+          "NC_EspressoCoffee",
+          "NC_FreshCoffee",
+          "ncd2024",
+          "NOTES-Medium body# Chocolate and nutty notes# nice smooth finish# low acidity",
+          "origin-brazil",
+          "oversell_active",
+          "prime2024",
+          "PROCESSING-Natural",
+          "REGION-Brazil (Mogiana)",
+          "ROAST-Medium-Dark",
+          "tg24wptt",
+          "tgwptt2021",
+          "tierincluded",
+          "under-100",
+          "WAR-CON",
+          "YGroup_santos"
+        ],
+        "availableForSale": true,
+        "featuredImage": {
+          "id": "gid://shopify/ProductImage/32017248321570",
+          "url": "https://cdn.shopify.com/s/files/1/1201/3604/files/BrazilianSantos036.jpg?v=1762457455",
+          "altText": null,
+          "width": 2032,
+          "height": 2995
+        },
+        "priceRange": {
+          "minVariantPrice": {
+            "amount": "18.0",
+            "currencyCode": "CAD"
+          },
+          "maxVariantPrice": {
+            "amount": "18.0",
+            "currencyCode": "CAD"
+          }
+        },
+        "compareAtPriceRange": {
+          "minVariantPrice": {
+            "amount": "0.0",
+            "currencyCode": "CAD"
+          },
+          "maxVariantPrice": {
+            "amount": "0.0",
+            "currencyCode": "CAD"
+          }
+        },
+        "variants": {
+          "totalCount": 1,
+          "nodes": [
+            {
+              "id": "gid://shopify/ProductVariant/26849581185",
+              "title": "Default Title",
+              "sku": "cf-bra-santos",
+              "availableForSale": true,
+              "price": {
+                "amount": "18.0",
+                "currencyCode": "CAD"
+              },
+              "compareAtPrice": null
+            }
+          ]
+        },
+        "metafields": {
+          "reviewsAverage": "4.7",
+          "reviewsCount": "285"
+        }
+      },
+      {
+        "id": "gid://shopify/Product/7075764338722",
+        "title": "Burundi",
+        "handle": "burundi",
+        "description": "This coffee comes from Burundi, a small country located in the African Great Lakes region, where East Africa and Central Africa meet. Burundi is an up and coming origin that is producing very interesting coffees. This offering comes from the Kayanza province.",
+        "vendor": "Escarpment Coffee Roasters",
+        "productType": "Fresh Coffee",
+        "tags": [
+          "5xcincopromo",
+          "5xpoints",
+          "68box",
+          "75box",
+          "bfcm2024-15",
+          "bfcm2025-15",
+          "boxtier3",
+          "bw2024-10",
+          "canadaday2023",
+          "cd202415",
+          "coffeeday2023",
+          "coffeeday2025",
+          "consumer",
+          "easter2025",
+          "eos225",
+          "escarpment-coffee-roasters",
+          "featured",
+          "freecoffeeday2025",
+          "is-us-eg",
+          "NC_Coffee",
+          "NC_CoffeeandTea",
+          "NC_FreshCoffee",
+          "ncd2024",
+          "NOTES-Sweet and creamy with citric acidity# toffee and lemon flavours",
+          "origin-burundi",
+          "oversell_active",
+          "prime2024",
+          "PROCESSING-Washed",
+          "REGION-Burundi",
+          "ROAST-Medium",
+          "tg24wptt",
+          "under-100",
+          "WAR-CON"
+        ],
+        "availableForSale": true,
+        "featuredImage": {
+          "id": "gid://shopify/ProductImage/32017252122658",
+          "url": "https://cdn.shopify.com/s/files/1/1201/3604/files/Burundi021.jpg?v=1709579996",
+          "altText": null,
+          "width": 2048,
+          "height": 2992
+        },
+        "priceRange": {
+          "minVariantPrice": {
+            "amount": "20.0",
+            "currencyCode": "CAD"
+          },
+          "maxVariantPrice": {
+            "amount": "20.0",
+            "currencyCode": "CAD"
+          }
+        },
+        "compareAtPriceRange": {
+          "minVariantPrice": {
+            "amount": "0.0",
+            "currencyCode": "CAD"
+          },
+          "maxVariantPrice": {
+            "amount": "0.0",
+            "currencyCode": "CAD"
+          }
+        },
+        "variants": {
+          "totalCount": 1,
+          "nodes": [
+            {
+              "id": "gid://shopify/ProductVariant/40643948347426",
+              "title": "Default Title",
+              "sku": "CF-BUR",
+              "availableForSale": true,
+              "price": {
+                "amount": "20.0",
+                "currencyCode": "CAD"
+              },
+              "compareAtPrice": null
+            }
+          ]
+        },
+        "metafields": {
+          "reviewsAverage": "4.7",
+          "reviewsCount": "36"
+        }
+      },
+      {
+        "id": "gid://shopify/Product/8052144570402",
+        "title": "Coffea Diversa Maragogype",
+        "handle": "coffea-diversa-maragogype",
+        "description": "Founded in 2003 by Mr. Gonzalo Hernandez, Coffea Diversa represents a revolutionary approach to coffee cultivation - a botanical coffee garden maintaining consistent terroir across multiple coffee variants. Unlike traditional mono-varietal plantations, Coffea Diversa cultivates the world's largest private coffee collection with over 800 coffee species, botanical varieties, mutants, and cultivars in one garden. This particular Maragogype varietal from Jutiapa, Suchitan, grown at 1500 meters above sea level, undergoes a unique fully washed hybrid cherry fermentation process with 72 hours of aerobic fermentation. The result is a coffee with sweet and chocolaty aromas, velvety body, and delicate but assertive acidity. Beautifully balanced with hints of apricot and peach, this rare offering showcases the exceptional possibilities when biodiversity meets expert cultivation.",
+        "vendor": "Escarpment Coffee Roasters",
+        "productType": "Fresh Coffee",
+        "tags": [
+          "bfcm2025-15",
+          "coffee",
+          "coffeeday2025",
+          "ELEVATION-1500m",
+          "escarpment coffee roasters",
+          "freecoffeeday2025",
+          "fresh-coffee",
+          "NC_FreshCoffee",
+          "newcoffeeaug25",
+          "NOTES-Chocolate#Apricot#Peach",
+          "origin-guatemala",
+          "PROCESSING-Washed Hybrid Cherry Fermentation",
+          "REGION-Jutiapa Suchitan",
+          "ROAST-Light",
+          "seasonal",
+          "twonewcoffees",
+          "VARIETAL-Maragogype"
+        ],
+        "availableForSale": true,
+        "featuredImage": {
+          "id": "gid://shopify/ProductImage/36264638218274",
+          "url": "https://cdn.shopify.com/s/files/1/1201/3604/files/133New_20Coffee_20Aug_2022_Coffea_20Diversa_20Maragogype_RESHOT-1755903088613.webp?v=1755903897",
+          "altText": "133New Coffee Aug 22_Coffea Diversa Maragogype_RESHOT.webp",
+          "width": 4000,
+          "height": 3999
+        },
+        "priceRange": {
+          "minVariantPrice": {
+            "amount": "30.0",
+            "currencyCode": "CAD"
+          },
+          "maxVariantPrice": {
+            "amount": "30.0",
+            "currencyCode": "CAD"
+          }
+        },
+        "compareAtPriceRange": {
+          "minVariantPrice": {
+            "amount": "0.0",
+            "currencyCode": "CAD"
+          },
+          "maxVariantPrice": {
+            "amount": "0.0",
+            "currencyCode": "CAD"
+          }
+        },
+        "variants": {
+          "totalCount": 1,
+          "nodes": [
+            {
+              "id": "gid://shopify/ProductVariant/44123479244834",
+              "title": "Default Title",
+              "sku": "CF-CD-MAR",
+              "availableForSale": true,
+              "price": {
+                "amount": "30.0",
+                "currencyCode": "CAD"
+              },
+              "compareAtPrice": null
+            }
+          ]
+        },
+        "metafields": {
+          "reviewsAverage": "4.0",
+          "reviewsCount": "2"
+        }
+      },
+      {
+        "id": "gid://shopify/Product/4414902566946",
+        "title": "Colombian Decaf",
+        "handle": "colombian-decaf",
+        "description": "Colombian coffee creates a rich, smooth and sweet tasting drink with a subtle nutty flavour and a complex aroma.",
+        "vendor": "Escarpment Coffee Roasters",
+        "productType": "Fresh Coffee",
+        "tags": [
+          "13tiersale",
+          "5xcincopromo",
+          "5xpoints",
+          "75box",
+          "bfcm202015",
+          "bfcm2024-15",
+          "bfcm2025-15",
+          "boxtier1",
+          "boxtier2",
+          "boxtier3",
+          "BREW-Filter",
+          "bts2021",
+          "bw2024-10",
+          "canadaday2023",
+          "cd202415",
+          "coffeeday2023",
+          "coffeeday2025",
+          "consumer",
+          "decaffeinated-coffee",
+          "easter2025",
+          "ELEVATION-2000 feet",
+          "eos225",
+          "escarpment-coffee-roasters",
+          "fathersday2021",
+          "fathersday2022",
+          "fd2022incl",
+          "freecoffeeday2025",
+          "is-us-eg",
+          "NC_",
+          "NC_CoffeeandTea",
+          "NC_DecaffeinatedCoffee",
+          "NC_FreshCoffee",
+          "ncd2024",
+          "NOTES-bold# strong body & aroma# slight hint of chocolate",
+          "origin-colombia",
+          "prime2024",
+          "PROCESSING-Sugarcane-EA",
+          "ROAST-Medium",
+          "tg24wptt",
+          "tgwptt2021",
+          "tierincluded",
+          "under-100",
+          "WAR-CON",
+          "YGroup_colswp"
+        ],
+        "availableForSale": true,
+        "featuredImage": {
+          "id": "gid://shopify/ProductImage/35271787053090",
+          "url": "https://cdn.shopify.com/s/files/1/1201/3604/files/ColombianSugarcaneDecaf-1747145621392_9200eec2-de70-42b5-a290-4b508b936c97.jpg?v=1747146281",
+          "altText": null,
+          "width": 2080,
+          "height": 3008
+        },
+        "priceRange": {
+          "minVariantPrice": {
+            "amount": "25.0",
+            "currencyCode": "CAD"
+          },
+          "maxVariantPrice": {
+            "amount": "25.0",
+            "currencyCode": "CAD"
+          }
+        },
+        "compareAtPriceRange": {
+          "minVariantPrice": {
+            "amount": "0.0",
+            "currencyCode": "CAD"
+          },
+          "maxVariantPrice": {
+            "amount": "0.0",
+            "currencyCode": "CAD"
+          }
+        },
+        "variants": {
+          "totalCount": 1,
+          "nodes": [
+            {
+              "id": "gid://shopify/ProductVariant/31477996093474",
+              "title": "Default Title",
+              "sku": "CF-COL-SWP",
+              "availableForSale": true,
+              "price": {
+                "amount": "25.0",
+                "currencyCode": "CAD"
+              },
+              "compareAtPrice": null
+            }
+          ]
+        },
+        "metafields": {
+          "reviewsAverage": "4.6",
+          "reviewsCount": "68"
+        }
+      },
+      {
+        "id": "gid://shopify/Product/4415390711842",
+        "title": "Colombian Huila Supremo",
+        "handle": "colombian-supremo",
+        "description": "Colombian coffee is the classic specialty coffee. Many people's first exposure to better coffee was when they first tasted a crisp Colombian. This offering from the Huila region is an exceptional coffee that is easy to drink and brimming with flavour",
+        "vendor": "Escarpment Coffee Roasters",
+        "productType": "Fresh Coffee",
+        "tags": [
+          "13tiersale",
+          "5xcincopromo",
+          "5xpoints",
+          "68box",
+          "75box",
+          "bfcm202015",
+          "bfcm2024-15",
+          "bfcm2025-15",
+          "boxtier1",
+          "boxtier2",
+          "boxtier3",
+          "BREW-Filter",
+          "bts2021",
+          "bw2024-10",
+          "canadaday2023",
+          "cd202415",
+          "coffeeday2023",
+          "coffeeday2025",
+          "consumer",
+          "easter2025",
+          "ELEVATION-2000 feet",
+          "eos225",
+          "escarpment-coffee-roasters",
+          "fathersday2021",
+          "fathersday2022",
+          "fd2022incl",
+          "freecoffeeday2025",
+          "is-us-eg",
+          "NC_",
+          "NC_CoffeeandTea",
+          "NC_EspressoCoffee",
+          "NC_FreshCoffee",
+          "ncd2024",
+          "NOTES-bold# strong body & aroma# slight hint of chocolate",
+          "origin-colombia",
+          "oversell_active",
+          "prime2024",
+          "PROCESSING-Washed",
+          "REGION-Colombia (Huila)",
+          "ROAST-Medium",
+          "tg24wptt",
+          "tgwptt2021",
+          "tierincluded",
+          "under-100",
+          "WAR-CON",
+          "YGroup_colsup"
+        ],
+        "availableForSale": true,
+        "featuredImage": {
+          "id": "gid://shopify/ProductImage/32017255366690",
+          "url": "https://cdn.shopify.com/s/files/1/1201/3604/files/ColombianHuilaSupremo046.jpg?v=1709580033",
+          "altText": null,
+          "width": 2032,
+          "height": 2992
+        },
+        "priceRange": {
+          "minVariantPrice": {
+            "amount": "19.0",
+            "currencyCode": "CAD"
+          },
+          "maxVariantPrice": {
+            "amount": "19.0",
+            "currencyCode": "CAD"
+          }
+        },
+        "compareAtPriceRange": {
+          "minVariantPrice": {
+            "amount": "0.0",
+            "currencyCode": "CAD"
+          },
+          "maxVariantPrice": {
+            "amount": "0.0",
+            "currencyCode": "CAD"
+          }
+        },
+        "variants": {
+          "totalCount": 1,
+          "nodes": [
+            {
+              "id": "gid://shopify/ProductVariant/31480447696930",
+              "title": "Default Title",
+              "sku": "CF-COL-SUP",
+              "availableForSale": true,
+              "price": {
+                "amount": "19.0",
+                "currencyCode": "CAD"
+              },
+              "compareAtPrice": null
+            }
+          ]
+        },
+        "metafields": {
+          "reviewsAverage": "4.7",
+          "reviewsCount": "157"
+        }
+      },
+      {
+        "id": "gid://shopify/Product/7921901961250",
+        "title": "Colombian Mujeres en Cafe",
+        "handle": "colombian-mujeres-en-cafe",
+        "description": "High in the mountains of Caldas, Colombia (1500–1900 masl), a remarkable coffee is cultivated by Mujeres en Café, a collective of 770 women farmers dedicated to crafting exceptional coffee while empowering female producers. This fully washed coffee delivers a smooth, balanced cup with rich notes of roasted nuts, creamy chocolate, and a sweet hint of vanilla. A touch of subtle citrus brightness adds vibrancy, leading to a clean, lingering finish. With its versatile profile, this medium roast is just as delightful brewed as a bold espresso as it is as a gentle pour-over. More than just a coffee, this is a movement. 100% of proceeds from this special edition will go to CARE CANADA, a global leader in fighting poverty with a focus on empowering women and girls. With approximately 300 bags available, we aim to raise $7,500 to support this important cause. Enjoy a remarkable coffee that not only tastes incredible but also makes a real difference.",
+        "vendor": "Escarpment Coffee Roasters",
+        "productType": "Fresh Coffee",
+        "tags": [
+          "ACIDITY-Bright",
+          "bfcm2025-15",
+          "BLEND-Single Origin",
+          "BREW-All Methods",
+          "CARE-CANADA",
+          "coffee",
+          "coffeeday2025",
+          "easter2025",
+          "ELEVATION-1500–1900 masl",
+          "freecoffeeday2025",
+          "NC_FreshCoffee",
+          "NOTES-Roasted Nuts# Smooth Chocolate# Hint of Vanilla# Subtle Citrus Brightness",
+          "origin-colombia",
+          "PROCESSING-Washed",
+          "REGION-Caldas",
+          "ROAST-Medium",
+          "seasonal",
+          "VARIETAL-Colombia# Castillo# Cenicafé 1"
+        ],
+        "availableForSale": false,
+        "featuredImage": {
+          "id": "gid://shopify/ProductImage/34877646536738",
+          "url": "https://cdn.shopify.com/s/files/1/1201/3604/files/ColumbianMujeresEnCafeCoffee-FocusStackSet_1.webp?v=1741293173",
+          "altText": null,
+          "width": 4000,
+          "height": 3997
+        },
+        "priceRange": {
+          "minVariantPrice": {
+            "amount": "25.0",
+            "currencyCode": "CAD"
+          },
+          "maxVariantPrice": {
+            "amount": "25.0",
+            "currencyCode": "CAD"
+          }
+        },
+        "compareAtPriceRange": {
+          "minVariantPrice": {
+            "amount": "0.0",
+            "currencyCode": "CAD"
+          },
+          "maxVariantPrice": {
+            "amount": "0.0",
+            "currencyCode": "CAD"
+          }
+        },
+        "variants": {
+          "totalCount": 1,
+          "nodes": [
+            {
+              "id": "gid://shopify/ProductVariant/43585796374562",
+              "title": "Default Title",
+              "sku": "CF-CO-MEC",
+              "availableForSale": false,
+              "price": {
+                "amount": "25.0",
+                "currencyCode": "CAD"
+              },
+              "compareAtPrice": null
+            }
+          ]
+        },
+        "metafields": {
+          "reviewsAverage": "4.6",
+          "reviewsCount": "10"
+        }
+      },
+      {
+        "id": "gid://shopify/Product/4415390777378",
+        "title": "Costa Rican SWP Decaf",
+        "handle": "costa-rican-swp-decaf",
+        "description": "Costa Rica produces one of the worlds best gourmet coffees. The near-perfect growing conditions of this region- high altitude, rich volcanic soil, and combination of sunlight, temperature and precipitation all contribute to the awesome elegance of this world class coffee.",
+        "vendor": "Escarpment Coffee Roasters",
+        "productType": "Fresh Coffee",
+        "tags": [
+          "13tiersale",
+          "5xcincopromo",
+          "5xpoints",
+          "75box",
+          "bfcm202015",
+          "bfcm2024-15",
+          "bfcm2025-15",
+          "boxtier2",
+          "boxtier3",
+          "BREW-Filter",
+          "bts2021",
+          "bw2024-10",
+          "canadaday2023",
+          "cd202415",
+          "coffeeday2023",
+          "coffeeday2025",
+          "consumer",
+          "decaffeinated-coffee",
+          "easter2025",
+          "ELEVATION-4000 feet",
+          "eos225",
+          "escarpment-coffee-roasters",
+          "fathersday2021",
+          "fathersday2022",
+          "fd2022incl",
+          "freecoffeeday2025",
+          "is-us-eg",
+          "NC_",
+          "NC_CoffeeandTea",
+          "NC_DecaffeinatedCoffee",
+          "NC_FreshCoffee",
+          "ncd2024",
+          "NOTES-Full body# nice rich taste# great finish# slightly fruity",
+          "origin-costa-rica",
+          "prime2024",
+          "PROCESSING-Swiss Water Processing",
+          "REGION-Colombia (Tarazu)",
+          "ROAST-Medium",
+          "tg24wptt",
+          "tgwptt2021",
+          "tierincluded",
+          "under-100",
+          "WAR-CON",
+          "YGroup_tarswp"
+        ],
+        "availableForSale": true,
+        "featuredImage": {
+          "id": "gid://shopify/ProductImage/32017260740642",
+          "url": "https://cdn.shopify.com/s/files/1/1201/3604/files/CostaRicanSWPDecaf037.jpg?v=1709580110",
+          "altText": null,
+          "width": 2048,
+          "height": 3000
+        },
+        "priceRange": {
+          "minVariantPrice": {
+            "amount": "25.0",
+            "currencyCode": "CAD"
+          },
+          "maxVariantPrice": {
+            "amount": "25.0",
+            "currencyCode": "CAD"
+          }
+        },
+        "compareAtPriceRange": {
+          "minVariantPrice": {
+            "amount": "0.0",
+            "currencyCode": "CAD"
+          },
+          "maxVariantPrice": {
+            "amount": "0.0",
+            "currencyCode": "CAD"
+          }
+        },
+        "variants": {
+          "totalCount": 1,
+          "nodes": [
+            {
+              "id": "gid://shopify/ProductVariant/31480447762466",
+              "title": "Default Title",
+              "sku": "CF-CR-TAR-SWP",
+              "availableForSale": true,
+              "price": {
+                "amount": "25.0",
+                "currencyCode": "CAD"
+              },
+              "compareAtPrice": null
+            }
+          ]
+        },
+        "metafields": {
+          "reviewsAverage": "4.6",
+          "reviewsCount": "63"
+        }
+      },
+      {
+        "id": "gid://shopify/Product/4415390810146",
+        "title": "Costa Rican Tarrazu",
+        "handle": "costa-rican-tarrazu",
+        "description": "one of the true coffee classics and not to be missed. Coffee aficionados agree that the Tarrazu region of Costa Rica produces one of the worlds best gourmet coffees. Costa Rican Tarrazu coffee beans carry an unusual silky flavor, a splendid aroma with a hint of nut and fruit tones, a well-balanced body and pleasant acidity.",
+        "vendor": "Escarpment Coffee Roasters",
+        "productType": "Fresh Coffee",
+        "tags": [
+          "13tiersale",
+          "5xcincopromo",
+          "5xpoints",
+          "68box",
+          "75box",
+          "bfcm202015",
+          "bfcm2024-15",
+          "bfcm2025-15",
+          "boxtier1",
+          "boxtier2",
+          "boxtier3",
+          "BREW-Filter",
+          "bts2021",
+          "bw2024-10",
+          "canadaday2023",
+          "cd202415",
+          "coffeeday2023",
+          "coffeeday2025",
+          "consumer",
+          "easter2025",
+          "ELEVATION-4000 feet",
+          "eos225",
+          "escarpment-coffee-roasters",
+          "fathersday2021",
+          "fathersday2022",
+          "fd2022incl",
+          "freecoffeeday2025",
+          "is-us-eg",
+          "NC_",
+          "NC_CoffeeandTea",
+          "NC_EspressoCoffee",
+          "NC_FreshCoffee",
+          "ncd2024",
+          "NOTES-Full body# nice rich taste# great finish# slightly fruity",
+          "origin-costa-rica",
+          "oversell_active",
+          "prime2024",
+          "PROCESSING-Honey",
+          "REGION-Costa Rica",
+          "ROAST-Medium",
+          "tg24wptt",
+          "tgwptt2021",
+          "tierincluded",
+          "under-100",
+          "WAR-CON",
+          "YGroup_tar"
+        ],
+        "availableForSale": false,
+        "featuredImage": {
+          "id": "gid://shopify/ProductImage/32017261789218",
+          "url": "https://cdn.shopify.com/s/files/1/1201/3604/files/CostaRicanTarrazu045.jpg?v=1709580118",
+          "altText": null,
+          "width": 2058,
+          "height": 3010
+        },
+        "priceRange": {
+          "minVariantPrice": {
+            "amount": "20.0",
+            "currencyCode": "CAD"
+          },
+          "maxVariantPrice": {
+            "amount": "20.0",
+            "currencyCode": "CAD"
+          }
+        },
+        "compareAtPriceRange": {
+          "minVariantPrice": {
+            "amount": "0.0",
+            "currencyCode": "CAD"
+          },
+          "maxVariantPrice": {
+            "amount": "0.0",
+            "currencyCode": "CAD"
+          }
+        },
+        "variants": {
+          "totalCount": 1,
+          "nodes": [
+            {
+              "id": "gid://shopify/ProductVariant/31480447795234",
+              "title": "Default Title",
+              "sku": "CF-CR-TAR",
+              "availableForSale": false,
+              "price": {
+                "amount": "20.0",
+                "currencyCode": "CAD"
+              },
+              "compareAtPrice": null
+            }
+          ]
+        },
+        "metafields": {
+          "reviewsAverage": "4.6",
+          "reviewsCount": "200"
+        }
+      },
+      {
+        "id": "gid://shopify/Product/7177111765026",
+        "title": "Daterra Farms Auction Lot: Heitor",
+        "handle": "daterra-farms-auction-lot-heitor",
+        "description": "This special coffee was part of Daterra's auction in 2022. It was inspired by the composer Heitor Villa-Lobos, considered the \"Father of Brazilian classical music,\" known for fusing native Brazilian music with European classical music and African rhythms.Daterra is one of the world-famous farms in Brazil, where coffee is produced with an inspiring commitment to quality and sustainability. All Daterra Farms coffees have been Rainforest Alliance certified since 2003, meaning the coffee is grown on farms where forests, rivers and soils are protected; wildlife is conserved; workers are paid decent wages and given access to medical care and education.The coffee beans are of the Datopia varietal, a unique blend of eight heirloom varietals from the regions of Kaffa, Harar and Shewa in Ethiopia, brought to Daterra by the Agronomic Institute of Campinas (IAC). This varietal is known for its resilience to climate change, pests, and diseases and its unique and desirable flavour profile. The producer cupping notes for this coffee are Earl grey tea, peach, apricot, brown sugar, and citric acidity.",
+        "vendor": "Escarpment Coffee Roasters",
+        "productType": "Fresh Coffee",
+        "tags": [
+          "5xcincopromo",
+          "5xpoints",
+          "auctionlot",
+          "bfcm2024-15",
+          "bfcm2025-15",
+          "bw2024-10",
+          "canadaday2023",
+          "cd202415",
+          "coffeeday2023",
+          "coffeeday2025",
+          "consumer",
+          "easter2025",
+          "eos225",
+          "escarpment-coffee-roasters",
+          "espresso-bean",
+          "freecoffeeday2025",
+          "is-us-eg",
+          "MASTERPIECE",
+          "ncd2024",
+          "NOTES-Earl grey tea# Peach# Apricot# Brown sugar# Citric acidity",
+          "origin-brazil",
+          "oversell_active",
+          "prime2024",
+          "PROCESSING-Natural-tree-dried",
+          "ROAST-Medium",
+          "seasonal",
+          "tg24wptt",
+          "under-100",
+          "WAR-CON"
+        ],
+        "availableForSale": true,
+        "featuredImage": {
+          "id": "gid://shopify/ProductImage/32017269522466",
+          "url": "https://cdn.shopify.com/s/files/1/1201/3604/files/DaterraFarmsAuctionLotHeitor024.jpg?v=1709580207",
+          "altText": null,
+          "width": 2048,
+          "height": 2992
+        },
+        "priceRange": {
+          "minVariantPrice": {
+            "amount": "60.0",
+            "currencyCode": "CAD"
+          },
+          "maxVariantPrice": {
+            "amount": "60.0",
+            "currencyCode": "CAD"
+          }
+        },
+        "compareAtPriceRange": {
+          "minVariantPrice": {
+            "amount": "0.0",
+            "currencyCode": "CAD"
+          },
+          "maxVariantPrice": {
+            "amount": "0.0",
+            "currencyCode": "CAD"
+          }
+        },
+        "variants": {
+          "totalCount": 1,
+          "nodes": [
+            {
+              "id": "gid://shopify/ProductVariant/41011444613154",
+              "title": "Default Title",
+              "sku": "CF-DAT-AL-H",
+              "availableForSale": true,
+              "price": {
+                "amount": "60.0",
+                "currencyCode": "CAD"
+              },
+              "compareAtPrice": null
+            }
+          ]
+        },
+        "metafields": {
+          "reviewsAverage": "5.0",
+          "reviewsCount": "3"
+        }
+      },
+      {
+        "id": "gid://shopify/Product/7971933953",
+        "title": "Daterra Farms Bourbon Collection",
+        "handle": "daterra-farms-bourbon-collection",
+        "description": "A complex and beautifully bright coffee. A sweet citrus-like acidity makes the body of this coffee glisten with flavors of sweet mandarin, rich dark chocolate and caramel. The finish is filled with high notes of sweet fruits and bittersweet chocolate.",
+        "vendor": "Escarpment Coffee Roasters",
+        "productType": "Fresh Coffee",
+        "tags": [
+          "13tiersale",
+          "35days",
+          "5xcincopromo",
+          "5xpoints",
+          "75box",
+          "bfcm202015",
+          "bfcm2024-15",
+          "bfcm2025-15",
+          "boxtier3",
+          "BREW-Espresso",
+          "bts2021",
+          "bw2024-10",
+          "canadaday2023",
+          "cd202415",
+          "coffeeday2023",
+          "coffeeday2025",
+          "consumer",
+          "easter2025",
+          "ELEVATION-3800 feet",
+          "eos225",
+          "escarpment-coffee-roasters",
+          "espresso-bean",
+          "fathersday2021",
+          "fathersday2022",
+          "fd2022incl",
+          "freecoffeeday2025",
+          "HARVESTING-Selective mechanical",
+          "is-us-eg",
+          "NC_",
+          "NC_CoffeeandTea",
+          "NC_EspressoCoffee",
+          "NC_FreshCoffee",
+          "ncd2024",
+          "NOTES-Mandarin# Dark Chocolate# Caramel",
+          "origin-brazil",
+          "oversell_active",
+          "prime2024",
+          "PROCESSING-Pulped (Semi-Washed)",
+          "REGION-Brazil (Minas Gerais)",
+          "ROAST-Medium",
+          "tg24wptt",
+          "tgwptt2021",
+          "tierincluded",
+          "under-100",
+          "WAR-CON",
+          "YGroup_tatbc"
+        ],
+        "availableForSale": false,
+        "featuredImage": {
+          "id": "gid://shopify/ProductImage/32017278107682",
+          "url": "https://cdn.shopify.com/s/files/1/1201/3604/files/DaterraFarmsBourbonCollection007.jpg?v=1762457610",
+          "altText": null,
+          "width": 2054,
+          "height": 3000
+        },
+        "priceRange": {
+          "minVariantPrice": {
+            "amount": "22.0",
+            "currencyCode": "CAD"
+          },
+          "maxVariantPrice": {
+            "amount": "22.0",
+            "currencyCode": "CAD"
+          }
+        },
+        "compareAtPriceRange": {
+          "minVariantPrice": {
+            "amount": "0.0",
+            "currencyCode": "CAD"
+          },
+          "maxVariantPrice": {
+            "amount": "0.0",
+            "currencyCode": "CAD"
+          }
+        },
+        "variants": {
+          "totalCount": 1,
+          "nodes": [
+            {
+              "id": "gid://shopify/ProductVariant/26849882049",
+              "title": "Default Title",
+              "sku": "CF-DAT-BC",
+              "availableForSale": false,
+              "price": {
+                "amount": "22.0",
+                "currencyCode": "CAD"
+              },
+              "compareAtPrice": null
+            }
+          ]
+        },
+        "metafields": {
+          "reviewsAverage": "4.7",
+          "reviewsCount": "388"
+        }
+      },
+      {
+        "id": "gid://shopify/Product/5430908865",
+        "title": "Daterra Farms Espresso Yellow",
+        "handle": "daterra-farms-espresso-yellow",
+        "description": "Daterra Farms Espresso Yellow is an absolute delight every time. It's perfect for espresso as it's a thicker-bodied coffee. The coffee beans carry an intense dry aroma with hints of chocolate and fruits. It is amazingly full-bodied, rich and lively with moderate acidity. Aromatic, full-bodied- perfect for espresso. Rich and lively with moderate acidity. Hints of chocolate and fruits.",
+        "vendor": "Escarpment Coffee Roasters",
+        "productType": "Fresh Coffee",
+        "tags": [
+          "13tiersale",
+          "35days",
+          "3points",
+          "5xcincopromo",
+          "5xpoints",
+          "75box",
+          "bfcm202015",
+          "bfcm2024-15",
+          "bfcm2025-15",
+          "boxtier3",
+          "BREW-Espresso",
+          "bts2021",
+          "bw2024-10",
+          "canadaday2023",
+          "cd202415",
+          "coffeeday2023",
+          "coffeeday2025",
+          "COFFEENOSTOCK",
+          "consumer",
+          "easter2025",
+          "ELEVATION-3800 feet",
+          "eos225",
+          "escarpment-coffee-roasters",
+          "espresso-bean",
+          "fathersday2021",
+          "fathersday2022",
+          "fd2022incl",
+          "featured",
+          "freecoffeeday2025",
+          "HARVESTING-Selective mechanical",
+          "is-us-eg",
+          "NC_",
+          "NC_CoffeeandTea",
+          "NC_EspressoCoffee",
+          "NC_FreshCoffee",
+          "ncd2024",
+          "origin-brazil",
+          "oversell_active",
+          "prime2024",
+          "PROCESSING-Natural",
+          "REGION-Brazil (Minas Gerais)",
+          "ROAST-Medium-Dark",
+          "tg24wptt",
+          "tgwptt2021",
+          "tierincluded",
+          "under-100",
+          "WAR-CON",
+          "YGroup_yellow"
+        ],
+        "availableForSale": true,
+        "featuredImage": {
+          "id": "gid://shopify/ProductImage/32017279254562",
+          "url": "https://cdn.shopify.com/s/files/1/1201/3604/files/DaterraFarmsEspressoYellow031_e94fd9ca-cc18-428a-aa31-df366132c75d.jpg?v=1762457444",
+          "altText": null,
+          "width": 2048,
+          "height": 3000
+        },
+        "priceRange": {
+          "minVariantPrice": {
+            "amount": "22.0",
+            "currencyCode": "CAD"
+          },
+          "maxVariantPrice": {
+            "amount": "22.0",
+            "currencyCode": "CAD"
+          }
+        },
+        "compareAtPriceRange": {
+          "minVariantPrice": {
+            "amount": "0.0",
+            "currencyCode": "CAD"
+          },
+          "maxVariantPrice": {
+            "amount": "0.0",
+            "currencyCode": "CAD"
+          }
+        },
+        "variants": {
+          "totalCount": 1,
+          "nodes": [
+            {
+              "id": "gid://shopify/ProductVariant/26849914817",
+              "title": "Default Title",
+              "sku": "CF-DAT-YELLOW",
+              "availableForSale": true,
+              "price": {
+                "amount": "22.0",
+                "currencyCode": "CAD"
+              },
+              "compareAtPrice": null
+            }
+          ]
+        },
+        "metafields": {
+          "reviewsAverage": "4.8",
+          "reviewsCount": "773"
+        }
+      },
+      {
+        "id": "gid://shopify/Product/9638201153",
+        "title": "Daterra Farms Full Bloom",
+        "handle": "daterra-farms-full-bloom",
+        "description": "An elegant and refined fully natural coffee begins its journey at the peak of the harvest when the cherries are filled with honey-like liquor. The beans start drying on the tree, then transferred in cherry to the patio, until the honey is almost dissolved.",
+        "vendor": "Escarpment Coffee Roasters",
+        "productType": "Fresh Coffee",
+        "tags": [
+          "13tiersale",
+          "35days",
+          "5xcincopromo",
+          "5xpoints",
+          "68box",
+          "75box",
+          "bfcm202015",
+          "bfcm2024-15",
+          "bfcm2025-15",
+          "boxtier3",
+          "BREW-Espresso",
+          "bts2021",
+          "bw2024-10",
+          "canadaday2023",
+          "cd202415",
+          "coffeeday2023",
+          "coffeeday2025",
+          "consumer",
+          "easter2025",
+          "ELEVATION-3800 feet",
+          "eos225",
+          "escarpment-coffee-roasters",
+          "espresso-bean",
+          "fathersday2021",
+          "fathersday2022",
+          "fd2022incl",
+          "freecoffeeday2025",
+          "HARVESTING-Selective mechanical",
+          "is-us-eg",
+          "NC_",
+          "NC_CoffeeandTea",
+          "NC_FreshCoffee",
+          "ncd2024",
+          "NOTES-stone fruits# blueberry# plum# caramel",
+          "origin-brazil",
+          "oversell_active",
+          "prime2024",
+          "PROCESSING-Natural",
+          "REGION-Brazil (Minas Gerais)",
+          "ROAST-Medium",
+          "tg24wptt",
+          "tgwptt2021",
+          "tierincluded",
+          "under-100",
+          "WAR-CON",
+          "YGroup_datfb"
+        ],
+        "availableForSale": false,
+        "featuredImage": {
+          "id": "gid://shopify/ProductImage/32017281155106",
+          "url": "https://cdn.shopify.com/s/files/1/1201/3604/files/DaterraFarmsFullBloom002.jpg?v=1762457866",
+          "altText": null,
+          "width": 2066,
+          "height": 3045
+        },
+        "priceRange": {
+          "minVariantPrice": {
+            "amount": "19.0",
+            "currencyCode": "CAD"
+          },
+          "maxVariantPrice": {
+            "amount": "19.0",
+            "currencyCode": "CAD"
+          }
+        },
+        "compareAtPriceRange": {
+          "minVariantPrice": {
+            "amount": "0.0",
+            "currencyCode": "CAD"
+          },
+          "maxVariantPrice": {
+            "amount": "0.0",
+            "currencyCode": "CAD"
+          }
+        },
+        "variants": {
+          "totalCount": 1,
+          "nodes": [
+            {
+              "id": "gid://shopify/ProductVariant/35177185153",
+              "title": "Default Title",
+              "sku": "CF-DAT-FB",
+              "availableForSale": false,
+              "price": {
+                "amount": "19.0",
+                "currencyCode": "CAD"
+              },
+              "compareAtPrice": null
+            }
+          ]
+        },
+        "metafields": {
+          "reviewsAverage": "4.7",
+          "reviewsCount": "242"
+        }
+      },
+      {
+        "id": "gid://shopify/Product/6539159601186",
+        "title": "Daterra Farms Low Caf Reserve",
+        "handle": "daterra-farms-low-caf-reserve",
+        "description": "This coffee is part of the Daterra Masterpieces collection and features two varietals that are naturally lower in caffeine - Laurina and Aramosa. It has less than half the caffeine of normal Arabica and brews a delightful cup suitable for the late afternoon or evening.",
+        "vendor": "Escarpment Coffee Roasters",
+        "productType": "Fresh Coffee",
+        "tags": [
+          "13tiersale",
+          "5xcincopromo",
+          "5xpoints",
+          "75box",
+          "bfcm2024-15",
+          "bfcm2025-15",
+          "bts2021",
+          "bw2024-10",
+          "canadaday2023",
+          "cd202415",
+          "coffeeday2023",
+          "coffeeday2025",
+          "consumer",
+          "easter2025",
+          "eos225",
+          "escarpment-coffee-roasters",
+          "fathersday2021",
+          "fathersday2022",
+          "fd2022incl",
+          "freecoffeeday2025",
+          "is-us-eg",
+          "NC_",
+          "NC_CoffeeandTea",
+          "NC_FreshCoffee",
+          "ncd2024",
+          "newcoffee2021",
+          "NOTES-Floral character# red berries# tropical fruits and grapes",
+          "origin-brazil",
+          "oversell_active",
+          "prime2024",
+          "PROCESSING-Blend of Natural# Honey and Anaerobic",
+          "ROAST-Medium",
+          "tg24wptt",
+          "tgwptt2021",
+          "tierincluded",
+          "under-100",
+          "WAR-CON"
+        ],
+        "availableForSale": true,
+        "featuredImage": {
+          "id": "gid://shopify/ProductImage/32017288527906",
+          "url": "https://cdn.shopify.com/s/files/1/1201/3604/files/DaterraFarmsLowCafReserve010.jpg?v=1709580483",
+          "altText": null,
+          "width": 2064,
+          "height": 2989
+        },
+        "priceRange": {
+          "minVariantPrice": {
+            "amount": "25.0",
+            "currencyCode": "CAD"
+          },
+          "maxVariantPrice": {
+            "amount": "25.0",
+            "currencyCode": "CAD"
+          }
+        },
+        "compareAtPriceRange": {
+          "minVariantPrice": {
+            "amount": "0.0",
+            "currencyCode": "CAD"
+          },
+          "maxVariantPrice": {
+            "amount": "0.0",
+            "currencyCode": "CAD"
+          }
+        },
+        "variants": {
+          "totalCount": 1,
+          "nodes": [
+            {
+              "id": "gid://shopify/ProductVariant/39261227614242",
+              "title": "Default Title",
+              "sku": "CF-DF-LCR",
+              "availableForSale": true,
+              "price": {
+                "amount": "25.0",
+                "currencyCode": "CAD"
+              },
+              "compareAtPrice": null
+            }
+          ]
+        },
+        "metafields": {
+          "reviewsAverage": "4.6",
+          "reviewsCount": "36"
+        }
+      },
+      {
+        "id": "gid://shopify/Product/3770882359330",
+        "title": "Daterra Farms Monte Cristo",
+        "handle": "daterra-farms-monte-cristo",
+        "description": "Monte Cristo translates to “Mount of Christ”. This coffee is named after Corcovado in Rio de Janeiro that has a statue of Jesus overlooking the city. It’s a symbol of Brazilian culture. This coffee is a classic Brazilian, it’s naturally Processed so it yields a sweet, full bodied and easy to drink cup",
+        "vendor": "Escarpment Coffee Roasters",
+        "productType": "Fresh Coffee",
+        "tags": [
+          "13tiersale",
+          "35days",
+          "5xcincopromo",
+          "5xpoints",
+          "68box",
+          "75box",
+          "bfcm202015",
+          "bfcm2024-15",
+          "bfcm2025-15",
+          "boxtier2",
+          "boxtier3",
+          "BREW-Filter",
+          "bts2021",
+          "bw2024-10",
+          "canadaday2023",
+          "cd202415",
+          "coffeeday2023",
+          "coffeeday2025",
+          "consumer",
+          "easter2025",
+          "ECMNOSALE",
+          "ELEVATION-3800 feet",
+          "eos225",
+          "escarpment-coffee-roasters",
+          "espresso-bean",
+          "fathersday2021",
+          "fathersday2022",
+          "fd2022incl",
+          "freecoffeeday2025",
+          "HARVESTING-Selective mechanical",
+          "is-us-eg",
+          "NC_",
+          "NC_CoffeeandTea",
+          "NC_EspressoCoffee",
+          "NC_FreshCoffee",
+          "ncd2024",
+          "NOTES-stone fruits# semi-sweet chocolate# smooth",
+          "origin-brazil",
+          "oversell_active",
+          "prime2024",
+          "PROCESSING-Natural",
+          "REGION-Brazil (Minas Gerais)",
+          "ROAST-Medium-Dark",
+          "tgwptt2021",
+          "tierincluded",
+          "under-100",
+          "WAR-CON",
+          "YGroup_datmc"
+        ],
+        "availableForSale": false,
+        "featuredImage": {
+          "id": "gid://shopify/ProductImage/32017290592290",
+          "url": "https://cdn.shopify.com/s/files/1/1201/3604/files/DaterraFarmsMonteCristo041.jpg?v=1762458208",
+          "altText": null,
+          "width": 2032,
+          "height": 3000
+        },
+        "priceRange": {
+          "minVariantPrice": {
+            "amount": "20.0",
+            "currencyCode": "CAD"
+          },
+          "maxVariantPrice": {
+            "amount": "20.0",
+            "currencyCode": "CAD"
+          }
+        },
+        "compareAtPriceRange": {
+          "minVariantPrice": {
+            "amount": "0.0",
+            "currencyCode": "CAD"
+          },
+          "maxVariantPrice": {
+            "amount": "0.0",
+            "currencyCode": "CAD"
+          }
+        },
+        "variants": {
+          "totalCount": 1,
+          "nodes": [
+            {
+              "id": "gid://shopify/ProductVariant/28897620983842",
+              "title": "Default Title",
+              "sku": "CF-DAT-MC",
+              "availableForSale": false,
+              "price": {
+                "amount": "20.0",
+                "currencyCode": "CAD"
+              },
+              "compareAtPrice": null
+            }
+          ]
+        },
+        "metafields": {
+          "reviewsAverage": "4.7",
+          "reviewsCount": "187"
+        }
+      },
+      {
+        "id": "gid://shopify/Product/5430909313",
+        "title": "Daterra Farms Sweet Blue",
+        "handle": "daterra-farms-sweet-blue",
+        "description": "Sweet Blue is an outstanding blend with a superb aroma. It tastes like an elegant dark and spicy chocolate bar. It has delicate acidity blended with flavors of lightly roasted almond and pleasant spicy chocolate are a precursor to a dense and interestingly textured body.",
+        "vendor": "Escarpment Coffee Roasters",
+        "productType": "Fresh Coffee",
+        "tags": [
+          "13tierexcl",
+          "13tiersale",
+          "35days",
+          "5xcincopromo",
+          "5xpoints",
+          "75box",
+          "bfcm202015",
+          "bfcm2024-15",
+          "bfcm2025-15",
+          "boxtier3",
+          "BREW-Espresso",
+          "bts2021",
+          "bw2024-10",
+          "canadaday2023",
+          "cd202415",
+          "coffeeday2023",
+          "coffeeday2025",
+          "consumer",
+          "easter2025",
+          "ELEVATION-3800 feet",
+          "eos225",
+          "escarpment-coffee-roasters",
+          "espresso-bean",
+          "excludedfromtiers",
+          "fathersday2021",
+          "fathersday2022",
+          "fd2022incl",
+          "freecoffeeday2025",
+          "HARVESTING-Selective mechanical",
+          "is-us-eg",
+          "NC_",
+          "NC_CoffeeandTea",
+          "NC_EspressoCoffee",
+          "NC_FreshCoffee",
+          "ncd2024",
+          "NOTES-Great Body# Spicy Chocolate# Roasted Almonds",
+          "origin-brazil",
+          "oversell_active",
+          "prime2024",
+          "PROCESSING-Natural (Honey)",
+          "REGION-Brazil (Minas Gerais)",
+          "ROAST-Medium-Dark",
+          "sweetblue",
+          "tg24wptt",
+          "tgwptt2021",
+          "tierincluded",
+          "under-100",
+          "WAR-CON",
+          "YGroup_swblue"
+        ],
+        "availableForSale": false,
+        "featuredImage": {
+          "id": "gid://shopify/ProductImage/32017264050210",
+          "url": "https://cdn.shopify.com/s/files/1/1201/3604/files/DateraFarmsSweetBlue001.jpg?v=1762457446",
+          "altText": null,
+          "width": 2040,
+          "height": 3000
+        },
+        "priceRange": {
+          "minVariantPrice": {
+            "amount": "22.0",
+            "currencyCode": "CAD"
+          },
+          "maxVariantPrice": {
+            "amount": "22.0",
+            "currencyCode": "CAD"
+          }
+        },
+        "compareAtPriceRange": {
+          "minVariantPrice": {
+            "amount": "0.0",
+            "currencyCode": "CAD"
+          },
+          "maxVariantPrice": {
+            "amount": "0.0",
+            "currencyCode": "CAD"
+          }
+        },
+        "variants": {
+          "totalCount": 1,
+          "nodes": [
+            {
+              "id": "gid://shopify/ProductVariant/26849983553",
+              "title": "Default Title",
+              "sku": "CF-DAT-SWBLUE",
+              "availableForSale": false,
+              "price": {
+                "amount": "22.0",
+                "currencyCode": "CAD"
+              },
+              "compareAtPrice": null
+            }
+          ]
+        },
+        "metafields": {
+          "reviewsAverage": "4.7",
+          "reviewsCount": "569"
+        }
+      },
+      {
+        "id": "gid://shopify/Product/5430908993",
+        "title": "Daterra Farms Sweet Collection",
+        "handle": "daterra-farms-sweet-collection",
+        "description": "Daterra Farms Sweet Collection is an exceptional blend which is sweet as well as crema abundant. This coffee was used by 2006 World Barista Champion Klaus Thomsen in his winning signature blend. Balanced and persistent, this coffee offers sweet fruity aroma, delicate acidity with long lasting citrus aftertaste. It creates a smooth body and flavor includes vanilla-caramel notes to the cup. Sweet fruity aroma and citrus notes Balanced, smooth body and delicate acidity Vanilla-caramel flavor, crema abundant",
+        "vendor": "Escarpment Coffee Roasters",
+        "productType": "Fresh Coffee",
+        "tags": [
+          "13tiersale",
+          "35days",
+          "5xcincopromo",
+          "5xpoints",
+          "75box",
+          "bfcm202015",
+          "bfcm2024-15",
+          "bfcm2025-15",
+          "boxtier3",
+          "BREW-Espresso",
+          "bts2021",
+          "bw2024-10",
+          "canadaday2023",
+          "cd202415",
+          "coffeeday2023",
+          "coffeeday2025",
+          "COFFEENOSTOCK",
+          "combo-tier-1",
+          "consumer",
+          "easter2025",
+          "ELEVATION-3800 feet",
+          "eos225",
+          "escarpment-coffee-roasters",
+          "espresso-bean",
+          "fathersday2021",
+          "fathersday2022",
+          "fd2022incl",
+          "freecoffeeday2025",
+          "HARVESTING-Selective mechanical",
+          "is-us-eg",
+          "NC_",
+          "NC_CoffeeandTea",
+          "NC_EspressoCoffee",
+          "NC_FreshCoffee",
+          "ncd2024",
+          "origin-brazil",
+          "oversell_active",
+          "prime2024",
+          "PROCESSING-Pulped",
+          "REGION-Brazil (Minas Gerais)",
+          "ROAST-Medium-Dark",
+          "tg24wptt",
+          "tgwptt2021",
+          "tierincluded",
+          "under-100",
+          "WAR-CON",
+          "YGroup_sweet"
+        ],
+        "availableForSale": false,
+        "featuredImage": {
+          "id": "gid://shopify/ProductImage/32017291608098",
+          "url": "https://cdn.shopify.com/s/files/1/1201/3604/files/DaterraFarmsSweetCollection030.jpg?v=1762457446",
+          "altText": null,
+          "width": 2053,
+          "height": 2992
+        },
+        "priceRange": {
+          "minVariantPrice": {
+            "amount": "22.0",
+            "currencyCode": "CAD"
+          },
+          "maxVariantPrice": {
+            "amount": "22.0",
+            "currencyCode": "CAD"
+          }
+        },
+        "compareAtPriceRange": {
+          "minVariantPrice": {
+            "amount": "0.0",
+            "currencyCode": "CAD"
+          },
+          "maxVariantPrice": {
+            "amount": "0.0",
+            "currencyCode": "CAD"
+          }
+        },
+        "variants": {
+          "totalCount": 1,
+          "nodes": [
+            {
+              "id": "gid://shopify/ProductVariant/26850006657",
+              "title": "Default Title",
+              "sku": "CF-DAT-SWEET",
+              "availableForSale": false,
+              "price": {
+                "amount": "22.0",
+                "currencyCode": "CAD"
+              },
+              "compareAtPrice": null
+            }
+          ]
+        },
+        "metafields": {
+          "reviewsAverage": "4.8",
+          "reviewsCount": "663"
+        }
+      },
+      {
+        "id": "gid://shopify/Product/8078902951970",
+        "title": "El Salvador Sweet Panela Pacamara",
+        "handle": "el-salvador-sweet-panela-pacamara",
+        "description": "A distinctive natural-processed Pacamara from the renowned San Carlos Estate in La Libertad, El Salvador. This exceptional coffee comes from the Borgonovo Pohl family, who have been producing specialty coffee since 1971 and are now in their third generation of coffee excellence.Grown in rich volcanic soil at elevations between 800-1300 meters, this rare Pacamara varietal - a hybrid of Pacas and Maragogype - produces exceptionally large beans with complex flavor characteristics. The natural processing method, known locally as \"Sweet Panela,\" enhances the coffee's inherent sweetness while preserving the unique terroir of El Salvador.San Carlos Estate is known for their commitment to quality and sustainability. The coffee is processed immediately at their family-owned mill, ensuring the preservation of inherent flavors and aromas. This meticulous approach has made their coffee a top choice for discerning roasters worldwide.Medium roasted to highlight the natural sweetness and complexity that the Pacamara variety and natural processing bring to the cup.",
+        "vendor": "Escarpment Coffee Roasters",
+        "productType": "Fresh Coffee",
+        "tags": [
+          "bfcm2025-15",
+          "coffee",
+          "coffeeday2025",
+          "consumer",
+          "ELEVATION-800-1300m",
+          "escarpment coffee roasters",
+          "FARM-San_Carlos_Estate",
+          "freecoffeeday2025",
+          "NC_FreshCoffee",
+          "NOTES-Rich# Sweet# Heavy Body# Stone Fruits# Cherry",
+          "origin-el-salvador",
+          "PROCESSING-Natural",
+          "REGION-El_Salvador",
+          "ROAST-Medium",
+          "VARIETAL-Pacamara",
+          "WAR-CON"
+        ],
+        "availableForSale": true,
+        "featuredImage": {
+          "id": "gid://shopify/ProductImage/36524174901282",
+          "url": "https://cdn.shopify.com/s/files/1/1201/3604/files/El_Salvador_Sweet_Panela_Pacamara_label3.webp?v=1759151150",
+          "altText": null,
+          "width": 3161,
+          "height": 3162
+        },
+        "priceRange": {
+          "minVariantPrice": {
+            "amount": "30.0",
+            "currencyCode": "CAD"
+          },
+          "maxVariantPrice": {
+            "amount": "30.0",
+            "currencyCode": "CAD"
+          }
+        },
+        "compareAtPriceRange": {
+          "minVariantPrice": {
+            "amount": "0.0",
+            "currencyCode": "CAD"
+          },
+          "maxVariantPrice": {
+            "amount": "0.0",
+            "currencyCode": "CAD"
+          }
+        },
+        "variants": {
+          "totalCount": 1,
+          "nodes": [
+            {
+              "id": "gid://shopify/ProductVariant/44345736200226",
+              "title": "Default Title",
+              "sku": "CF-SALV-PAC",
+              "availableForSale": true,
+              "price": {
+                "amount": "30.0",
+                "currencyCode": "CAD"
+              },
+              "compareAtPrice": null
+            }
+          ]
+        },
+        "metafields": {
+          "reviewsAverage": "5.0",
+          "reviewsCount": "2"
+        }
+      },
+      {
+        "id": "gid://shopify/Product/8078903050274",
+        "title": "Essential Espresso",
+        "handle": "essential-espresso",
+        "description": "Essential Espresso is our take on a timeless classic - crafted to bring great, freshly roasted coffee to everyone. This 100% Arabica blend of both naturally processed and washed coffees delivers rich, velvety crema and a smooth, balanced flavour that shines both straight as a shot and in milk-based drinks like lattes and cappuccinos. Expect a nutty taste with a dark chocolate finish and just a hint of citrus fruit to keep things lively. Its heavy body and bold character are sure to satisfy anyone craving that classic Italian café experience. And despite its name, Essential Espresso isn’t just for the espresso machine. It’s versatile enough to brew beautifully as drip, pour-over, or even in a French press - so you can enjoy it any way you like.",
+        "vendor": "Escarpment Coffee Roasters",
+        "productType": "Fresh Coffee",
+        "tags": [
+          "68box",
+          "75box",
+          "bfcm2025-15",
+          "BREW-Espresso",
+          "coffee",
+          "coffeeday2025",
+          "consumer",
+          "escarpment coffee roasters",
+          "espresso-bean",
+          "freecoffeeday2025",
+          "NC_EspressoCoffee",
+          "NC_FreshCoffee",
+          "NOTES-nutty taste# dark chocolate finish#  hint of citrus",
+          "ROAST-Medium",
+          "WAR-CON"
+        ],
+        "availableForSale": true,
+        "featuredImage": {
+          "id": "gid://shopify/ProductImage/36501334425634",
+          "url": "https://cdn.shopify.com/s/files/1/1201/3604/files/essential-espresso-1758898738151.webp?v=1758899441",
+          "altText": "essential-espresso.webp",
+          "width": 1899,
+          "height": 2536
+        },
+        "priceRange": {
+          "minVariantPrice": {
+            "amount": "18.0",
+            "currencyCode": "CAD"
+          },
+          "maxVariantPrice": {
+            "amount": "18.0",
+            "currencyCode": "CAD"
+          }
+        },
+        "compareAtPriceRange": {
+          "minVariantPrice": {
+            "amount": "0.0",
+            "currencyCode": "CAD"
+          },
+          "maxVariantPrice": {
+            "amount": "0.0",
+            "currencyCode": "CAD"
+          }
+        },
+        "variants": {
+          "totalCount": 1,
+          "nodes": [
+            {
+              "id": "gid://shopify/ProductVariant/44345736462370",
+              "title": "Default Title",
+              "sku": "CF-ESS-ESP",
+              "availableForSale": true,
+              "price": {
+                "amount": "18.0",
+                "currencyCode": "CAD"
+              },
+              "compareAtPrice": null
+            }
+          ]
+        },
+        "metafields": {
+          "reviewsAverage": "4.9",
+          "reviewsCount": "33"
+        }
+      },
+      {
+        "id": "gid://shopify/Product/8168745336866",
+        "title": "Essential Espresso Decaf",
+        "handle": "essential-espresso-decaf",
+        "description": "Essential Espresso Decaf is our take on a timeless classic - crafted to bring great, freshly roasted coffee to everyone, without the caffeine. This 100% Arabica blend of both naturally processed and washed coffees delivers rich, velvety crema and a smooth, balanced flavour that shines both straight as a shot and in milk-based drinks like lattes and cappuccinos. Decaffeinated using the Swiss Water Process (SWP), it keeps all the character you love in Essential Espresso. Expect a nutty taste with a dark chocolate finish and just a hint of citrus fruit to keep things lively. Its heavy body and bold character are sure to satisfy anyone craving that classic Italian café experience. And despite its name, Essential Espresso Decaf isn’t just for the espresso machine. It’s versatile enough to brew beautifully as drip, pour-over, or even in a French press - so you can enjoy it any way you like.",
+        "vendor": "Escarpment Coffee Roasters",
+        "productType": "Fresh Coffee",
+        "tags": [
+          "68box",
+          "75box",
+          "bfcm2025-15",
+          "BREW-Espresso",
+          "coffee",
+          "coffeeday2025",
+          "consumer",
+          "escarpment coffee roasters",
+          "espresso-bean",
+          "freecoffeeday2025",
+          "NC_EspressoCoffee",
+          "NC_FreshCoffee",
+          "NOTES-nutty taste# dark chocolate finish#  hint of citrus",
+          "PROCESSING-Swiss Water Processing",
+          "ROAST-Medium",
+          "WAR-CON"
+        ],
+        "availableForSale": true,
+        "featuredImage": {
+          "id": "gid://shopify/ProductImage/37979728674850",
+          "url": "https://cdn.shopify.com/s/files/1/1201/3604/files/trimmed-essential-1765911539897_50bc81c2-b545-4fc8-9971-8e08b08eb9b6.webp?v=1765911650",
+          "altText": "Essential Espresso Decaf coffee bag",
+          "width": 1877,
+          "height": 2620
+        },
+        "priceRange": {
+          "minVariantPrice": {
+            "amount": "22.0",
+            "currencyCode": "CAD"
+          },
+          "maxVariantPrice": {
+            "amount": "22.0",
+            "currencyCode": "CAD"
+          }
+        },
+        "compareAtPriceRange": {
+          "minVariantPrice": {
+            "amount": "0.0",
+            "currencyCode": "CAD"
+          },
+          "maxVariantPrice": {
+            "amount": "0.0",
+            "currencyCode": "CAD"
+          }
+        },
+        "variants": {
+          "totalCount": 1,
+          "nodes": [
+            {
+              "id": "gid://shopify/ProductVariant/44643706863650",
+              "title": "Default Title",
+              "sku": "CF-ESS-DEC",
+              "availableForSale": true,
+              "price": {
+                "amount": "22.0",
+                "currencyCode": "CAD"
+              },
+              "compareAtPrice": null
+            }
+          ]
+        },
+        "metafields": {
+          "reviewsAverage": "4.9",
+          "reviewsCount": "32"
+        }
+      },
+      {
+        "id": "gid://shopify/Product/4415390908450",
+        "title": "Ethiopian Harrar",
+        "handle": "ethiopian-harrar",
+        "description": "The Harrar region, which is on the eastern side of Ethiopia, produces some of the most fascinating coffees in the world. Harrar large coffee beans have an intense flavor of tropical fruit and blueberries with smooth chocolate notes. You will find Ethiopian Harrar coffee to have a rich body, room filling aroma, crisp finish with pleasant acidity.",
+        "vendor": "Escarpment Coffee Roasters",
+        "productType": "Fresh Coffee",
+        "tags": [
+          "13tiersale",
+          "5xcincopromo",
+          "5xpoints",
+          "68box",
+          "75box",
+          "ACIDITY-High",
+          "bfcm202015",
+          "bfcm2024-15",
+          "bfcm2025-15",
+          "BLEND-Single Origin",
+          "boxtier2",
+          "boxtier3",
+          "BREW-Filter",
+          "bts2021",
+          "bw2024-10",
+          "canadaday2023",
+          "cd202415",
+          "coffeeday2023",
+          "coffeeday2025",
+          "consumer",
+          "easter2025",
+          "ELEVATION-5000 feet",
+          "eos225",
+          "escarpment-coffee-roasters",
+          "espresso-bean",
+          "fathersday2021",
+          "fathersday2022",
+          "fd2022incl",
+          "freecoffeeday2025",
+          "HARVESTING-Hand-Picking",
+          "is-us-eg",
+          "NC_",
+          "NC_CoffeeandTea",
+          "NC_FreshCoffee",
+          "ncd2024",
+          "NOTES-blueberry# heavy body# crisp acidity",
+          "origin-ethiopia",
+          "oversell_active",
+          "prime2024",
+          "PROCESSING-Natural",
+          "REGION-Ethiopia (Harrar)",
+          "ROAST-Light-Medium",
+          "tg24wptt",
+          "tgwptt2021",
+          "tierincluded",
+          "under-100",
+          "VARIETAL-Heirloom",
+          "WAR-CON",
+          "YGroup_harr"
+        ],
+        "availableForSale": true,
+        "featuredImage": {
+          "id": "gid://shopify/ProductImage/32017376739362",
+          "url": "https://cdn.shopify.com/s/files/1/1201/3604/files/EthiopianHarrar014.jpg?v=1709581859",
+          "altText": null,
+          "width": 2048,
+          "height": 2987
+        },
+        "priceRange": {
+          "minVariantPrice": {
+            "amount": "20.0",
+            "currencyCode": "CAD"
+          },
+          "maxVariantPrice": {
+            "amount": "20.0",
+            "currencyCode": "CAD"
+          }
+        },
+        "compareAtPriceRange": {
+          "minVariantPrice": {
+            "amount": "0.0",
+            "currencyCode": "CAD"
+          },
+          "maxVariantPrice": {
+            "amount": "0.0",
+            "currencyCode": "CAD"
+          }
+        },
+        "variants": {
+          "totalCount": 1,
+          "nodes": [
+            {
+              "id": "gid://shopify/ProductVariant/31480447926306",
+              "title": "Default Title",
+              "sku": "CF-ETH-HAR",
+              "availableForSale": true,
+              "price": {
+                "amount": "20.0",
+                "currencyCode": "CAD"
+              },
+              "compareAtPrice": null
+            }
+          ]
+        },
+        "metafields": {
+          "reviewsAverage": "4.6",
+          "reviewsCount": "212"
+        }
+      },
+      {
+        "id": "gid://shopify/Product/4415390941218",
+        "title": "Ethiopian Sidama Guji",
+        "handle": "ethiopian-sidama-guji",
+        "description": "This coffee is lesser known than its very famous neighbour Yirgacheffe but it deserves attention in its own right. It has the rare combination of great acidity and a very full body and yields a lovely cup of coffee for anytime of day.",
+        "vendor": "Escarpment Coffee Roasters",
+        "productType": "Fresh Coffee",
+        "tags": [
+          "13tiersale",
+          "5xcincopromo",
+          "5xpoints",
+          "68box",
+          "75box",
+          "ACIDITY-Medium",
+          "bfcm202015",
+          "bfcm2024-15",
+          "bfcm2025-15",
+          "BLEND-Single Origin",
+          "boxtier2",
+          "boxtier3",
+          "BREW-Filter",
+          "bts2021",
+          "bw2024-10",
+          "canadaday2023",
+          "cd202415",
+          "coffeeday2023",
+          "coffeeday2025",
+          "consumer",
+          "easter2025",
+          "ELEVATION-5000 feet",
+          "eos225",
+          "escarpment-coffee-roasters",
+          "fathersday2021",
+          "fathersday2022",
+          "fd2022incl",
+          "freecoffeeday2025",
+          "HARVESTING-Hand-Picking",
+          "is-us-eg",
+          "NC_",
+          "NC_CoffeeandTea",
+          "NC_FreshCoffee",
+          "ncd2024",
+          "NOTES-Smooth# Sweet# Full Bodied# Exotic Fruit# Gentle Acidity",
+          "origin-ethiopia",
+          "oversell_active",
+          "prime2024",
+          "PROCESSING-Washed",
+          "REGION-Ethiopia (Guji# Sidama)",
+          "ROAST-Light-Medium",
+          "tg24wptt",
+          "tgwptt2021",
+          "tierincluded",
+          "under-100",
+          "VARIETAL-Heirloom",
+          "WAR-CON",
+          "YGroup_sidamo"
+        ],
+        "availableForSale": false,
+        "featuredImage": {
+          "id": "gid://shopify/ProductImage/32017377230882",
+          "url": "https://cdn.shopify.com/s/files/1/1201/3604/files/EthiopianSidamaGuji012.jpg?v=1709581867",
+          "altText": null,
+          "width": 2064,
+          "height": 2992
+        },
+        "priceRange": {
+          "minVariantPrice": {
+            "amount": "20.0",
+            "currencyCode": "CAD"
+          },
+          "maxVariantPrice": {
+            "amount": "20.0",
+            "currencyCode": "CAD"
+          }
+        },
+        "compareAtPriceRange": {
+          "minVariantPrice": {
+            "amount": "0.0",
+            "currencyCode": "CAD"
+          },
+          "maxVariantPrice": {
+            "amount": "0.0",
+            "currencyCode": "CAD"
+          }
+        },
+        "variants": {
+          "totalCount": 1,
+          "nodes": [
+            {
+              "id": "gid://shopify/ProductVariant/31480447959074",
+              "title": "Default Title",
+              "sku": "CF-ETH-SID",
+              "availableForSale": false,
+              "price": {
+                "amount": "20.0",
+                "currencyCode": "CAD"
+              },
+              "compareAtPrice": null
+            }
+          ]
+        },
+        "metafields": {
+          "reviewsAverage": "4.7",
+          "reviewsCount": "91"
+        }
+      },
+      {
+        "id": "gid://shopify/Product/4415390973986",
+        "title": "Ethiopian Yirgacheffe FTO",
+        "handle": "ethiopian-yirgacheffe-fto",
+        "description": "It was in Ethiopia that the first coffee trees flourished centuries ago and even today the breadth of its flavour experience is profound. Yirgacheffe is a town in the Sidamo region of Ethiopia, and the coffees produced in this area will amaze you with their citrus and floral notes.",
+        "vendor": "Escarpment Coffee Roasters",
+        "productType": "Fresh Coffee",
+        "tags": [
+          "13tiersale",
+          "5xcincopromo",
+          "5xpoints",
+          "75box",
+          "ACIDITY-5",
+          "bfcm202015",
+          "bfcm2024-15",
+          "bfcm2025-15",
+          "BLEND-Single Origin",
+          "boxtier3",
+          "BREW-Filter",
+          "bts2021",
+          "bw2024-10",
+          "canadaday2023",
+          "cd202415",
+          "coffeeday2023",
+          "coffeeday2025",
+          "consumer",
+          "easter2025",
+          "ELEVATION-5000 feet",
+          "eos225",
+          "escarpment-coffee-roasters",
+          "fathersday2021",
+          "fathersday2022",
+          "fd2022incl",
+          "freecoffeeday2025",
+          "HARVESTING-Hand-Picking",
+          "is-us-eg",
+          "NC_",
+          "NC_CoffeeandTea",
+          "NC_FreshCoffee",
+          "ncd2024",
+          "NOTES-Grapefruit Like Acidity# Citrus# Floral Notes# Very Complex",
+          "origin-ethiopia",
+          "oversell_active",
+          "prime2024",
+          "PROCESSING-Washed",
+          "REGION-Ethiopia (Yirgacheffe)",
+          "ROAST-Light-Medium",
+          "tg24wptt",
+          "tgwptt2021",
+          "tierincluded",
+          "under-100",
+          "VARIETAL-Heirloom",
+          "WAR-CON",
+          "YGroup_yir"
+        ],
+        "availableForSale": true,
+        "featuredImage": {
+          "id": "gid://shopify/ProductImage/32017377558562",
+          "url": "https://cdn.shopify.com/s/files/1/1201/3604/files/EthiopianYirgacheffe018.jpg?v=1709581875",
+          "altText": null,
+          "width": 2072,
+          "height": 3008
+        },
+        "priceRange": {
+          "minVariantPrice": {
+            "amount": "22.0",
+            "currencyCode": "CAD"
+          },
+          "maxVariantPrice": {
+            "amount": "22.0",
+            "currencyCode": "CAD"
+          }
+        },
+        "compareAtPriceRange": {
+          "minVariantPrice": {
+            "amount": "0.0",
+            "currencyCode": "CAD"
+          },
+          "maxVariantPrice": {
+            "amount": "0.0",
+            "currencyCode": "CAD"
+          }
+        },
+        "variants": {
+          "totalCount": 1,
+          "nodes": [
+            {
+              "id": "gid://shopify/ProductVariant/31480447991842",
+              "title": "Default Title",
+              "sku": "CF-ETH-YIRFTO",
+              "availableForSale": true,
+              "price": {
+                "amount": "22.0",
+                "currencyCode": "CAD"
+              },
+              "compareAtPrice": null
+            }
+          ]
+        },
+        "metafields": {
+          "reviewsAverage": "4.8",
+          "reviewsCount": "220"
+        }
+      },
+      {
+        "id": "gid://shopify/Product/8052143882274",
+        "title": "Guatemala Gualvador Pacas",
+        "handle": "guatemala-gualvador-pacas",
+        "description": "This exceptional coffee from Gualvador Estate showcases the unique terroir of the Chingo Volcano region. Managed by third-generation coffee grower Mr. Jaime Rios, this estate sits uniquely at the border between Guatemala and El Salvador - half in each country, hence the name 'Gualvador' combining both nations. Grown at 1,370-1500 meters above sea level, this SHB (Strictly Hard Bean) grade Pacas varietal undergoes a distinctive winey processing method that enhances its complex flavor profile. Experience sweet, winey and creamy aromas that lead into rich notes of dark chocolate, sweet cherry, and pecan pie - a true testament to the exceptional coffee-growing conditions at the convergence of two great coffee nations.",
+        "vendor": "Escarpment Coffee Roasters",
+        "productType": "Fresh Coffee",
+        "tags": [
+          "bfcm2025-15",
+          "coffee",
+          "coffeeday2025",
+          "ELEVATION-1370-1500m",
+          "escarpment coffee roasters",
+          "freecoffeeday2025",
+          "fresh-coffee",
+          "NC_FreshCoffee",
+          "newcoffeeaug25",
+          "NOTES-Dark Chocolate#Sweet Cherry#Pecan Pie",
+          "origin-guatemala",
+          "PROCESSING-Winey",
+          "REGION-Chingo Volcano",
+          "ROAST-Light Medium",
+          "seasonal",
+          "twonewcoffees",
+          "VARIETAL-Pacas"
+        ],
+        "availableForSale": true,
+        "featuredImage": {
+          "id": "gid://shopify/ProductImage/36264638251042",
+          "url": "https://cdn.shopify.com/s/files/1/1201/3604/files/132New_20Coffee_20Aug_2022_Guatemala_20Gualvador_20Pacas_RESHOT-1755903089103.webp?v=1755903797",
+          "altText": "132New Coffee Aug 22_Guatemala Gualvador Pacas_RESHOT.webp",
+          "width": 4000,
+          "height": 3999
+        },
+        "priceRange": {
+          "minVariantPrice": {
+            "amount": "25.0",
+            "currencyCode": "CAD"
+          },
+          "maxVariantPrice": {
+            "amount": "25.0",
+            "currencyCode": "CAD"
+          }
+        },
+        "compareAtPriceRange": {
+          "minVariantPrice": {
+            "amount": "0.0",
+            "currencyCode": "CAD"
+          },
+          "maxVariantPrice": {
+            "amount": "0.0",
+            "currencyCode": "CAD"
+          }
+        },
+        "variants": {
+          "totalCount": 1,
+          "nodes": [
+            {
+              "id": "gid://shopify/ProductVariant/44123477016610",
+              "title": "Default Title",
+              "sku": "CF-GUA-PAC",
+              "availableForSale": true,
+              "price": {
+                "amount": "25.0",
+                "currencyCode": "CAD"
+              },
+              "compareAtPrice": null
+            }
+          ]
+        },
+        "metafields": {
+          "reviewsAverage": "5.0",
+          "reviewsCount": "5"
+        }
+      },
+      {
+        "id": "gid://shopify/Product/4415391072290",
+        "title": "Guatemalan Antigua",
+        "handle": "guatemalan-antigua",
+        "description": "Grown in the Antigua district southwest of Guatemala City, Guatemalan Antigua coffee gives you a rich, full bodied cup with notes of dry cocoa, spices aroma and a lively wine like acidity. It creates a vibrant cup of coffee with a unique finish. A classic morning coffee.",
+        "vendor": "Escarpment Coffee Roasters",
+        "productType": "Fresh Coffee",
+        "tags": [
+          "13tiersale",
+          "5xcincopromo",
+          "5xpoints",
+          "68box",
+          "75box",
+          "ACIDITY-High",
+          "bfcm202015",
+          "bfcm2024-15",
+          "bfcm2025-15",
+          "BLEND-Single Origin",
+          "boxtier1",
+          "boxtier2",
+          "boxtier3",
+          "BREW-Filter",
+          "bts2021",
+          "bw2024-10",
+          "canadaday2023",
+          "cd202415",
+          "coffeeday2023",
+          "coffeeday2025",
+          "consumer",
+          "easter2025",
+          "ELEVATION-5000 feet",
+          "eos225",
+          "escarpment-coffee-roasters",
+          "fathersday2021",
+          "fathersday2022",
+          "fd2022incl",
+          "freecoffeeday2025",
+          "is-us-eg",
+          "NC_",
+          "NC_CoffeeandTea",
+          "NC_FreshCoffee",
+          "ncd2024",
+          "NOTES-Chardonnay Like Acidity# spice# full body",
+          "origin-guatemala",
+          "oversell_active",
+          "prime2024",
+          "PROCESSING-Washed",
+          "REGION-Guatemala (Antigua)",
+          "ROAST-Light",
+          "tg24wptt",
+          "tgwptt2021",
+          "tierincluded",
+          "under-100",
+          "VARIETAL-Bourbon",
+          "WAR-CON",
+          "YGroup_guant"
+        ],
+        "availableForSale": true,
+        "featuredImage": {
+          "id": "gid://shopify/ProductImage/32017377984546",
+          "url": "https://cdn.shopify.com/s/files/1/1201/3604/files/GuatemalanAntigua2034.jpg?v=1709581904",
+          "altText": null,
+          "width": 2042,
+          "height": 2994
+        },
+        "priceRange": {
+          "minVariantPrice": {
+            "amount": "20.0",
+            "currencyCode": "CAD"
+          },
+          "maxVariantPrice": {
+            "amount": "20.0",
+            "currencyCode": "CAD"
+          }
+        },
+        "compareAtPriceRange": {
+          "minVariantPrice": {
+            "amount": "0.0",
+            "currencyCode": "CAD"
+          },
+          "maxVariantPrice": {
+            "amount": "0.0",
+            "currencyCode": "CAD"
+          }
+        },
+        "variants": {
+          "totalCount": 1,
+          "nodes": [
+            {
+              "id": "gid://shopify/ProductVariant/31480448122914",
+              "title": "Default Title",
+              "sku": "CF-GUA-ANT",
+              "availableForSale": true,
+              "price": {
+                "amount": "20.0",
+                "currencyCode": "CAD"
+              },
+              "compareAtPrice": null
+            }
+          ]
+        },
+        "metafields": {
+          "reviewsAverage": "4.6",
+          "reviewsCount": "79"
+        }
+      },
+      {
+        "id": "gid://shopify/Product/6896652156962",
+        "title": "Guatemalan SWP Decaf",
+        "handle": "guatemalan-swp-decaf",
+        "description": "Guatemalan Decaf gives you a rich, full bodied cup with notes of dry cocoa, spices aroma and a lively wine like acidity. It creates a vibrant cup of coffee with a unique finish without the caffeine.",
+        "vendor": "Escarpment Coffee Roasters",
+        "productType": "Fresh Coffee",
+        "tags": [
+          "13tiersale",
+          "5xcincopromo",
+          "5xpoints",
+          "75box",
+          "ACIDITY-High",
+          "bfcm202015",
+          "bfcm2024-15",
+          "bfcm2025-15",
+          "BLEND-Single Origin",
+          "boxtier2",
+          "boxtier3",
+          "BREW-Filter",
+          "bw2024-10",
+          "canadaday2023",
+          "cd202415",
+          "coffeeday2023",
+          "coffeeday2025",
+          "consumer",
+          "decaffeinated-coffee",
+          "easter2025",
+          "ELEVATION-5000 feet",
+          "eos225",
+          "escarpment-coffee-roasters",
+          "fathersday2022",
+          "fd2022incl",
+          "freecoffeeday2025",
+          "is-us-eg",
+          "NC_",
+          "NC_Coffee",
+          "NC_CoffeeandTea",
+          "NC_DecaffeinatedCoffee",
+          "ncd2024",
+          "NOTES-Chardonnay Like Acidity# spice# full body",
+          "origin-guatemala",
+          "oversell_active",
+          "prime2024",
+          "PROCESSING-Swiss Water Processing",
+          "REGION-Guatemala",
+          "ROAST-Light-Medium",
+          "tg24wptt",
+          "under-100",
+          "VARIETAL-Bourbon",
+          "WAR-CON",
+          "YGroup_guaswp"
+        ],
+        "availableForSale": true,
+        "featuredImage": {
+          "id": "gid://shopify/ProductImage/32017379852322",
+          "url": "https://cdn.shopify.com/s/files/1/1201/3604/files/GuatemalanSWPDecaf033.jpg?v=1709581917",
+          "altText": null,
+          "width": 2040,
+          "height": 3000
+        },
+        "priceRange": {
+          "minVariantPrice": {
+            "amount": "25.0",
+            "currencyCode": "CAD"
+          },
+          "maxVariantPrice": {
+            "amount": "25.0",
+            "currencyCode": "CAD"
+          }
+        },
+        "compareAtPriceRange": {
+          "minVariantPrice": {
+            "amount": "0.0",
+            "currencyCode": "CAD"
+          },
+          "maxVariantPrice": {
+            "amount": "0.0",
+            "currencyCode": "CAD"
+          }
+        },
+        "variants": {
+          "totalCount": 1,
+          "nodes": [
+            {
+              "id": "gid://shopify/ProductVariant/40077317046306",
+              "title": "Default Title",
+              "sku": "CF-GUA-SWP",
+              "availableForSale": true,
+              "price": {
+                "amount": "25.0",
+                "currencyCode": "CAD"
+              },
+              "compareAtPrice": null
+            }
+          ]
+        },
+        "metafields": {
+          "reviewsAverage": "4.4",
+          "reviewsCount": "33"
+        }
+      },
+      {
+        "id": "gid://shopify/Product/4415391137826",
+        "title": "Haiti Savane Zombie",
+        "handle": "haiti-savane-zombie",
+        "description": "Coffee from Haiti is a rarity. While the altitude is lower than many regions, the cool sea breeze makes this a prime location for coffee. Coffee was brought to Haiti in the 1720’s and is one of the first regions in the new world to grow coffee. Coffee from Haiti is often called Haitian Bleu because the varietal Typica is the same that is grown in the Jamaican Blue Mountain region.",
+        "vendor": "Escarpment Coffee Roasters",
+        "productType": "Fresh Coffee",
+        "tags": [
+          "13tiersale",
+          "5xcincopromo",
+          "5xpoints",
+          "75box",
+          "ACIDITY-Low",
+          "bfcm202015",
+          "bfcm2024-15",
+          "bfcm2025-15",
+          "BLEND-Single Origin",
+          "boxtier3",
+          "BREW-Espresso",
+          "bts2021",
+          "bw2024-10",
+          "canadaday2023",
+          "cd202415",
+          "coffeeday2023",
+          "coffeeday2025",
+          "consumer",
+          "easter2025",
+          "ELEVATION-4500 feet",
+          "eos225",
+          "escarpment-coffee-roasters",
+          "espresso-bean",
+          "fathersday2021",
+          "fathersday2022",
+          "fd2022incl",
+          "freecoffeeday2025",
+          "is-us-eg",
+          "NC_",
+          "NC_CoffeeandTea",
+          "NC_FreshCoffee",
+          "ncd2024",
+          "NOTES-Citrus# Mild Acidity# Chocolate# Floral",
+          "origin-haiti",
+          "oversell_active",
+          "prime2024",
+          "PROCESSING-Washed",
+          "REGION-Haiti (Savane Zombi)",
+          "ROAST-Dark",
+          "tg24wptt",
+          "tgwptt2021",
+          "tierincluded",
+          "under-100",
+          "VARIETAL-Typica",
+          "WAR-CON",
+          "YGroup_haizo"
+        ],
+        "availableForSale": true,
+        "featuredImage": {
+          "id": "gid://shopify/ProductImage/32017380638754",
+          "url": "https://cdn.shopify.com/s/files/1/1201/3604/files/HaitiSavaneZombie035.jpg?v=1709581939",
+          "altText": null,
+          "width": 2048,
+          "height": 3008
+        },
+        "priceRange": {
+          "minVariantPrice": {
+            "amount": "24.0",
+            "currencyCode": "CAD"
+          },
+          "maxVariantPrice": {
+            "amount": "24.0",
+            "currencyCode": "CAD"
+          }
+        },
+        "compareAtPriceRange": {
+          "minVariantPrice": {
+            "amount": "0.0",
+            "currencyCode": "CAD"
+          },
+          "maxVariantPrice": {
+            "amount": "0.0",
+            "currencyCode": "CAD"
+          }
+        },
+        "variants": {
+          "totalCount": 1,
+          "nodes": [
+            {
+              "id": "gid://shopify/ProductVariant/31480448319522",
+              "title": "Default Title",
+              "sku": "CF-HAI-ZO",
+              "availableForSale": true,
+              "price": {
+                "amount": "24.0",
+                "currencyCode": "CAD"
+              },
+              "compareAtPrice": null
+            }
+          ]
+        },
+        "metafields": {
+          "reviewsAverage": "4.6",
+          "reviewsCount": "212"
+        }
+      },
+      {
+        "id": "gid://shopify/Product/4415391170594",
+        "title": "Hawaiian Kona Extra Fancy - Cancino Estate",
+        "handle": "hawaiian-kona-extra-fancy",
+        "description": "Kona is recognized as one of the best tasting coffees in the world. Hawaii is the only place in the United States that harvests coffee. A perfect mix of humidity, sun and afternoon shade make Kona beans exceptional. Kona coffee beans produce a full bodied, sweet cup with a hint of chocolate. The coffee exhibits an alluring aroma, excellent flavour, low acidity and a clean finish. Smooth as silk, it rolls over your tongue like warm butter.",
+        "vendor": "Escarpment Coffee Roasters",
+        "productType": "Fresh Coffee",
+        "tags": [
+          "13tiersale",
+          "35days",
+          "5xcincopromo",
+          "5xpoints",
+          "ACIDITY-Medium",
+          "bfcm202015",
+          "bfcm2024-15",
+          "bfcm2025-15",
+          "BLEND-Single Origin",
+          "BREW-Espresso",
+          "bts2021",
+          "bw2024-10",
+          "canadaday2023",
+          "cd202415",
+          "coffeeday2023",
+          "coffeeday2025",
+          "consumer",
+          "easter2025",
+          "ELEVATION-3000 feet",
+          "eos225",
+          "escarpment-coffee-roasters",
+          "fathersday2021",
+          "fathersday2022",
+          "fd2022incl",
+          "freecoffeeday2025",
+          "HARVESTING-Hand-Picking",
+          "is-us-eg",
+          "NC_",
+          "NC_CoffeeandTea",
+          "NC_FreshCoffee",
+          "ncd2024",
+          "NOTES-Sweet Chocolate# Mild Acidity# Amazing Body# Clean Finish",
+          "origin-hawaii",
+          "oversell_active",
+          "prime2024",
+          "PROCESSING-Washed",
+          "REGION-USA (Kona# Hawaii)",
+          "ROAST-Medium",
+          "tg24wptt",
+          "tgwptt2021",
+          "tierincluded",
+          "under-100",
+          "VARIETAL-Typica",
+          "WAR-CON",
+          "YGroup_kona"
+        ],
+        "availableForSale": true,
+        "featuredImage": {
+          "id": "gid://shopify/ProductImage/32017381490722",
+          "url": "https://cdn.shopify.com/s/files/1/1201/3604/files/HawaiianKonaExtraFancy-CancinoEstate042.jpg?v=1709581957",
+          "altText": null,
+          "width": 2040,
+          "height": 2994
+        },
+        "priceRange": {
+          "minVariantPrice": {
+            "amount": "90.0",
+            "currencyCode": "CAD"
+          },
+          "maxVariantPrice": {
+            "amount": "90.0",
+            "currencyCode": "CAD"
+          }
+        },
+        "compareAtPriceRange": {
+          "minVariantPrice": {
+            "amount": "0.0",
+            "currencyCode": "CAD"
+          },
+          "maxVariantPrice": {
+            "amount": "0.0",
+            "currencyCode": "CAD"
+          }
+        },
+        "variants": {
+          "totalCount": 1,
+          "nodes": [
+            {
+              "id": "gid://shopify/ProductVariant/31480448352290",
+              "title": "Default Title",
+              "sku": "CF-HW-KONA-H",
+              "availableForSale": true,
+              "price": {
+                "amount": "90.0",
+                "currencyCode": "CAD"
+              },
+              "compareAtPrice": null
+            }
+          ]
+        },
+        "metafields": {
+          "reviewsAverage": "4.8",
+          "reviewsCount": "80"
+        }
+      },
+      {
+        "id": "gid://shopify/Product/4415391203362",
+        "title": "Indian Monsooned Malabar",
+        "handle": "indian-monsooned-malabar",
+        "description": "Indian Monsooned Malabar is for the most ardent coffee enthusiasts. One of the most unusual coffees in the world, Monsooned Malabar is prepared during the monsoon season at the Malabar Coast in India. The coffee beans are exposed to the moisture-laden winds of the monsoon season. As the beans absorb the moisture of the windy air, they not only expand in size but take on a distinctive syrupy sweetness. Monsooned Malabar features a spicy, earthy undertone, mild acidity and complex aroma.",
+        "vendor": "Escarpment Coffee Roasters",
+        "productType": "Fresh Coffee",
+        "tags": [
+          "13tiersale",
+          "35days",
+          "5xcincopromo",
+          "5xpoints",
+          "68box",
+          "75box",
+          "ACIDITY-Low",
+          "bfcm202015",
+          "bfcm2024-15",
+          "bfcm2025-15",
+          "BLEND-Single Origin",
+          "boxtier1",
+          "boxtier2",
+          "boxtier3",
+          "BREW-Espresso",
+          "bts2021",
+          "bw2024-10",
+          "canadaday2023",
+          "cd202415",
+          "coffeeday2023",
+          "coffeeday2025",
+          "consumer",
+          "easter2025",
+          "ELEVATION-3500 feet",
+          "eos225",
+          "escarpment-coffee-roasters",
+          "fathersday2021",
+          "fathersday2022",
+          "fd2022incl",
+          "freecoffeeday2025",
+          "HARVESTING-Hand-Picking",
+          "is-us-eg",
+          "NC_",
+          "NC_CoffeeandTea",
+          "NC_FreshCoffee",
+          "ncd2024",
+          "NOTES-Earthy# No Acidity# Smokey# Very Full and Rich Body",
+          "origin-india",
+          "oversell_active",
+          "prime2024",
+          "PROCESSING-Monsoon",
+          "REGION-India (Malabar)",
+          "ROAST-Dark",
+          "tg24wptt",
+          "tgwptt2021",
+          "tierincluded",
+          "under-100",
+          "VARIETAL-S795",
+          "WAR-CON",
+          "YGroup_indmon"
+        ],
+        "availableForSale": true,
+        "featuredImage": {
+          "id": "gid://shopify/ProductImage/32017382408226",
+          "url": "https://cdn.shopify.com/s/files/1/1201/3604/files/IndianMonsoonedMalabar005.jpg?v=1709581972",
+          "altText": null,
+          "width": 2058,
+          "height": 3012
+        },
+        "priceRange": {
+          "minVariantPrice": {
+            "amount": "20.0",
+            "currencyCode": "CAD"
+          },
+          "maxVariantPrice": {
+            "amount": "20.0",
+            "currencyCode": "CAD"
+          }
+        },
+        "compareAtPriceRange": {
+          "minVariantPrice": {
+            "amount": "0.0",
+            "currencyCode": "CAD"
+          },
+          "maxVariantPrice": {
+            "amount": "0.0",
+            "currencyCode": "CAD"
+          }
+        },
+        "variants": {
+          "totalCount": 1,
+          "nodes": [
+            {
+              "id": "gid://shopify/ProductVariant/31480448385058",
+              "title": "Default Title",
+              "sku": "CF-IND-MON",
+              "availableForSale": true,
+              "price": {
+                "amount": "20.0",
+                "currencyCode": "CAD"
+              },
+              "compareAtPrice": null
+            }
+          ]
+        },
+        "metafields": {
+          "reviewsAverage": "4.8",
+          "reviewsCount": "164"
+        }
+      },
+      {
+        "id": "gid://shopify/Product/4415391236130",
+        "title": "Jamaican Blue Mountain Clydesdale Estate",
+        "handle": "jamaican-blue-mountain-clydesdale-estate",
+        "description": "Start your day with the aroma and taste of Blue Mountain. Grown on the eastern end of the beautiful island of Jamaica in the majestic range of hills called Blue Mountains, it is the world's most revered coffee due to the rare availability and refined taste. The coffee of James Bond and Damian Marley alike.",
+        "vendor": "Escarpment Coffee Roasters",
+        "productType": "Fresh Coffee",
+        "tags": [
+          "13tiersale",
+          "35days",
+          "5xcincopromo",
+          "5xpoints",
+          "ACIDITY-Low",
+          "bfcm202015",
+          "bfcm2024-15",
+          "bfcm2025-15",
+          "BLEND-Single Origin",
+          "BREW-Filter",
+          "bts2021",
+          "bw2024-10",
+          "canadaday2023",
+          "cd202415",
+          "coffeeday2023",
+          "coffeeday2025",
+          "consumer",
+          "easter2025",
+          "ELEVATION-3500 feet",
+          "eos225",
+          "escarpment-coffee-roasters",
+          "fathersday2021",
+          "fathersday2022",
+          "fd2022incl",
+          "freecoffeeday2025",
+          "HARVESTING-Hand-Picking",
+          "is-us-eg",
+          "NC_",
+          "NC_CoffeeandTea",
+          "NC_FreshCoffee",
+          "ncd2024",
+          "NOTES-Gentle# Perfectly Balanced# Velvety Body# Sweet with floral# spicy# and citric undertones.",
+          "origin-jamaica",
+          "oversell_active",
+          "prime2024",
+          "PROCESSING-Washed",
+          "REGION-Jamaica",
+          "ROAST-Medium",
+          "tg24wptt",
+          "tgwptt2021",
+          "tierincluded",
+          "under-100",
+          "VARIETAL-Blue Mountain",
+          "WAR-CON",
+          "YGroup_jmwalbm"
+        ],
+        "availableForSale": true,
+        "featuredImage": {
+          "id": "gid://shopify/ProductImage/32017387225122",
+          "url": "https://cdn.shopify.com/s/files/1/1201/3604/files/JamaicanBlueMountainClydesdaleEstate032.jpg?v=1709582027",
+          "altText": null,
+          "width": 2048,
+          "height": 2968
+        },
+        "priceRange": {
+          "minVariantPrice": {
+            "amount": "65.0",
+            "currencyCode": "CAD"
+          },
+          "maxVariantPrice": {
+            "amount": "65.0",
+            "currencyCode": "CAD"
+          }
+        },
+        "compareAtPriceRange": {
+          "minVariantPrice": {
+            "amount": "0.0",
+            "currencyCode": "CAD"
+          },
+          "maxVariantPrice": {
+            "amount": "0.0",
+            "currencyCode": "CAD"
+          }
+        },
+        "variants": {
+          "totalCount": 1,
+          "nodes": [
+            {
+              "id": "gid://shopify/ProductVariant/31480448417826",
+              "title": "Default Title",
+              "sku": "CF-JM-WALBM",
+              "availableForSale": true,
+              "price": {
+                "amount": "65.0",
+                "currencyCode": "CAD"
+              },
+              "compareAtPrice": null
+            }
+          ]
+        },
+        "metafields": {
+          "reviewsAverage": "4.6",
+          "reviewsCount": "84"
+        }
+      },
+      {
+        "id": "gid://shopify/Product/4415391498274",
+        "title": "Kenyan AA",
+        "handle": "kenyan-aa",
+        "description": "The rich taste of the Kenyan Coffee is appreciated by coffee aficionados and connoisseurs all over the world. Kenyan AA is the largest bean grown in the rich fertile soils around Mount Kenya. The Kenyan AA coffee beans brew up a rich, intense cup of coffee with a winy taste and a pronounced fruity undertone.",
+        "vendor": "Escarpment Coffee Roasters",
+        "productType": "Fresh Coffee",
+        "tags": [
+          "13tiersale",
+          "5xcincopromo",
+          "5xpoints",
+          "68box",
+          "75box",
+          "ACIDITY-High",
+          "bfcm202015",
+          "bfcm2024-15",
+          "bfcm2025-15",
+          "BLEND-Single Origin",
+          "boxtier3",
+          "BREW-Filter",
+          "bts2021",
+          "bw2024-10",
+          "canadaday2023",
+          "cd202415",
+          "coffeeday2023",
+          "coffeeday2025",
+          "consumer",
+          "easter2025",
+          "ELEVATION-5500 feet",
+          "eos225",
+          "escarpment-coffee-roasters",
+          "fathersday2021",
+          "fathersday2022",
+          "fd2022incl",
+          "freecoffeeday2025",
+          "is-us-eg",
+          "NC_",
+          "NC_CoffeeandTea",
+          "NC_FreshCoffee",
+          "ncd2024",
+          "NOTES-Bright Acidity# Full Body# Cranberry# Complex Layers of Fruit",
+          "origin-kenya",
+          "oversell_active",
+          "prime2024",
+          "PROCESSING-Washed",
+          "REGION-Kenya",
+          "ROAST-Medium",
+          "tg24wptt",
+          "tgwptt2021",
+          "tierincluded",
+          "under-100",
+          "WAR-CON",
+          "YGroup_kenaa"
+        ],
+        "availableForSale": true,
+        "featuredImage": {
+          "id": "gid://shopify/ProductImage/32017396367394",
+          "url": "https://cdn.shopify.com/s/files/1/1201/3604/files/KenyanAA015.jpg?v=1709582094",
+          "altText": null,
+          "width": 2056,
+          "height": 2984
+        },
+        "priceRange": {
+          "minVariantPrice": {
+            "amount": "23.0",
+            "currencyCode": "CAD"
+          },
+          "maxVariantPrice": {
+            "amount": "23.0",
+            "currencyCode": "CAD"
+          }
+        },
+        "compareAtPriceRange": {
+          "minVariantPrice": {
+            "amount": "0.0",
+            "currencyCode": "CAD"
+          },
+          "maxVariantPrice": {
+            "amount": "0.0",
+            "currencyCode": "CAD"
+          }
+        },
+        "variants": {
+          "totalCount": 1,
+          "nodes": [
+            {
+              "id": "gid://shopify/ProductVariant/31480448876578",
+              "title": "Default Title",
+              "sku": "CF-KEN-AA",
+              "availableForSale": true,
+              "price": {
+                "amount": "23.0",
+                "currencyCode": "CAD"
+              },
+              "compareAtPrice": null
+            }
+          ]
+        },
+        "metafields": {
+          "reviewsAverage": "4.6",
+          "reviewsCount": "146"
+        }
+      },
+      {
+        "id": "gid://shopify/Product/4415391596578",
+        "title": "Mexican Altura",
+        "handle": "mexican-altura",
+        "description": "Sweet coffee. Crisp, nutty aroma on the nose, with a full, rich flavor, very balanced once in the cup. Medium body, fine and balanced acidity. Smooth, sweet flavor of nuts and chocolate on the palate.",
+        "vendor": "Escarpment Coffee Roasters",
+        "productType": "Fresh Coffee",
+        "tags": [
+          "13tiersale",
+          "5xcincopromo",
+          "5xpoints",
+          "68box",
+          "75box",
+          "ACIDITY-Medium",
+          "bfcm202015",
+          "bfcm2024-15",
+          "bfcm2025-15",
+          "boxtier1",
+          "boxtier2",
+          "boxtier3",
+          "BREW-Filter",
+          "bts2021",
+          "bw2024-10",
+          "canadaday2023",
+          "cd202415",
+          "coffeeday2023",
+          "coffeeday2025",
+          "consumer",
+          "easter2025",
+          "ELEVATION-4500 feet",
+          "eos225",
+          "escarpment-coffee-roasters",
+          "espresso-bean",
+          "fathersday2021",
+          "fathersday2022",
+          "fd2022incl",
+          "freecoffeeday2025",
+          "is-us-eg",
+          "NC_",
+          "NC_CoffeeandTea",
+          "NC_Decaffe",
+          "NC_FreshCoffee",
+          "ncd2024",
+          "NOTES-Chocolate# Nutty# Balanced Acidity",
+          "origin-mexico",
+          "oversell_active",
+          "prime2024",
+          "PROCESSING-Washed",
+          "REGION-Mexico",
+          "ROAST-Medium Dark",
+          "tg24wptt",
+          "tgwptt2021",
+          "tierincluded",
+          "under-100",
+          "WAR-CON",
+          "YGroup_mexalt"
+        ],
+        "availableForSale": true,
+        "featuredImage": {
+          "id": "gid://shopify/ProductImage/32017397317666",
+          "url": "https://cdn.shopify.com/s/files/1/1201/3604/files/MexicanAltura040.jpg?v=1709582099",
+          "altText": null,
+          "width": 2040,
+          "height": 3008
+        },
+        "priceRange": {
+          "minVariantPrice": {
+            "amount": "18.0",
+            "currencyCode": "CAD"
+          },
+          "maxVariantPrice": {
+            "amount": "18.0",
+            "currencyCode": "CAD"
+          }
+        },
+        "compareAtPriceRange": {
+          "minVariantPrice": {
+            "amount": "0.0",
+            "currencyCode": "CAD"
+          },
+          "maxVariantPrice": {
+            "amount": "0.0",
+            "currencyCode": "CAD"
+          }
+        },
+        "variants": {
+          "totalCount": 1,
+          "nodes": [
+            {
+              "id": "gid://shopify/ProductVariant/31480448974882",
+              "title": "Default Title",
+              "sku": "CF-MEX-ALT",
+              "availableForSale": true,
+              "price": {
+                "amount": "18.0",
+                "currencyCode": "CAD"
+              },
+              "compareAtPrice": null
+            }
+          ]
+        },
+        "metafields": {
+          "reviewsAverage": "4.6",
+          "reviewsCount": "125"
+        }
+      },
+      {
+        "id": "gid://shopify/Product/7075752804386",
+        "title": "Nicaragua SHG",
+        "handle": "nicaragua-shg",
+        "description": "SHG (Strictly High Grown) is a term used to classify coffee grown above 1350 Meters, this is the highest grade of coffee in Nicaragua. This washed coffee produces a clean and satisfying cup and it is good anytime of day.",
+        "vendor": "Escarpment Coffee Roasters",
+        "productType": "Fresh Coffee",
+        "tags": [
+          "5xcincopromo",
+          "5xpoints",
+          "68box",
+          "75box",
+          "bfcm2024-15",
+          "bfcm2025-15",
+          "BLEND-Single Origin",
+          "boxtier1",
+          "boxtier2",
+          "boxtier3",
+          "bw2024-10",
+          "canadaday2023",
+          "cd202415",
+          "coffeeday2023",
+          "coffeeday2025",
+          "consumer",
+          "easter2025",
+          "eos225",
+          "escarpment-coffee-roasters",
+          "featured",
+          "freecoffeeday2025",
+          "is-us-eg",
+          "NC_Coffee",
+          "NC_CoffeeandTea",
+          "NC_FreshCoffee",
+          "ncd2024",
+          "NOTES-Clean# nutty# crisp# bright acidity",
+          "origin-nicaragua",
+          "oversell_active",
+          "prime2024",
+          "PROCESSING-Washed",
+          "REGION-Nicaragua",
+          "ROAST-Medium-Light",
+          "tg24wptt",
+          "under-100",
+          "VARIETAL-Bourbon# Typica# Caturra# Catimor",
+          "WAR-CON"
+        ],
+        "availableForSale": true,
+        "featuredImage": {
+          "id": "gid://shopify/ProductImage/32017411473442",
+          "url": "https://cdn.shopify.com/s/files/1/1201/3604/files/NicaraguaSHG044.jpg?v=1709582220",
+          "altText": null,
+          "width": 2048,
+          "height": 3000
+        },
+        "priceRange": {
+          "minVariantPrice": {
+            "amount": "19.0",
+            "currencyCode": "CAD"
+          },
+          "maxVariantPrice": {
+            "amount": "19.0",
+            "currencyCode": "CAD"
+          }
+        },
+        "compareAtPriceRange": {
+          "minVariantPrice": {
+            "amount": "0.0",
+            "currencyCode": "CAD"
+          },
+          "maxVariantPrice": {
+            "amount": "0.0",
+            "currencyCode": "CAD"
+          }
+        },
+        "variants": {
+          "totalCount": 1,
+          "nodes": [
+            {
+              "id": "gid://shopify/ProductVariant/40643933995042",
+              "title": "Default Title",
+              "sku": "CF-NI-SHG",
+              "availableForSale": true,
+              "price": {
+                "amount": "19.0",
+                "currencyCode": "CAD"
+              },
+              "compareAtPrice": null
+            }
+          ]
+        },
+        "metafields": {
+          "reviewsAverage": "4.8",
+          "reviewsCount": "34"
+        }
+      },
+      {
+        "id": "gid://shopify/Product/7202698788898",
+        "title": "Nicaraguan Cafe Diego Premium Maragogipe",
+        "handle": "nicaraguan-cafe-diego-premium-maragogipe",
+        "description": "Immerse in the luxuriously rare experience of the Nicaraguan Cafe Diego Premium Maragogipe. Originating from the verdant Nicaraguan landscapes, this coffee features the exceptional Maragogipe varietal - often dubbed \"elephant coffee beans\" due to their large size compared to other Arabica beans. Every bean tells a tale of nature's unpredictability, tracing back to a spontaneous mutation of the Typica coffee in Maragogipe, Bahia in Brazil. The varietal's taste remarkably hinges on its soil, with poor soils often culminating in diminished flavours. However, when carefully nurtured, these beans are capable of developing flavors that challenge this narrative. Our Cafe Diego Premium Maragogipe is a testament to this potential. Expertly processed via the washed method and roasted to a perfect medium, each brew promises to unveil a symphony of floral and chocolate notes, underpinned by a modest acidity. The finish? A long-lasting, juicy sweetness that lingers, leaving your palate yearning for more. So, whether you're a coffee connoisseur seeking rare finds or someone who simply loves a unique brew, this Nicaraguan gem is an indulgence you wouldn't want to miss.",
+        "vendor": "Escarpment Coffee Roasters",
+        "productType": "Fresh Coffee",
+        "tags": [
+          "5xcincopromo",
+          "bfcm2024-15",
+          "bfcm2025-15",
+          "bw2024-10",
+          "cd202415",
+          "coffee-aficionado",
+          "coffeeday2023",
+          "coffeeday2025",
+          "consumer.",
+          "easter2025",
+          "elephant-bean",
+          "eos225",
+          "escarpment-coffee-roasters",
+          "freecoffeeday2025",
+          "is-us-eg",
+          "ncd2024",
+          "NOTES-Floral# Chocolate# Medium Acidity# Juicy Sweet Aftertaste",
+          "origin-nicaragua",
+          "oversell_active",
+          "prime2024",
+          "PROCESSING-Washed",
+          "ROAST-Medium",
+          "tg24wptt",
+          "under-100",
+          "VARIETAL-Maragogipe (19+ bean size)",
+          "WAR-CON"
+        ],
+        "availableForSale": true,
+        "featuredImage": {
+          "id": "gid://shopify/ProductImage/32017403412514",
+          "url": "https://cdn.shopify.com/s/files/1/1201/3604/files/NicaraguanCafeDiegoPremiumMaragogipe022.jpg?v=1709582154",
+          "altText": null,
+          "width": 2042,
+          "height": 3000
+        },
+        "priceRange": {
+          "minVariantPrice": {
+            "amount": "30.0",
+            "currencyCode": "CAD"
+          },
+          "maxVariantPrice": {
+            "amount": "30.0",
+            "currencyCode": "CAD"
+          }
+        },
+        "compareAtPriceRange": {
+          "minVariantPrice": {
+            "amount": "0.0",
+            "currencyCode": "CAD"
+          },
+          "maxVariantPrice": {
+            "amount": "0.0",
+            "currencyCode": "CAD"
+          }
+        },
+        "variants": {
+          "totalCount": 1,
+          "nodes": [
+            {
+              "id": "gid://shopify/ProductVariant/41086567186466",
+              "title": "Default Title",
+              "sku": "CF-NICD",
+              "availableForSale": true,
+              "price": {
+                "amount": "30.0",
+                "currencyCode": "CAD"
+              },
+              "compareAtPrice": null
+            }
+          ]
+        },
+        "metafields": {
+          "reviewsAverage": "4.8",
+          "reviewsCount": "17"
+        }
+      },
+      {
+        "id": "gid://shopify/Product/4415391465506",
+        "title": "Papua New Guinea",
+        "handle": "papua-new-guinea",
+        "description": "Cultivated at a high altitude in rich volcanic soil, Papua New Guinea coffee beans create a distinct aroma, very full body with low acidity",
+        "vendor": "Escarpment Coffee Roasters",
+        "productType": "Fresh Coffee",
+        "tags": [
+          "13tiersale",
+          "5xcincopromo",
+          "5xpoints",
+          "68box",
+          "75box",
+          "ACIDITY-Low",
+          "bfcm202015",
+          "bfcm2024-15",
+          "bfcm2025-15",
+          "BLEND-Single Origin",
+          "boxtier1",
+          "boxtier2",
+          "boxtier3",
+          "BREW-Espresso",
+          "bts2021",
+          "bw2024-10",
+          "canadaday2023",
+          "cd202415",
+          "coffeeday2023",
+          "coffeeday2025",
+          "consumer",
+          "easter2025",
+          "ELEVATION-4500 feet",
+          "eos225",
+          "escarpment-coffee-roasters",
+          "fathersday2021",
+          "fathersday2022",
+          "fd2022incl",
+          "freecoffeeday2025",
+          "is-us-eg",
+          "NC_",
+          "NC_CoffeeandTea",
+          "NC_FreshCoffee",
+          "ncd2024",
+          "NOTES-Creamy# Heavy Body# Low Acidity",
+          "origin-papua-new-guinea",
+          "oversell_active",
+          "prime2024",
+          "PROCESSING-Washed",
+          "REGION-Papua New Guinea",
+          "ROAST-Dark",
+          "tg24wptt",
+          "tgwptt2021",
+          "tierincluded",
+          "under-100",
+          "WAR-CON",
+          "YGroup_png"
+        ],
+        "availableForSale": true,
+        "featuredImage": {
+          "id": "gid://shopify/ProductImage/32017426841634",
+          "url": "https://cdn.shopify.com/s/files/1/1201/3604/files/PapuaNewGuinea009.jpg?v=1709582400",
+          "altText": null,
+          "width": 2059,
+          "height": 3016
+        },
+        "priceRange": {
+          "minVariantPrice": {
+            "amount": "20.0",
+            "currencyCode": "CAD"
+          },
+          "maxVariantPrice": {
+            "amount": "20.0",
+            "currencyCode": "CAD"
+          }
+        },
+        "compareAtPriceRange": {
+          "minVariantPrice": {
+            "amount": "0.0",
+            "currencyCode": "CAD"
+          },
+          "maxVariantPrice": {
+            "amount": "0.0",
+            "currencyCode": "CAD"
+          }
+        },
+        "variants": {
+          "totalCount": 1,
+          "nodes": [
+            {
+              "id": "gid://shopify/ProductVariant/31480448843810",
+              "title": "Default Title",
+              "sku": "CF-PNG",
+              "availableForSale": true,
+              "price": {
+                "amount": "20.0",
+                "currencyCode": "CAD"
+              },
+              "compareAtPrice": null
+            }
+          ]
+        },
+        "metafields": {
+          "reviewsAverage": "4.5",
+          "reviewsCount": "94"
+        }
+      },
+      {
+        "id": "gid://shopify/Product/7075743989794",
+        "title": "Peru SHB",
+        "handle": "peru-shb",
+        "description": "SHB (Strictly Hard Bean) is a term used to classify coffees grown above 1350 meters, this is the highest grade of coffee in Peru. This versatile coffee does well with all kinds of preparation methods from Aeropress to French Press to Espresso.",
+        "vendor": "Escarpment Coffee Roasters",
+        "productType": "Fresh Coffee",
+        "tags": [
+          "5xcincopromo",
+          "5xpoints",
+          "68box",
+          "75box",
+          "bfcm2024-15",
+          "bfcm2025-15",
+          "BLEND-Single Origin",
+          "boxtier1",
+          "boxtier2",
+          "boxtier3",
+          "bw2024-10",
+          "canadaday2023",
+          "cd202415",
+          "coffeeday2023",
+          "coffeeday2025",
+          "consumer",
+          "easter2025",
+          "eos225",
+          "escarpment-coffee-roasters",
+          "espresso-bean",
+          "featured",
+          "freecoffeeday2025",
+          "is-us-eg",
+          "NC_Coffee",
+          "NC_CoffeeandTea",
+          "NC_FreshCoffee",
+          "ncd2024",
+          "NOTES-Sweet# herbaceous# savory# citric with cocoa flavors.",
+          "origin-peru",
+          "oversell_active",
+          "prime2024",
+          "PROCESSING-Washed",
+          "REGION-Peru",
+          "ROAST-Medium",
+          "tg24wptt",
+          "under-100",
+          "VARIETAL-Caturra# Typica# Catimor# Mundo Novo# Pache",
+          "WAR-CON"
+        ],
+        "availableForSale": true,
+        "featuredImage": {
+          "id": "gid://shopify/ProductImage/32017441849378",
+          "url": "https://cdn.shopify.com/s/files/1/1201/3604/files/PeruSHB038.jpg?v=1709582596",
+          "altText": null,
+          "width": 2042,
+          "height": 3010
+        },
+        "priceRange": {
+          "minVariantPrice": {
+            "amount": "19.0",
+            "currencyCode": "CAD"
+          },
+          "maxVariantPrice": {
+            "amount": "19.0",
+            "currencyCode": "CAD"
+          }
+        },
+        "compareAtPriceRange": {
+          "minVariantPrice": {
+            "amount": "0.0",
+            "currencyCode": "CAD"
+          },
+          "maxVariantPrice": {
+            "amount": "0.0",
+            "currencyCode": "CAD"
+          }
+        },
+        "variants": {
+          "totalCount": 1,
+          "nodes": [
+            {
+              "id": "gid://shopify/ProductVariant/40643923279906",
+              "title": "Default Title",
+              "sku": "CF-PE-SHB",
+              "availableForSale": true,
+              "price": {
+                "amount": "19.0",
+                "currencyCode": "CAD"
+              },
+              "compareAtPrice": null
+            }
+          ]
+        },
+        "metafields": {
+          "reviewsAverage": "4.6",
+          "reviewsCount": "60"
+        }
+      },
+      {
+        "id": "gid://shopify/Product/4601890963490",
+        "title": "Rwanda Gakenke",
+        "handle": "rwanda-gakenke",
+        "description": "Gakenke washing station was established in 2015 and has about 1,000 smallholder members who deliver coffee to it. This is a very high grown coffee at 1900 masl (6200 feet) and it is everything that is great about African coffee. Its sweet with a lively citrus brightness.",
+        "vendor": "Escarpment Coffee Roasters",
+        "productType": "Fresh Coffee",
+        "tags": [
+          "13tiersale",
+          "5xcincopromo",
+          "5xpoints",
+          "68box",
+          "75box",
+          "bfcm202015",
+          "bfcm2024-15",
+          "bfcm2025-15",
+          "boxtier3",
+          "bts2021",
+          "bw2024-10",
+          "canadaday2023",
+          "cd202415",
+          "coffeeday2023",
+          "coffeeday2025",
+          "consumer",
+          "easter2025",
+          "eos225",
+          "escarpment-coffee-roasters",
+          "fathersday2021",
+          "fathersday2022",
+          "fd2022incl",
+          "freecoffeeday2025",
+          "is-us-eg",
+          "NC_",
+          "NC_CoffeeandTea",
+          "NC_FreshCoffee",
+          "ncd2024",
+          "newcoffee2020",
+          "NOTES-Sweet# savory and citric with melon and cedar flavors",
+          "origin-rwanda",
+          "oversell_active",
+          "prime2024",
+          "PROCESSING-Washed",
+          "ROAST-Light",
+          "tg24wptt",
+          "tgwptt2021",
+          "tierincluded",
+          "under-100",
+          "WAR-CON"
+        ],
+        "availableForSale": true,
+        "featuredImage": {
+          "id": "gid://shopify/ProductImage/32017442766882",
+          "url": "https://cdn.shopify.com/s/files/1/1201/3604/files/RwandaGakenke017.jpg?v=1709582637",
+          "altText": null,
+          "width": 2064,
+          "height": 3008
+        },
+        "priceRange": {
+          "minVariantPrice": {
+            "amount": "20.0",
+            "currencyCode": "CAD"
+          },
+          "maxVariantPrice": {
+            "amount": "20.0",
+            "currencyCode": "CAD"
+          }
+        },
+        "compareAtPriceRange": {
+          "minVariantPrice": {
+            "amount": "0.0",
+            "currencyCode": "CAD"
+          },
+          "maxVariantPrice": {
+            "amount": "0.0",
+            "currencyCode": "CAD"
+          }
+        },
+        "variants": {
+          "totalCount": 1,
+          "nodes": [
+            {
+              "id": "gid://shopify/ProductVariant/32237958463522",
+              "title": "Default Title",
+              "sku": "CF-RWA-G",
+              "availableForSale": true,
+              "price": {
+                "amount": "20.0",
+                "currencyCode": "CAD"
+              },
+              "compareAtPrice": null
+            }
+          ]
+        },
+        "metafields": {
+          "reviewsAverage": "4.4",
+          "reviewsCount": "62"
+        }
+      },
+      {
+        "id": "gid://shopify/Product/4415391399970",
+        "title": "Sulawesi Grade 1",
+        "handle": "sulawesi-grade-1",
+        "description": "Sulawesi also known as Celebes is one of the four Greater Sundra Islands. The large bean has a relatively low acidity, is full bodied, and strong, with a vibrant flavor and aromatic spiciness. Citric sweetness in the body, while the finish is smooth and soft",
+        "vendor": "Escarpment Coffee Roasters",
+        "productType": "Fresh Coffee",
+        "tags": [
+          "13tiersale",
+          "5xcincopromo",
+          "5xpoints",
+          "68box",
+          "75box",
+          "ACIDITY-Very Low",
+          "bfcm202015",
+          "bfcm2024-15",
+          "bfcm2025-15",
+          "BLEND-Single Origin",
+          "boxtier2",
+          "boxtier3",
+          "BREW-Filter",
+          "bts2021",
+          "bw2024-10",
+          "canadaday2023",
+          "cd202415",
+          "coffeeday2023",
+          "coffeeday2025",
+          "consumer",
+          "easter2025",
+          "ELEVATION-4500 feet",
+          "eos225",
+          "escarpment-coffee-roasters",
+          "fathersday2021",
+          "fathersday2022",
+          "fd2022incl",
+          "freecoffeeday2025",
+          "is-us-eg",
+          "NC_",
+          "NC_CoffeeandTea",
+          "NC_FreshCoffee",
+          "ncd2024",
+          "NOTES-Low Acidity# Full Body# Spicy Notes# Smooth Finish",
+          "origin-indonesia",
+          "prime2024",
+          "PROCESSING-Washed",
+          "REGION-Indonesia (Sulawesi)",
+          "ROAST-Medium-Dark",
+          "tg24wptt",
+          "tgwptt2021",
+          "tierincluded",
+          "under-100",
+          "VARIETAL-S795",
+          "WAR-CON",
+          "YGroup_sul"
+        ],
+        "availableForSale": true,
+        "featuredImage": {
+          "id": "gid://shopify/ProductImage/32017443684386",
+          "url": "https://cdn.shopify.com/s/files/1/1201/3604/files/SulawesiGrade1006.jpg?v=1709582653",
+          "altText": null,
+          "width": 2058,
+          "height": 3026
+        },
+        "priceRange": {
+          "minVariantPrice": {
+            "amount": "20.0",
+            "currencyCode": "CAD"
+          },
+          "maxVariantPrice": {
+            "amount": "20.0",
+            "currencyCode": "CAD"
+          }
+        },
+        "compareAtPriceRange": {
+          "minVariantPrice": {
+            "amount": "0.0",
+            "currencyCode": "CAD"
+          },
+          "maxVariantPrice": {
+            "amount": "0.0",
+            "currencyCode": "CAD"
+          }
+        },
+        "variants": {
+          "totalCount": 1,
+          "nodes": [
+            {
+              "id": "gid://shopify/ProductVariant/31480448778274",
+              "title": "Default Title",
+              "sku": "CF-SUL",
+              "availableForSale": true,
+              "price": {
+                "amount": "20.0",
+                "currencyCode": "CAD"
+              },
+              "compareAtPrice": null
+            }
+          ]
+        },
+        "metafields": {
+          "reviewsAverage": "4.4",
+          "reviewsCount": "53"
+        }
+      },
+      {
+        "id": "gid://shopify/Product/4415391334434",
+        "title": "Sumatran Mandheling",
+        "handle": "sumatra-mandheling",
+        "description": "Sumatran Mandheling - A classic Sumatran, earthy, full-bodied, balanced but bold. This premium Mandheling coffee features a smooth, complex taste profile with distinctive Indonesian characteristics.",
+        "vendor": "Escarpment Coffee Roasters",
+        "productType": "Fresh Coffee",
+        "tags": [
+          "13tiersale",
+          "5xcincopromo",
+          "5xpoints",
+          "68box",
+          "75box",
+          "ACIDITY-Very Low",
+          "bfcm202015",
+          "bfcm2024-15",
+          "bfcm2025-15",
+          "BLEND-Single Origin",
+          "boxtier1",
+          "boxtier2",
+          "boxtier3",
+          "BREW-Espresso",
+          "bts2021",
+          "bw2024-10",
+          "canadaday2023",
+          "cd202415",
+          "coffeeday2023",
+          "coffeeday2025",
+          "consumer",
+          "easter2025",
+          "ELEVATION-5000 feet",
+          "eos225",
+          "escarpment-coffee-roasters",
+          "fathersday2021",
+          "fathersday2022",
+          "fd2022incl",
+          "freecoffeeday2025",
+          "is-us-eg",
+          "NC_",
+          "NC_CoffeeandTea",
+          "NC_FreshCoffee",
+          "ncd2024",
+          "origin-indonesia",
+          "oversell_active",
+          "prime2024",
+          "PROCESSING-Washed",
+          "REGION-Indonesia (Sumatra)",
+          "ROAST-Dark",
+          "tg24wptt",
+          "tgwptt2021",
+          "tierincluded",
+          "under-100",
+          "VARIETAL-Catimor",
+          "WAR-CON",
+          "YGroup_summan"
+        ],
+        "availableForSale": true,
+        "featuredImage": {
+          "id": "gid://shopify/ProductImage/36912191111202",
+          "url": "https://cdn.shopify.com/s/files/1/1201/3604/files/generated_1762445666446_85a7cdc4.png?v=1762447343",
+          "altText": "Sumatran Mandheling Premium Coffee",
+          "width": 832,
+          "height": 1248
+        },
+        "priceRange": {
+          "minVariantPrice": {
+            "amount": "20.0",
+            "currencyCode": "CAD"
+          },
+          "maxVariantPrice": {
+            "amount": "20.0",
+            "currencyCode": "CAD"
+          }
+        },
+        "compareAtPriceRange": {
+          "minVariantPrice": {
+            "amount": "0.0",
+            "currencyCode": "CAD"
+          },
+          "maxVariantPrice": {
+            "amount": "0.0",
+            "currencyCode": "CAD"
+          }
+        },
+        "variants": {
+          "totalCount": 1,
+          "nodes": [
+            {
+              "id": "gid://shopify/ProductVariant/31480448712738",
+              "title": "Default Title",
+              "sku": "CF-SUM-MAN",
+              "availableForSale": true,
+              "price": {
+                "amount": "20.0",
+                "currencyCode": "CAD"
+              },
+              "compareAtPrice": null
+            }
+          ]
+        },
+        "metafields": {
+          "reviewsAverage": "4.6",
+          "reviewsCount": "110"
+        }
+      },
+      {
+        "id": "gid://shopify/Product/4415391367202",
+        "title": "Sumatran Mandheling SWP Decaf",
+        "handle": "sumatran-swp-decaf",
+        "description": "Sumatran Mandheling SWP Decaf - Grown on the island of Sumatra, Mandheling is known for its smooth, full body, and its rich, complex taste. This coffee is named after north Sumatra’s Mandailing people – an ethnic group and not so much a region.",
+        "vendor": "Escarpment Coffee Roasters",
+        "productType": "Fresh Coffee",
+        "tags": [
+          "13tiersale",
+          "5xcincopromo",
+          "5xpoints",
+          "75box",
+          "ACIDITY-Very Low",
+          "bfcm202015",
+          "bfcm2024-15",
+          "bfcm2025-15",
+          "BLEND-Single Origin",
+          "boxtier2",
+          "boxtier3",
+          "BREW-Espresso",
+          "bts2021",
+          "bw2024-10",
+          "canadaday2023",
+          "cd202415",
+          "coffeeday2023",
+          "coffeeday2025",
+          "consumer",
+          "decaffeinated-coffee",
+          "easter2025",
+          "ELEVATION-5000 feet",
+          "eos225",
+          "escarpment-coffee-roasters",
+          "fathersday2021",
+          "fathersday2022",
+          "fd2022incl",
+          "freecoffeeday2025",
+          "is-us-eg",
+          "NC_",
+          "NC_Coffee",
+          "NC_CoffeeandTea",
+          "NC_DecaffeinatedCoffee",
+          "ncd2024",
+          "origin-indonesia",
+          "oversell_active",
+          "prime2024",
+          "PROCESSING-Swiss Water Processing",
+          "REGION-Indonesia (Sumatra)",
+          "ROAST-Dark",
+          "tg24wptt",
+          "tgwptt2021",
+          "tierincluded",
+          "under-100",
+          "VARIETAL-Catimor",
+          "WAR-CON",
+          "YGroup_sumdec"
+        ],
+        "availableForSale": true,
+        "featuredImage": {
+          "id": "gid://shopify/ProductImage/32017445453858",
+          "url": "https://cdn.shopify.com/s/files/1/1201/3604/files/SumatranMandhelingSWPDecaf004.jpg?v=1709582687",
+          "altText": null,
+          "width": 2058,
+          "height": 3024
+        },
+        "priceRange": {
+          "minVariantPrice": {
+            "amount": "25.0",
+            "currencyCode": "CAD"
+          },
+          "maxVariantPrice": {
+            "amount": "25.0",
+            "currencyCode": "CAD"
+          }
+        },
+        "compareAtPriceRange": {
+          "minVariantPrice": {
+            "amount": "0.0",
+            "currencyCode": "CAD"
+          },
+          "maxVariantPrice": {
+            "amount": "0.0",
+            "currencyCode": "CAD"
+          }
+        },
+        "variants": {
+          "totalCount": 1,
+          "nodes": [
+            {
+              "id": "gid://shopify/ProductVariant/31480448745506",
+              "title": "Default Title",
+              "sku": "CF-SUM-DEC",
+              "availableForSale": true,
+              "price": {
+                "amount": "25.0",
+                "currencyCode": "CAD"
+              },
+              "compareAtPrice": null
+            }
+          ]
+        },
+        "metafields": {
+          "reviewsAverage": "4.7",
+          "reviewsCount": "102"
+        }
+      },
+      {
+        "id": "gid://shopify/Product/4415391268898",
+        "title": "Tanzanian Peaberry",
+        "handle": "tanzanian-peaberry",
+        "description": "Tanzanian Peaberry is revered by coffee connoisseurs for its distinct taste and rare availability. Harvested on the slopes of Mount Kilimanjaro near the Kenyan border, the peaberry is a natural deviation wherein the coffee cherry develops a single oval bean rather than the normal two flat-sided beans. The coffee exhibits a well balanced body, distinguished aroma along with light acidity.",
+        "vendor": "Escarpment Coffee Roasters",
+        "productType": "Fresh Coffee",
+        "tags": [
+          "13tiersale",
+          "35days",
+          "5xcincopromo",
+          "5xpoints",
+          "68box",
+          "75box",
+          "ACIDITY-Very Low",
+          "bfcm202015",
+          "bfcm2024-15",
+          "bfcm2025-15",
+          "BLEND-Single Origin",
+          "boxtier2",
+          "boxtier3",
+          "BREW-Filter",
+          "bts2021",
+          "bw2024-10",
+          "canadaday2023",
+          "cd202415",
+          "coffeeday2023",
+          "coffeeday2025",
+          "consumer",
+          "easter2025",
+          "ELEVATION-3300 feet",
+          "eos225",
+          "escarpment-coffee-roasters",
+          "fathersday2021",
+          "fathersday2022",
+          "fd2022incl",
+          "freecoffeeday2025",
+          "HARVESTING-Hand-Picking",
+          "is-us-eg",
+          "NC_",
+          "NC_CoffeeandTea",
+          "NC_FreshCoffee",
+          "ncd2024",
+          "NOTES-Balanced# Light Acidity# Winey Taste",
+          "origin-tanzania",
+          "oversell_active",
+          "prime2024",
+          "PROCESSING-Washed",
+          "REGION-Tanzania",
+          "ROAST-Medium",
+          "tg24wptt",
+          "tgwptt2021",
+          "tierincluded",
+          "under-100",
+          "WAR-CON",
+          "YGroup_tampb"
+        ],
+        "availableForSale": true,
+        "featuredImage": {
+          "id": "gid://shopify/ProductImage/32017447419938",
+          "url": "https://cdn.shopify.com/s/files/1/1201/3604/files/TanzanianPeaberry016.jpg?v=1709582721",
+          "altText": null,
+          "width": 2056,
+          "height": 2978
+        },
+        "priceRange": {
+          "minVariantPrice": {
+            "amount": "18.0",
+            "currencyCode": "CAD"
+          },
+          "maxVariantPrice": {
+            "amount": "18.0",
+            "currencyCode": "CAD"
+          }
+        },
+        "compareAtPriceRange": {
+          "minVariantPrice": {
+            "amount": "0.0",
+            "currencyCode": "CAD"
+          },
+          "maxVariantPrice": {
+            "amount": "0.0",
+            "currencyCode": "CAD"
+          }
+        },
+        "variants": {
+          "totalCount": 1,
+          "nodes": [
+            {
+              "id": "gid://shopify/ProductVariant/31480448548898",
+              "title": "Default Title",
+              "sku": "CF-TAN-PB",
+              "availableForSale": true,
+              "price": {
+                "amount": "18.0",
+                "currencyCode": "CAD"
+              },
+              "compareAtPrice": null
+            }
+          ]
+        },
+        "metafields": {
+          "reviewsAverage": "4.7",
+          "reviewsCount": "131"
+        }
+      },
+      {
+        "id": "gid://shopify/Product/7694058225698",
+        "title": "Vietnam Duc Trong Mill",
+        "handle": "vietnam-duc-trong-mill",
+        "description": "Dung K'No Commune, located in the Lam Dong province of Vietnam, is known for its specialty coffee production. The farmers here cultivate coffee alongside other crops like persimmon, jackfruit, macadamia, and avocado. The coffee undergoes a washed process at the Duc Trong Mill, where it is fermented anaerobically, enhancing the intensity of fruit and acidity in the cup. The coffee is then dried on raised beds or patios for 5-7 days. The Catimor variety grown at elevations between 1100-1400 MASL results in a cup profile with intense jammy strawberry, cooked melon, mild toffee, and malt flavors, complemented by sugary sweetness and winey acidity.",
+        "vendor": "Escarpment Coffee Roasters",
+        "productType": "Fresh Coffee",
+        "tags": [
+          "bfcm2024-15",
+          "bfcm2025-15",
+          "bw2024-10",
+          "cd202415",
+          "coffeeday2025",
+          "consumer",
+          "easter2025",
+          "ELEVATION-1100-1400 MASL",
+          "eos225",
+          "escarpment-coffee-roasters",
+          "espresso-bean",
+          "freecoffeeday2025",
+          "HARVESTING-November-February",
+          "NC_",
+          "NC_CoffeeandTea",
+          "NC_EspressoCoffee",
+          "NC_FreshCoffee",
+          "ncd2024",
+          "NOTES-Intense jammy strawberry#cooked melon#mild toffee#malt flavors#sugary sweetness#winey acidity",
+          "origin-Vietnam",
+          "prime2024",
+          "PROCESSING-Washed#Anaerobic#Natural",
+          "REGION-Lam Dong",
+          "ROAST-Medium",
+          "tg24wptt",
+          "VARIETAL-Catimor",
+          "WAR-CON"
+        ],
+        "availableForSale": true,
+        "featuredImage": {
+          "id": "gid://shopify/ProductImage/33441845510178",
+          "url": "https://cdn.shopify.com/s/files/1/1201/3604/files/113EscarpmentCoffeeJune2024_4NewSeasonalCoffeeLabels-VietnamDucTrongMill.png?v=1718802492",
+          "altText": null,
+          "width": 3000,
+          "height": 3000
+        },
+        "priceRange": {
+          "minVariantPrice": {
+            "amount": "20.0",
+            "currencyCode": "CAD"
+          },
+          "maxVariantPrice": {
+            "amount": "20.0",
+            "currencyCode": "CAD"
+          }
+        },
+        "compareAtPriceRange": {
+          "minVariantPrice": {
+            "amount": "0.0",
+            "currencyCode": "CAD"
+          },
+          "maxVariantPrice": {
+            "amount": "0.0",
+            "currencyCode": "CAD"
+          }
+        },
+        "variants": {
+          "totalCount": 1,
+          "nodes": [
+            {
+              "id": "gid://shopify/ProductVariant/42718364696610",
+              "title": "Default Title",
+              "sku": "CF-VI-DTM",
+              "availableForSale": true,
+              "price": {
+                "amount": "20.0",
+                "currencyCode": "CAD"
+              },
+              "compareAtPrice": null
+            }
+          ]
+        },
+        "metafields": {
+          "reviewsAverage": "4.5",
+          "reviewsCount": "18"
+        }
+      }
+    ],
+    "pagination": {
+      "currentPage": 1,
+      "itemsPerPage": 50,
+      "totalItems": 42,
+      "totalPages": 1,
+      "hasNextPage": false,
+      "hasPreviousPage": false
+    }
+  },
+  "seo": {
+    "title": "Fresh Coffee Online | Great Prices!",
+    "description": "Shop a variety of great coffee flavors. Start your day off right, choose iDrinkCoffee for all great, low prices."
+  }
+}

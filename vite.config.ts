@@ -40,5 +40,12 @@ export default defineConfig({
       strict: true,
       deny: ["**/.*"],
     },
+    proxy: {
+      '/api/coffee-products': {
+        target: 'https://idrinkcoffee.com',
+        changeOrigin: true,
+        rewrite: () => '/collections/coffee.json',
+      },
+    },
   },
 });
