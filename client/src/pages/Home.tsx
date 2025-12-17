@@ -2,85 +2,72 @@ import Layout from "@/components/Layout";
 import ProductCard from "@/components/ProductCard";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Coffee, Package, Truck, Award } from "lucide-react";
+import { useEffect, useState } from "react";
+import { fetchCoffeeProducts, type Product } from "@/lib/api";
 
 export default function Home() {
-  const featuredCoffees = [
+  const [products, setProducts] = useState<Product[]>([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    async function loadProducts() {
+      const data = await fetchCoffeeProducts();
+      setProducts(data);
+      setLoading(false);
+    }
+    loadProducts();
+  }, []);
+
+  // Featured items that must always be shown first
+  const featuredItems = [
     {
-      id: 1,
+      id: "featured-1",
       title: "Essential Espresso",
       price: "$18.00",
       image: "https://cdn.shopify.com/s/files/1/1201/3604/files/essential-espresso-1758898738151.webp?v=1758899441",
       description: "Rich, velvety crema with a nutty taste and dark chocolate finish. 100% Arabica blend.",
       tags: ["Espresso", "Dark Roast", "Blend"],
-      isNew: false
+      isNew: false,
+      productUrl: "https://idrinkcoffee.com/products/essential-espresso"
     },
     {
-      id: 2,
+      id: "featured-2",
       title: "Essential Espresso Decaf",
       price: "$22.00",
       image: "https://cdn.shopify.com/s/files/1/1201/3604/files/trimmed-essential-1765911539897_50bc81c2-b545-4fc8-9971-8e08b08eb9b6.webp?v=1765911650",
       description: "Swiss Water Process decaf. Smooth, balanced flavour with hints of citrus fruit.",
       tags: ["Decaf", "Espresso", "SWP"],
-      isNew: false
+      isNew: false,
+      productUrl: "https://idrinkcoffee.com/products/essential-espresso-decaf"
     },
     {
-      id: 3,
+      id: "featured-3",
       title: "Coffee Subscription - Tier 1",
       price: "$68.00",
       image: "https://cdn.shopify.com/s/files/1/1201/3604/files/Coffee-Tier-2_8128fd45-89c7-424e-a908-69a83b50d32c.jpg?v=1690212268",
       description: "Select 4 coffees out of 18. Save up to $11 on every order.",
       tags: ["Subscription", "Bundle", "Save"],
-      isNew: true
+      isNew: true,
+      productUrl: "https://idrinkcoffee.com/products/new-coffee-subscription-tier-1"
     },
     {
-      id: 4,
+      id: "featured-4",
       title: "Coffee Subscription - Tier 2",
       price: "$75.00",
       image: "https://cdn.shopify.com/s/files/1/1201/3604/files/Coffee-Tier-3_48159031-7656-4893-9922-c8ecba482880.jpg?v=1694025476",
       description: "Select 4 coffees out of 30. Save up to $18 on every order.",
       tags: ["Subscription", "Premium", "Save"],
-      isNew: true
+      isNew: true,
+      productUrl: "https://idrinkcoffee.com/products/new-coffee-subscription-tier-2"
     }
   ];
 
-  const equipment = [
-    {
-      id: 5,
-      title: "Coffee Brain Genesis",
-      price: "$599.00",
-      image: "https://cdn.shopify.com/s/files/1/1201/3604/files/wmed-104CoffeeBrainGenisis-WhitezzzgroundPhotosSet1copy.jpg?v=1761072564",
-      description: "Super automatic espresso machine with 2.4-inch colour display and 16 programmable beverages.",
-      tags: ["Machine", "Automatic", "Sale"],
-      isNew: false
-    },
-    {
-      id: 6,
-      title: "Moccamaster Cup-One",
-      price: "$344.00",
-      image: "https://cdn.shopify.com/s/files/1/1201/3604/products/71_2B6l_2B9IeSL._AC_SL1500_61e30c06-11bc-48e7-8e7b-1589cce4ac7e.jpg?v=1761072575",
-      description: "Handmade single-serve brewer. Perfect cup in just 4 minutes.",
-      tags: ["Brewer", "Handmade", "Filter"],
-      isNew: false
-    },
-    {
-      id: 7,
-      title: "Whitebird KC215A Scale",
-      price: "$75.00",
-      image: "https://cdn.shopify.com/s/files/1/1201/3604/files/wb.jpg?v=1683122219",
-      description: "Precision digital scale with timer and 0.1g accuracy.",
-      tags: ["Accessory", "Precision"],
-      isNew: false
-    },
-    {
-      id: 8,
-      title: "Airscape Canister 64oz",
-      price: "$42.00",
-      image: "https://cdn.shopify.com/s/files/1/1201/3604/files/120BlackFridayGiveAwayPackages.jpg?v=1704991342",
-      description: "Preserve freshness with patented air-removing lid technology.",
-      tags: ["Storage", "Freshness"],
-      isNew: false
-    }
-  ];
+  // Filter out featured items from the fetched list to avoid duplicates if they exist
+  const dynamicProducts = products.filter(p => 
+    !featuredItems.some(f => f.title === p.title)
+  ).slice(0, 8); // Show top 8 new arrivals
+
+
 
   return (
     <Layout>
@@ -143,22 +130,47 @@ export default function Home() {
               <h2 className="font-sans font-bold text-3xl md:text-4xl uppercase text-foreground mb-2">Fresh Roasts</h2>
               <p className="font-mono text-muted-foreground">Small batch, ethically sourced.</p>
             </div>
-            <Button variant="link" className="hidden md:flex gap-2 text-primary hover:text-accent uppercase font-bold tracking-wider">
-              View All Coffees <ArrowRight className="h-4 w-4" />
-            </Button>
+            <a href="https://idrinkcoffee.com/collections/coffee" target="_blank" rel="noopener noreferrer">
+              <Button variant="link" className="hidden md:flex gap-2 text-primary hover:text-accent uppercase font-bold tracking-wider">
+                View All Coffees <ArrowRight className="h-4 w-4" />
+              </Button>
+            </a>
           </div>
           
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {featuredCoffees.map((coffee) => (
+            {/* Featured Items First */}
+            {featuredItems.map((item) => (
               <ProductCard 
-                key={coffee.id}
-                {...coffee}
+                key={item.id}
+                {...item}
+              />
+            ))}
+
+            {/* Dynamic Items */}
+            {!loading && dynamicProducts.map((product) => (
+              <ProductCard 
+                key={product.id}
+                title={product.title}
+                price={`$${product.priceRange.minVariantPrice.amount}`}
+                image={product.featuredImage?.url || ""}
+                description={product.description.replace(/<[^>]*>?/gm, '').substring(0, 100) + "..."}
+                tags={product.tags.slice(0, 3)}
+                isNew={false}
+                productUrl={`https://idrinkcoffee.com/products/${product.handle}`}
               />
             ))}
           </div>
           
+          {loading && (
+            <div className="flex justify-center py-12">
+              <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary"></div>
+            </div>
+          )}
+          
           <div className="mt-12 text-center md:hidden">
-            <Button variant="outline" className="w-full uppercase tracking-wider">View All Coffees</Button>
+            <a href="https://idrinkcoffee.com/collections/coffee" target="_blank" rel="noopener noreferrer">
+              <Button variant="outline" className="w-full uppercase tracking-wider">View All Coffees</Button>
+            </a>
           </div>
         </div>
       </section>
