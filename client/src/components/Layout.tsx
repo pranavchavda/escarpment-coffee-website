@@ -21,30 +21,28 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container flex h-20 items-center justify-between">
           {/* Logo */}
-          <Link href="/">
-            <a className="flex items-center gap-2 group">
+          <Link href="/" className="flex items-center gap-2 group">
               <img 
                 src="/images/logo-wide.png" 
                 alt="Escarpment Coffee Roasters" 
                 className="h-12 w-auto object-contain transition-opacity duration-300 hover:opacity-90"
               />
-            </a>
           </Link>
 
           {/* Desktop Nav */}
           <nav className="hidden md:flex items-center gap-8">
             {navItems.map((item) => (
-              <Link key={item.href} href={item.href}>
-                <a
-                  className={cn(
-                    "text-sm font-medium transition-colors hover:text-primary uppercase tracking-wider",
-                    location === item.href
-                      ? "text-primary border-b-2 border-primary"
-                      : "text-muted-foreground"
-                  )}
-                >
-                  {item.label}
-                </a>
+              <Link 
+                key={item.href} 
+                href={item.href}
+                className={cn(
+                  "text-sm font-medium transition-colors hover:text-primary uppercase tracking-wider",
+                  location === item.href
+                    ? "text-primary border-b-2 border-primary"
+                    : "text-muted-foreground"
+                )}
+              >
+                {item.label}
               </Link>
             ))}
           </nav>
@@ -67,8 +65,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           <div className="md:hidden border-t border-border bg-background p-4 animate-in slide-in-from-top-5">
             <nav className="flex flex-col gap-4">
               {navItems.map((item) => (
-                <Link key={item.href} href={item.href}>
-                  <a
+                <Link 
+                    key={item.href} 
+                    href={item.href}
                     className={cn(
                       "text-lg font-medium transition-colors hover:text-primary uppercase tracking-wider py-2",
                       location === item.href ? "text-primary" : "text-muted-foreground"
@@ -76,8 +75,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
                     {item.label}
-                  </a>
-                </Link>
+                  </Link>
               ))}
 
             </nav>
