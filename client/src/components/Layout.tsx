@@ -1,7 +1,7 @@
 import { Link, useLocation } from "wouter";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
-import { Menu, X, ShoppingBag, Search } from "lucide-react";
+import { Menu, X, Search } from "lucide-react";
 import { useState } from "react";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
@@ -54,10 +54,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             <Button variant="ghost" size="icon" className="text-muted-foreground hover:text-primary">
               <Search className="h-5 w-5" />
             </Button>
-            <Button variant="ghost" size="icon" className="text-muted-foreground hover:text-primary relative">
-              <ShoppingBag className="h-5 w-5" />
-              <span className="absolute top-1 right-1 h-2 w-2 rounded-full bg-primary"></span>
-            </Button>
+
           </div>
 
           {/* Mobile Menu Toggle */}
@@ -90,9 +87,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 <Button variant="outline" className="w-full justify-start gap-2">
                   <Search className="h-4 w-4" /> Search
                 </Button>
-                <Button variant="default" className="w-full justify-start gap-2">
-                  <ShoppingBag className="h-4 w-4" /> Cart
-                </Button>
+
               </div>
             </nav>
           </div>
@@ -125,7 +120,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               <ul className="space-y-2 text-sm text-muted-foreground">
                 <li><a href="/coffees" className="hover:text-primary transition-colors">All Coffees</a></li>
                 <li><a href="/subscriptions" className="hover:text-primary transition-colors">Subscriptions</a></li>
-                <li><a href="#" className="hover:text-primary transition-colors">Gift Cards</a></li>
+
               </ul>
             </div>
 
@@ -134,8 +129,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               <ul className="space-y-2 text-sm text-muted-foreground">
                 <li><a href="/about" className="hover:text-primary transition-colors">Our Story</a></li>
                 <li><a href="#" className="hover:text-primary transition-colors">Wholesale</a></li>
-                <li><a href="#" className="hover:text-primary transition-colors">Locations</a></li>
-                <li><a href="#" className="hover:text-primary transition-colors">Contact</a></li>
+ 
+                <li><a href="/contact" className="hover:text-primary transition-colors">Contact</a></li>
               </ul>
             </div>
 
