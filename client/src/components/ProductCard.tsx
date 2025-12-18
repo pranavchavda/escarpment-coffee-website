@@ -4,6 +4,8 @@ import { Badge } from "@/components/ui/badge";
 import { cn } from "@/lib/utils";
 import { parseCoffeeAttributes, shouldDisplayTag } from "@/lib/tags";
 import { Flame, Droplets, MapPin, ShoppingBag } from "lucide-react";
+import { useState } from "react";
+import ProductDetailModal from "./ProductDetailModal";
 
 interface ProductCardProps {
   title: string;
@@ -28,11 +30,16 @@ export default function ProductCard({
   className,
   productUrl = "https://idrinkcoffee.com/collections/coffee"
 }: ProductCardProps) {
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const attributes = parseCoffeeAttributes(tags);
   const displayTags = tags.filter(shouldDisplayTag).slice(0, 3);
 
   return (
-    <Card className={cn("group overflow-hidden border-border bg-card transition-all duration-300 hover:shadow-lg hover:border-primary/50 flex flex-col h-full", className)}>
+    <>
+    <Card 
+      onClick={() => setIsModalOpen(true)}
+      className={cn("group overflow-hidden border-border bg-card transition-all duration-300 hover:shadow-lg hover:border-primary/50 flex flex-col h-full cursor-pointer", className)}
+    >
       <div className="relative aspect-square overflow-hidden bg-muted">
         {isNew && (
           <Badge className="absolute top-3 left-3 z-10 bg-primary text-primary-foreground hover:bg-primary/90 font-sans uppercase tracking-wider text-xs rounded-none px-2 py-1">
@@ -69,13 +76,11 @@ export default function ProductCard({
 
         {/* Quick Add Overlay */}
         <div className="absolute bottom-0 left-0 right-0 translate-y-full transition-transform duration-300 group-hover:translate-y-0 p-4 bg-background/90 backdrop-blur-sm border-t border-border z-30">
-          <a href={productUrl} target="_blank" rel="noopener noreferrer">
-            <Button 
-              className="w-full font-sans uppercase tracking-wider text-xs font-bold" 
-            >
-              View on iDrinkCoffee
-            </Button>
-          </a>
+          <Button 
+            className="w-full font-sans uppercase tracking-wider text-xs font-bold" 
+          >
+            View Details
+          </Button>
         </div>
       </div>
       
@@ -132,5 +137,19 @@ export default function ProductCard({
         </div>
       </CardContent>
     </Card>
+
+    <ProductDetailModal 
+      isOpen={isModalOpen}
+      onClose={() => setIsModalOpen(false)}
+      product={{
+        title,
+        price,
+        image,
+        description,
+        tags,
+        productUrl
+      }}
+    />
+    </>
   );
 }
