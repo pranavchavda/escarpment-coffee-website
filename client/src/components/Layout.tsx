@@ -1,7 +1,7 @@
 import { Link, useLocation } from "wouter";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
-import { Menu, X, Search } from "lucide-react";
+import { Menu, X, Search, Instagram, Facebook, Twitter } from "lucide-react";
 import { useState } from "react";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
@@ -51,10 +51,6 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
           {/* Actions */}
           <div className="hidden md:flex items-center gap-4">
-            <Button variant="ghost" size="icon" className="text-muted-foreground hover:text-primary">
-              <Search className="h-5 w-5" />
-            </Button>
-
           </div>
 
           {/* Mobile Menu Toggle */}
@@ -83,12 +79,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                   </a>
                 </Link>
               ))}
-              <div className="flex gap-4 mt-4 pt-4 border-t border-border">
-                <Button variant="outline" className="w-full justify-start gap-2">
-                  <Search className="h-4 w-4" /> Search
-                </Button>
 
-              </div>
             </nav>
           </div>
         )}
@@ -128,7 +119,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               <h3 className="font-sans font-bold text-lg mb-4 uppercase tracking-wider text-primary">Company</h3>
               <ul className="space-y-2 text-sm text-muted-foreground">
                 <li><a href="/about" className="hover:text-primary transition-colors">Our Story</a></li>
-                <li><a href="#" className="hover:text-primary transition-colors">Wholesale</a></li>
+                <li><a href="https://wholesale.idrinkcoffee.com/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">Wholesale</a></li>
  
                 <li><a href="/contact" className="hover:text-primary transition-colors">Contact</a></li>
               </ul>
@@ -147,15 +138,29 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 />
                 <Button>JOIN</Button>
               </div>
+              
+              <div className="mt-6">
+                <h3 className="font-sans font-bold text-lg mb-4 uppercase tracking-wider text-primary">Follow Us</h3>
+                <div className="flex gap-4">
+                  <a href="https://www.instagram.com/idrinkcoffeecom/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+                    <Instagram className="h-6 w-6" />
+                  </a>
+                  <a href="https://www.facebook.com/iDrinkCoffeecom/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+                    <Facebook className="h-6 w-6" />
+                  </a>
+                  <a href="https://twitter.com/iDrinkCoffeecom" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+                    <Twitter className="h-6 w-6" />
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
           
           <div className="mt-12 pt-8 border-t border-border flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-muted-foreground uppercase tracking-widest">
             <p>&copy; {new Date().getFullYear()} Escarpment Coffee Roasters.</p>
             <div className="flex gap-6">
-              <a href="#" className="hover:text-primary transition-colors">Privacy</a>
-              <a href="#" className="hover:text-primary transition-colors">Terms</a>
-              <a href="#" className="hover:text-primary transition-colors">Shipping</a>
+              <a href="/privacy" className="hover:text-primary transition-colors">Privacy</a>
+              <a href="/terms" className="hover:text-primary transition-colors">Terms</a>
             </div>
           </div>
         </div>

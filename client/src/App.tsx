@@ -9,6 +9,8 @@ import Coffees from "./pages/Coffees";
 import Subscriptions from "./pages/Subscriptions";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
+import Privacy from "./pages/Privacy";
+import Terms from "./pages/Terms";
 
 
 function Router() {
@@ -19,6 +21,8 @@ function Router() {
       <Route path={"/subscriptions"} component={Subscriptions} />
        <Route path="/about" component={About} />
       <Route path="/contact" component={Contact} />
+      <Route path="/privacy" component={Privacy} />
+      <Route path="/terms" component={Terms} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />

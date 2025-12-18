@@ -42,7 +42,8 @@ export default function Contact() {
                   <div>
                     <h3 className="font-sans font-bold text-lg uppercase tracking-wide">Visit Us</h3>
                     <p className="text-muted-foreground font-mono">
-                      Milton, Ontario<br />
+                      1-312 Alliance Road<br />
+                      Milton, ON L9T 2V2<br />
                       Canada
                     </p>
                   </div>
@@ -53,7 +54,7 @@ export default function Contact() {
                   <div>
                     <h3 className="font-sans font-bold text-lg uppercase tracking-wide">Email Us</h3>
                     <p className="text-muted-foreground font-mono">
-                      hello@escarpment.coffee
+                      sales@idrinkcoffee.com
                     </p>
                   </div>
                 </div>
@@ -63,7 +64,7 @@ export default function Contact() {
                   <div>
                     <h3 className="font-sans font-bold text-lg uppercase tracking-wide">Call Us</h3>
                     <p className="text-muted-foreground font-mono">
-                      (555) 123-4567
+                      1-800-425-5405
                     </p>
                   </div>
                 </div>
