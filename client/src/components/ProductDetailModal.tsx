@@ -1,7 +1,7 @@
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Flame, Droplets, MapPin, ExternalLink } from "lucide-react";
+import { Flame, Droplets, MapPin, ExternalLink, Mountain, Coffee, Wheat, Sprout } from "lucide-react";
 import { parseCoffeeAttributes } from "@/lib/tags";
 
 interface ProductDetailModalProps {
@@ -62,24 +62,75 @@ export default function ProductDetailModal({ isOpen, onClose, product }: Product
                 </div>
               )}
 
-              {/* Key Attributes */}
-              <div className="grid grid-cols-2 gap-4 py-4 border-y border-border">
-                {attributes.processing && (
-                  <div className="flex items-center gap-3">
-                    <Droplets className="h-5 w-5 text-primary" />
-                    <div>
-                      <p className="text-[10px] font-bold uppercase tracking-wider text-muted-foreground">Process</p>
-                      <p className="font-mono text-sm">{attributes.processing}</p>
+              {/* Key Attributes List */}
+              <div className="space-y-4 py-6 border-y border-border">
+                {attributes.elevation && (
+                  <div className="flex items-center justify-between">
+                    <div className="flex items-center gap-3">
+                      <Mountain className="h-5 w-5 text-muted-foreground" />
+                      <span className="font-sans font-bold text-sm">Elevation</span>
                     </div>
+                    <span className="font-mono text-sm text-muted-foreground">{attributes.elevation}</span>
                   </div>
                 )}
-                {attributes.region && (
-                  <div className="flex items-center gap-3">
-                    <MapPin className="h-5 w-5 text-primary" />
-                    <div>
-                      <p className="text-[10px] font-bold uppercase tracking-wider text-muted-foreground">Region</p>
-                      <p className="font-mono text-sm">{attributes.region}</p>
+                
+                {attributes.brew && (
+                  <div className="flex items-center justify-between">
+                    <div className="flex items-center gap-3">
+                      <Coffee className="h-5 w-5 text-muted-foreground" />
+                      <span className="font-sans font-bold text-sm">Brew</span>
                     </div>
+                    <span className="font-mono text-sm text-muted-foreground">{attributes.brew}</span>
+                  </div>
+                )}
+
+                {attributes.harvest && (
+                  <div className="flex items-center justify-between">
+                    <div className="flex items-center gap-3">
+                      <Wheat className="h-5 w-5 text-muted-foreground" />
+                      <span className="font-sans font-bold text-sm">Harvesting</span>
+                    </div>
+                    <span className="font-mono text-sm text-muted-foreground">{attributes.harvest}</span>
+                  </div>
+                )}
+
+                {attributes.roast && (
+                  <div className="flex items-center justify-between">
+                    <div className="flex items-center gap-3">
+                      <Flame className="h-5 w-5 text-muted-foreground" />
+                      <span className="font-sans font-bold text-sm">Roast</span>
+                    </div>
+                    <span className="font-mono text-sm text-muted-foreground">{attributes.roast}</span>
+                  </div>
+                )}
+
+                {attributes.processing && (
+                  <div className="flex items-center justify-between">
+                    <div className="flex items-center gap-3">
+                      <Droplets className="h-5 w-5 text-muted-foreground" />
+                      <span className="font-sans font-bold text-sm">Processing</span>
+                    </div>
+                    <span className="font-mono text-sm text-muted-foreground">{attributes.processing}</span>
+                  </div>
+                )}
+
+                {attributes.region && (
+                  <div className="flex items-center justify-between">
+                    <div className="flex items-center gap-3">
+                      <MapPin className="h-5 w-5 text-muted-foreground" />
+                      <span className="font-sans font-bold text-sm">Region</span>
+                    </div>
+                    <span className="font-mono text-sm text-muted-foreground">{attributes.region}</span>
+                  </div>
+                )}
+                
+                {attributes.varietal && attributes.varietal.length > 0 && (
+                  <div className="flex items-center justify-between">
+                    <div className="flex items-center gap-3">
+                      <Sprout className="h-5 w-5 text-muted-foreground" />
+                      <span className="font-sans font-bold text-sm">Varietal</span>
+                    </div>
+                    <span className="font-mono text-sm text-muted-foreground text-right">{attributes.varietal.join(", ")}</span>
                   </div>
                 )}
               </div>

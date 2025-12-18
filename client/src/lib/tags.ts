@@ -6,6 +6,7 @@ export interface CoffeeAttributes {
   notes?: string[];
   varietal?: string[];
   harvest?: string;
+  brew?: string;
 }
 
 export function parseCoffeeAttributes(tags: string[]): CoffeeAttributes {
@@ -25,6 +26,8 @@ export function parseCoffeeAttributes(tags: string[]): CoffeeAttributes {
       attributes.elevation = tag.replace('ELEVATION-', '');
     } else if (tag.startsWith('HARVESTING-')) {
       attributes.harvest = tag.replace('HARVESTING-', '');
+    } else if (tag.startsWith('BREW-')) {
+      attributes.brew = tag.replace('BREW-', '');
     } else if (tag.startsWith('NOTES-')) {
       // Handle notes which might be hash-separated (e.g., "NOTES-Apple#Caramel")
       const rawNotes = tag.replace('NOTES-', '');
@@ -69,7 +72,8 @@ export function shouldDisplayTag(tag: string): boolean {
       tag.startsWith('REGION-') || 
       tag.startsWith('ELEVATION-') || 
       tag.startsWith('HARVESTING-') || 
-      tag.startsWith('NOTES-') || 
+      tag.startsWith('BREW-') || 
+      tag.startsWith('NOTES-') ||
       tag.startsWith('VARIETAL-') || 
       tag.startsWith('origin-')) return false;
 
