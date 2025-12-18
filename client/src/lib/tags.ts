@@ -10,37 +10,40 @@ export interface CoffeeAttributes {
 }
 
 export function parseCoffeeAttributes(tags: string[]): CoffeeAttributes {
+  // console.log('Parsing tags:', tags); // Debug log
   const attributes: CoffeeAttributes = {};
   const notes: string[] = [];
   const varietals: string[] = [];
 
   tags.forEach(tag => {
+    const upperTag = tag.toUpperCase();
+    
     // Handle key-value tags (e.g., "ROAST-Medium")
-    if (tag.startsWith('ROAST-')) {
-      attributes.roast = tag.replace('ROAST-', '').replace(/-/g, ' ');
-    } else if (tag.startsWith('PROCESSING-')) {
-      attributes.processing = tag.replace('PROCESSING-', '');
-    } else if (tag.startsWith('REGION-')) {
-      attributes.region = tag.replace('REGION-', '');
-    } else if (tag.startsWith('ELEVATION-')) {
-      attributes.elevation = tag.replace('ELEVATION-', '');
-    } else if (tag.startsWith('HARVESTING-')) {
-      attributes.harvest = tag.replace('HARVESTING-', '');
-    } else if (tag.startsWith('BREW-')) {
-      attributes.brew = tag.replace('BREW-', '');
-    } else if (tag.startsWith('NOTES-')) {
+    if (upperTag.startsWith('ROAST-')) {
+      attributes.roast = tag.substring(6).replace(/-/g, ' ');
+    } else if (upperTag.startsWith('PROCESSING-')) {
+      attributes.processing = tag.substring(11);
+    } else if (upperTag.startsWith('REGION-')) {
+      attributes.region = tag.substring(7);
+    } else if (upperTag.startsWith('ELEVATION-')) {
+      attributes.elevation = tag.substring(10);
+    } else if (upperTag.startsWith('HARVESTING-')) {
+      attributes.harvest = tag.substring(11);
+    } else if (upperTag.startsWith('BREW-')) {
+      attributes.brew = tag.substring(5);
+    } else if (upperTag.startsWith('NOTES-')) {
       // Handle notes which might be hash-separated (e.g., "NOTES-Apple#Caramel")
-      const rawNotes = tag.replace('NOTES-', '');
+      const rawNotes = tag.substring(6);
       const splitNotes = rawNotes.split('#').map(n => n.trim());
       notes.push(...splitNotes);
-    } else if (tag.startsWith('VARIETAL-')) {
-      const rawVarietals = tag.replace('VARIETAL-', '');
+    } else if (upperTag.startsWith('VARIETAL-')) {
+      const rawVarietals = tag.substring(9);
       const splitVarietals = rawVarietals.split('#').map(v => v.trim());
       varietals.push(...splitVarietals);
-    } else if (tag.startsWith('origin-')) {
+    } else if (upperTag.startsWith('ORIGIN-')) {
       // Fallback for region if not explicitly set
       if (!attributes.region) {
-        attributes.region = tag.replace('origin-', '').replace(/-/g, ' ');
+        attributes.region = tag.substring(7).replace(/-/g, ' ');
         // Capitalize first letter of each word
         attributes.region = attributes.region.replace(/\b\w/g, l => l.toUpperCase());
       }
@@ -67,15 +70,16 @@ export function shouldDisplayTag(tag: string): boolean {
   if (ignoredPrefixes.some(prefix => lowerTag.startsWith(prefix))) return false;
   
   // Filter out attribute tags as they are displayed separately
-  if (tag.startsWith('ROAST-') || 
-      tag.startsWith('PROCESSING-') || 
-      tag.startsWith('REGION-') || 
-      tag.startsWith('ELEVATION-') || 
-      tag.startsWith('HARVESTING-') || 
-      tag.startsWith('BREW-') || 
-      tag.startsWith('NOTES-') ||
-      tag.startsWith('VARIETAL-') || 
-      tag.startsWith('origin-')) return false;
+  const upperTag = tag.toUpperCase();
+  if (upperTag.startsWith('ROAST-') || 
+      upperTag.startsWith('PROCESSING-') || 
+      upperTag.startsWith('REGION-') || 
+      upperTag.startsWith('ELEVATION-') || 
+      upperTag.startsWith('HARVESTING-') || 
+      upperTag.startsWith('BREW-') || 
+      upperTag.startsWith('NOTES-') ||
+      upperTag.startsWith('VARIETAL-') || 
+      upperTag.startsWith('ORIGIN-')) return false;
 
   return true;
 }
