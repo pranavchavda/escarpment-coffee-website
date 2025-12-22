@@ -46,10 +46,12 @@ export default function ProductCard({
             New Arrival
           </Badge>
         )}
-        <img 
-          src={image} 
-          alt={title} 
-          className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+        <img
+          src={image}
+          alt={title}
+          loading="lazy"
+          decoding="async"
+          className="h-full w-full object-contain transition-transform duration-500 group-hover:scale-105"
         />
         
         {/* Overlay Attributes on Image Hover */}
@@ -89,16 +91,13 @@ export default function ProductCard({
           <h3 className="font-sans font-bold text-lg leading-tight group-hover:text-primary transition-colors line-clamp-2">
             {title}
           </h3>
-          <span className="font-mono font-medium text-primary whitespace-nowrap">
-            {price}
-          </span>
         </div>
       </CardHeader>
       
       <CardContent className="p-4 pt-0 flex-1 flex flex-col">
         {/* Tasting Notes Highlight */}
         {attributes.notes && attributes.notes.length > 0 && (
-          <div className="mb-2 text-xs font-mono text-primary uppercase tracking-tight font-bold">
+          <div className="mb-2 bg-secondary text-secondary-foreground rounded-md px-2 py-1 shadow-2xl text-xs font-mono uppercase tracking-tight font-bold">
             {attributes.notes.slice(0, 3).join(" • ")}
           </div>
         )}
@@ -109,7 +108,7 @@ export default function ProductCard({
           </p>
         )}
         
-        <div className="flex flex-wrap gap-1 mt-auto">
+        {/* <div className="flex flex-wrap gap-1 mt-auto">
           {displayTags.length > 0 ? (
             displayTags.map((tag) => (
               <span 
@@ -120,7 +119,6 @@ export default function ProductCard({
               </span>
             ))
           ) : (
-            /* Fallback to showing roast/region if no other tags exist */
             <>
               {attributes.roast && (
                 <span className="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium border border-border text-muted-foreground font-mono uppercase tracking-tight">
@@ -134,7 +132,7 @@ export default function ProductCard({
               )}
             </>
           )}
-        </div>
+        </div> */}
       </CardContent>
     </Card>
 

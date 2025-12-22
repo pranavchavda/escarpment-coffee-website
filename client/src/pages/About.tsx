@@ -8,7 +8,7 @@ export default function About() {
         <section className="relative h-[60vh] flex items-center justify-center overflow-hidden">
           <div className="absolute inset-0 z-0">
             <img 
-              src="/images/hero-bg.webp" 
+              src="/images/hero-escarpment.webp" 
               alt="Niagara Escarpment" 
               className="h-full w-full object-cover"
             />
@@ -33,9 +33,8 @@ export default function About() {
                 from the rugged beauty and enduring strength of our natural surroundings.
               </p>
               <p className="text-lg leading-relaxed mb-12">
-                We are explorers at heart. We travel the globe to find the finest beans, building relationships with farmers 
-                who share our commitment to quality and sustainability. We bring these treasures back to Milton, where we 
-                roast them in small batches to highlight their unique character and flavor profiles.
+                We are explorers at heart. We scour the globe to find the finest beans, building relationships with farmers 
+                who share our commitment to quality. We bring these treasures back to our roastery, where we roast them in small batches to highlight their unique character and flavour profiles.
               </p>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 my-16 not-prose">
@@ -58,9 +57,8 @@ export default function About() {
               <h2 className="font-sans font-bold text-3xl uppercase text-primary mb-8">Community & Connection</h2>
               <p className="text-lg leading-relaxed">
                 Coffee is more than just a beverage; it's a catalyst for connection. It brings people together, 
-                starts conversations, and fuels ideas. We are proud to be a part of the Milton community and to share 
-                our passion with coffee lovers across Canada. When you choose Escarpment Coffee, you're not just 
-                buying beans—you're joining us on a journey of discovery.
+                starts conversations, and fuels ideas. We are proud to be able to share our passion with coffee lovers 
+                across Canada. Grab a bag of Escarpment Coffee and taste what we’re excited to roast right now.
               </p>
             </div>
           </div>

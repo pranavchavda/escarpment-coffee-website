@@ -1,7 +1,7 @@
 import { Link, useLocation } from "wouter";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
-import { Menu, X, Search, Instagram, Facebook, Twitter } from "lucide-react";
+import { Menu, X, Search, Instagram, Facebook, Twitter, TwitterIcon, XIcon, FacebookIcon, InstagramIcon, YoutubeIcon } from "lucide-react";
 import { useState } from "react";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
@@ -25,7 +25,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               <img 
                 src="/images/logo-wide.png" 
                 alt="Escarpment Coffee Roasters" 
-                className="h-12 w-auto object-contain transition-opacity duration-300 hover:opacity-90"
+                className="h-10 px-4 w-auto object-contain transition-opacity duration-300 hover:opacity-90"
               />
           </Link>
 
@@ -55,6 +55,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           <button
             className="md:hidden p-2 text-muted-foreground hover:text-primary"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            aria-label={isMobileMenuOpen ? "Close menu" : "Open menu"}
+            aria-expanded={isMobileMenuOpen}
           >
             {isMobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
           </button>
@@ -128,26 +130,39 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               <p className="text-sm text-muted-foreground mb-4">
                 Be the first to know about new roasts and exclusive offers.
               </p>
-              <div className="flex gap-2">
-                <input 
-                  type="email" 
-                  placeholder="EMAIL ADDRESS" 
-                  className="flex-1 bg-background border border-input px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+              <form
+                className="flex flex-col gap-2"
+                action="//manage.kmail-lists.com/subscriptions/subscribe"
+                method="POST"
+              >
+                <input type="hidden" name="g" value="rH8EgK" />
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="EMAIL ADDRESS"
+                  aria-label="Email address for newsletter"
+                  required
+                  className="w-full md:max-w-[240px] bg-background border border-input px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
                 />
-                <Button>JOIN</Button>
-              </div>
+                <Button type="submit" className="w-full md:max-w-[240px]">
+                  JOIN
+                </Button>
+              </form>
               
               <div className="mt-6">
                 <h3 className="font-sans font-bold text-lg mb-4 uppercase tracking-wider text-primary">Follow Us</h3>
                 <div className="flex gap-4">
-                  <a href="https://www.instagram.com/idrinkcoffeecom/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
-                    <Instagram className="h-6 w-6" />
+                  <a href="https://www.instagram.com/idrinkcoffeecanada/" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Instagram" className="text-muted-foreground hover:text-primary transition-colors">
+                    <InstagramIcon className="h-6 w-6" />
                   </a>
-                  <a href="https://www.facebook.com/iDrinkCoffeecom/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
-                    <Facebook className="h-6 w-6" />
+                  <a href="https://www.facebook.com/iDrinkCoffeecom/" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Facebook" className="text-muted-foreground hover:text-primary transition-colors">
+                    <FacebookIcon className="h-6 w-6" />
                   </a>
-                  <a href="https://twitter.com/iDrinkCoffeecom" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
-                    <Twitter className="h-6 w-6" />
+                  <a href="https://twitter.com/idrinkcoffee" target="_blank" rel="noopener noreferrer" aria-label="Follow us on X (Twitter)" className="text-muted-foreground hover:text-primary transition-colors">
+                    <XIcon className="h-6 w-6" />
+                  </a>
+                  <a href="https://youtube.com/idrinkcoffeecanada" target="_blank" rel="noopener noreferrer" aria-label="Subscribe to our YouTube channel" className="text-muted-foreground hover:text-primary transition-colors">
+                    <YoutubeIcon className="h-6 w-6" />
                   </a>
                 </div>
               </div>

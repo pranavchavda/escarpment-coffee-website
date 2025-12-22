@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://escarpment.coffee/sitemap.xml

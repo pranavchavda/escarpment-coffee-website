@@ -37,7 +37,16 @@ export default function Subscriptions() {
       <div className="bg-background min-h-screen">
         {/* Hero */}
         <section className="relative py-24 md:py-32 overflow-hidden bg-secondary/20">
+                    <div className="absolute inset-0 z-0">
+            <img 
+              src="/images/brewing-process.webp" 
+              alt="Niagara Escarpment" 
+              className="h-full w-full object-cover"
+            />
+            <div className="absolute inset-0 bg-black/50" />
+          </div>
           <div className="container relative z-10 text-center">
+
             <h1 className="font-sans font-bold text-4xl md:text-6xl uppercase text-foreground mb-6">Never Run Out</h1>
             <p className="font-mono text-muted-foreground max-w-2xl mx-auto text-lg mb-10">
               Fresh roasted coffee delivered to your door on your schedule. 

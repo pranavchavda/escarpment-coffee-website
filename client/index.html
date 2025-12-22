@@ -3,22 +3,53 @@
 
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1" />
-    <title>Escarpment Coffee - Modern Website</title>    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+
+    <title>Escarpment Coffee Roasters | Premium Specialty Coffee from Milton, Ontario</title>
+    <meta name="description" content="Discover premium specialty coffee freshly roasted in Milton, Ontario. Escarpment Coffee Roasters offers ethically sourced, small-batch roasted coffees with unique flavour profiles. Shop online for the best Canadian coffee." />
+    <meta name="keywords" content="specialty coffee, coffee roasters, Milton Ontario, Canadian coffee, fresh roasted coffee, single origin coffee, espresso beans" />
+
+    <link rel="canonical" href="https://escarpment.coffee/" />
+    <link rel="icon" type="image/webp" href="/images/logo-round.webp" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://escarpment.coffee/" />
+    <meta property="og:title" content="Escarpment Coffee Roasters | Premium Specialty Coffee" />
+    <meta property="og:description" content="Premium specialty coffee freshly roasted in Milton, Ontario. Ethically sourced, small-batch roasted with unique flavour profiles." />
+    <meta property="og:image" content="https://escarpment.coffee/images/logo-wide.png" />
+    <meta property="og:locale" content="en_CA" />
+    <meta property="og:site_name" content="Escarpment Coffee Roasters" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://escarpment.coffee/" />
+    <meta name="twitter:title" content="Escarpment Coffee Roasters | Premium Specialty Coffee" />
+    <meta name="twitter:description" content="Premium specialty coffee freshly roasted in Milton, Ontario. Ethically sourced, small-batch roasted with unique flavour profiles." />
+    <meta name="twitter:image" content="https://escarpment.coffee/images/logo-wide.png" />
+
+    <!-- Additional SEO -->
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#1a1a1a" />
+    <meta name="author" content="Escarpment Coffee Roasters" />
+    <meta name="geo.region" content="CA-ON" />
+    <meta name="geo.placename" content="Milton, Ontario" />
+
+    <!-- Preload LCP hero image -->
+    <link rel="preload" href="/images/hero-bg-2.webp" as="image" type="image/webp" fetchpriority="high" />
+
+    <!-- Font loading optimization -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&family=Roboto+Mono:wght@300;400;500;700&display=swap" rel="stylesheet" />
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&family=Roboto+Mono:wght@300;400;500;700&display=swap" as="style" />
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&family=Roboto+Mono:wght@300;400;500;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&family=Roboto+Mono:wght@300;400;500;700&display=swap" rel="stylesheet" /></noscript>
   </head>
 
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
-    <script
-      defer
-      src="%VITE_ANALYTICS_ENDPOINT%/umami"
-      data-website-id="%VITE_ANALYTICS_WEBSITE_ID%"></script>
+
   </body>
 
 </html>

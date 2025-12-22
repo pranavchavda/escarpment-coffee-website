@@ -20,13 +20,19 @@ export default function Coffees() {
     <Layout>
       <div className="bg-background min-h-screen">
         {/* Header */}
-        <section className="bg-muted/30 py-20 border-b border-border">
-          <div className="container text-center">
-            <h1 className="font-sans font-bold text-4xl md:text-6xl uppercase text-foreground mb-6">Our Coffees</h1>
-            <p className="font-mono text-muted-foreground max-w-2xl mx-auto text-lg">
-              Explore our full selection of ethically sourced, small-batch roasted coffees. 
-              From bright and fruity to dark and chocolatey, find your perfect cup.
-            </p>
+        <section className="relative h-[60vh]  flex items-center justify-center overflow-hidden">
+                    <div className="absolute inset-0 z-0">
+            <img 
+              src="/images/hero-story.webp" 
+              alt="Niagara Escarpment" 
+              className="h-full w-full object-cover"
+            />
+            <div className="absolute inset-0 bg-black/70 backdrop-blur-sm" />
+          </div>
+          <div className="container z-10 text-center">
+            <h1 className="font-sans  font-bold text-4xl md:text-6xl uppercase text-foreground mb-6">Our Coffees</h1>
+            <p className="font-mono  text-muted-foreground max-w-2xl mx-auto text-lg">
+Explore our full selection of premium specialty coffees, freshly roasted in Canada. Whether you prefer complex acidity or a rich, full body, browse our range to discover your ideal cup            </p>
           </div>
         </section>
 
@@ -46,7 +52,7 @@ export default function Coffees() {
                     price={`$${product.priceRange.minVariantPrice.amount}`}
                     image={product.featuredImage?.url || ""}
                     description={product.description.replace(/<[^>]*>?/gm, '').substring(0, 100) + "..."}
-                    tags={product.tags.slice(0, 3)}
+                    tags={product.tags}
                     isNew={false}
                     productUrl={`https://idrinkcoffee.com/products/${product.handle}`}
                   />

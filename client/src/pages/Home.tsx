@@ -2,6 +2,7 @@ import Layout from "@/components/Layout";
 import ProductCard from "@/components/ProductCard";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Coffee, Package, Truck, Award } from "lucide-react";
+import { Link } from "wouter";
 import { useEffect, useState } from "react";
 import { fetchCoffeeProducts, type Product } from "@/lib/api";
 
@@ -63,7 +64,7 @@ export default function Home() {
   ];
 
   // Filter out featured items from the fetched list to avoid duplicates if they exist
-  const dynamicProducts = products.filter(p => 
+  const dynamicProducts = products.filter(p =>
     !featuredItems.some(f => f.title === p.title)
   ).slice(0, 8); // Show top 8 new arrivals
 
@@ -74,21 +75,21 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative h-[85vh] w-full overflow-hidden flex items-center justify-center">
         <div className="absolute inset-0 z-0">
-          <img 
-            src="/images/hero-bg-2.webp" 
-            alt="Niagara Escarpment in Autumn" 
+          <img
+            src="/images/hero-bg-2.webp"
+            alt="Niagara Escarpment in Autumn"
             className="h-full w-full object-cover"
           />
           <div className="absolute inset-0 bg-black/40 mix-blend-multiply" />
           <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent" />
         </div>
-        
+
         <div className="container relative z-10 text-center text-white max-w-4xl mx-auto px-4">
           <h1 className="font-sans font-bold text-5xl md:text-7xl lg:text-8xl mb-6 tracking-tight uppercase drop-shadow-lg animate-in slide-in-from-bottom-10 duration-1000">
-            Roasted Fresh in <br/><span className="text-primary">Milton, Ontario</span>
+            Roasted Fresh in <br /><span className="text-primary drop-shadow-lg shadow-black/50">Milton, Ontario</span>
           </h1>
           <p className="font-mono text-lg md:text-xl mb-10 max-w-2xl mx-auto text-gray-200 leading-relaxed animate-in slide-in-from-bottom-10 duration-1000 delay-200">
-            We share the best of what we find on our journeys with you. 
+            We share the best of what we find on our journeys with you.
             From the rugged escarpment to your morning cup.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-in slide-in-from-bottom-10 duration-1000 delay-300">
@@ -97,9 +98,11 @@ export default function Home() {
                 Shop Coffees
               </Button>
             </a>
-            <Button size="lg" variant="outline" className="font-sans uppercase tracking-widest text-base px-8 py-6 bg-transparent hover:bg-white/10 text-white border-2 border-white rounded-none backdrop-blur-sm">
-              Our Story
-            </Button>
+            <Link href="/about">
+              <Button size="lg" variant="outline" className="font-sans uppercase tracking-widest text-base px-8 py-6 bg-transparent hover:bg-white/10 text-white border-2 border-white rounded-none backdrop-blur-sm">
+                Our Story
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
@@ -111,12 +114,12 @@ export default function Home() {
           <h2 className="font-sans font-bold text-4xl md:text-5xl mb-8 text-foreground uppercase">A Quality Cup of Coffee</h2>
           <div className="w-24 h-1 bg-primary mx-auto mb-10"></div>
           <p className="text-lg md:text-xl text-muted-foreground leading-loose font-light max-w-3xl mx-auto">
-            We think that an excellent cup of coffee should be easy to come by. Whether you're a coffee aficionado, 
-            cafe owner, or simply looking to refine your morning brew, Escarpment Coffee Roasters delivers 
+            We think that an excellent cup of coffee should be easy to come by. Whether you're a coffee aficionado,
+            cafe owner, or simply looking to refine your morning brew, Escarpment Coffee Roasters delivers
             everything you need to brew superb coffee anywhere.
           </p>
         </div>
-        
+
         {/* Decorative Elements */}
         <div className="absolute top-0 left-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2"></div>
         <div className="absolute bottom-0 right-0 w-96 h-96 bg-accent/5 rounded-full blur-3xl translate-x-1/3 translate-y-1/3"></div>
@@ -136,11 +139,11 @@ export default function Home() {
               </Button>
             </a>
           </div>
-          
+
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {/* Featured Items First */}
             {featuredItems.map((item) => (
-              <ProductCard 
+              <ProductCard
                 key={item.id}
                 {...item}
               />
@@ -148,25 +151,25 @@ export default function Home() {
 
             {/* Dynamic Items */}
             {!loading && dynamicProducts.map((product) => (
-              <ProductCard 
+              <ProductCard
                 key={product.id}
                 title={product.title}
                 price={`$${product.priceRange.minVariantPrice.amount}`}
                 image={product.featuredImage?.url || ""}
                 description={product.description.replace(/<[^>]*>?/gm, '').substring(0, 100) + "..."}
-                tags={product.tags.slice(0, 3)}
+                tags={product.tags}
                 isNew={false}
                 productUrl={`https://idrinkcoffee.com/products/${product.handle}`}
               />
             ))}
           </div>
-          
+
           {loading && (
             <div className="flex justify-center py-12">
               <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary"></div>
             </div>
           )}
-          
+
           <div className="mt-12 text-center md:hidden">
             <a href="https://idrinkcoffee.com/collections/coffee" target="_blank" rel="noopener noreferrer">
               <Button variant="outline" className="w-full uppercase tracking-wider">View All Coffees</Button>
@@ -187,7 +190,7 @@ export default function Home() {
               </div>
               <h3 className="font-sans font-bold text-xl uppercase">Free Shipping</h3>
               <p className="text-sm text-muted-foreground font-mono px-8">
-                On all orders over $50 across Canada. Fresh to your door.
+                On all orders over $75 across Canada. Fresh to your door.
               </p>
             </div>
             <div className="flex flex-col items-center text-center space-y-4">
@@ -196,7 +199,8 @@ export default function Home() {
               </div>
               <h3 className="font-sans font-bold text-xl uppercase">Quality Guaranteed</h3>
               <p className="text-sm text-muted-foreground font-mono px-8">
-                Ethically sourced, carefully roasted, and quality tested.
+                {/* // no idea what to write here, don't want ethically sourced */}
+                Highest quality specialty coffee
               </p>
             </div>
             <div className="flex flex-col items-center text-center space-y-4">
@@ -205,7 +209,7 @@ export default function Home() {
               </div>
               <h3 className="font-sans font-bold text-xl uppercase">Freshness First</h3>
               <p className="text-sm text-muted-foreground font-mono px-8">
-                Roasted in small batches to ensure peak flavor profile.
+                Roasted in small batches to ensure peak flavour profile.
               </p>
             </div>
           </div>
@@ -213,7 +217,7 @@ export default function Home() {
       </section>
 
       {/* Newsletter Parallax */}
-      <section className="relative py-32 flex items-center justify-center overflow-hidden">
+      {/* <section className="relative py-32 flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
             src="/images/coffee-beans-texture.jpg" 
@@ -239,7 +243,7 @@ export default function Home() {
             </Button>
           </form>
         </div>
-      </section>
+      </section> */}
     </Layout>
   );
 }
