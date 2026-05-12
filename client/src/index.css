@@ -6,6 +6,7 @@
 @theme inline {
   --font-sans: "Oswald", sans-serif;
   --font-mono: "Roboto Mono", monospace;
+  --font-serif: "Fraunces", "Iowan Old Style", "Apple Garamond", "Baskerville", "Times New Roman", serif;
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
@@ -44,47 +45,56 @@
   --color-sidebar-ring: var(--sidebar-ring);
 }
 
-/* Rustic Industrial Minimalism Theme */
+/* Stratigraphy — Rustic Industrial Minimalism */
 :root {
-  /* Deep Charcoal & Slate Grey Base */
-  --background: oklch(0.25 0.02 280); /* Deep Charcoal */
-  --foreground: oklch(0.92 0.01 85); /* Off-white/Stone */
+  /* Stratum 1: deep charcoal (default page bg) */
+  --background: oklch(0.20 0.015 60); /* Deeper, warmer charcoal */
+  --foreground: oklch(0.93 0.015 80); /* Bone */
+
+  /* Stratum 2: parchment (alternating section bg) */
+  --parchment: oklch(0.93 0.02 80);
+  --parchment-foreground: oklch(0.22 0.015 60);
+  --parchment-muted: oklch(0.55 0.02 70);
+  --parchment-rule: oklch(0.78 0.03 70);
+
+  /* Stratum 3: limestone (mid neutral, for spec rails) */
+  --limestone: oklch(0.42 0.02 65);
   
   /* Card & Surface Colors */
-  --card: oklch(0.30 0.02 280); /* Lighter Charcoal */
-  --card-foreground: oklch(0.92 0.01 85);
-  
+  --card: oklch(0.25 0.018 60); /* Lifted charcoal */
+  --card-foreground: oklch(0.93 0.015 80);
+
   /* Popovers */
-  --popover: oklch(0.28 0.02 280);
-  --popover-foreground: oklch(0.92 0.01 85);
-  
-  /* Primary Accent: Burnt Sienna / Roasted Coffee */
-  --primary: oklch(0.55 0.15 45); /* Burnt Sienna */
-  --primary-foreground: oklch(0.98 0.01 85);
-  
-  /* Secondary: Raw Umber / Soil */
-  --secondary: oklch(0.40 0.08 60); /* Raw Umber */
-  --secondary-foreground: oklch(0.95 0.01 85);
-  
-  /* Muted Tones */
-  --muted: oklch(0.35 0.02 280);
-  --muted-foreground: oklch(0.70 0.02 85);
-  
-  /* Accents: Muted Copper */
-  --accent: oklch(0.65 0.12 50); /* Muted Copper */
-  --accent-foreground: oklch(0.98 0.01 85);
-  
+  --popover: oklch(0.24 0.018 60);
+  --popover-foreground: oklch(0.93 0.015 80);
+
+  /* Primary: Burnt Sienna */
+  --primary: oklch(0.62 0.17 42);
+  --primary-foreground: oklch(0.97 0.015 80);
+
+  /* Secondary: Raw Umber */
+  --secondary: oklch(0.38 0.07 55);
+  --secondary-foreground: oklch(0.94 0.015 80);
+
+  /* Muted */
+  --muted: oklch(0.30 0.018 60);
+  --muted-foreground: oklch(0.65 0.02 75);
+
+  /* Accent: Muted Copper */
+  --accent: oklch(0.70 0.13 55);
+  --accent-foreground: oklch(0.18 0.015 60);
+
   /* Destructive */
-  --destructive: oklch(0.45 0.15 25);
-  --destructive-foreground: oklch(0.98 0.01 85);
-  
+  --destructive: oklch(0.50 0.18 28);
+  --destructive-foreground: oklch(0.97 0.015 80);
+
   /* Borders & Inputs */
-  --border: oklch(0.40 0.02 280);
-  --input: oklch(0.35 0.02 280);
-  --ring: oklch(0.65 0.12 50); /* Copper Ring */
-  
-  /* Radius - slightly sharper for industrial feel */
-  --radius: 0.25rem;
+  --border: oklch(0.32 0.02 60);
+  --input: oklch(0.30 0.018 60);
+  --ring: oklch(0.62 0.17 42);
+
+  /* Sharp industrial radius */
+  --radius: 0.125rem;
   
   /* Sidebar */
   --sidebar: oklch(0.22 0.02 280);
@@ -200,4 +210,104 @@
       max-width: 1280px; /* Standard content width */
     }
   }
+
+  /* Stratigraphy components — see components/StrataRule.tsx */
+  .strata-rule {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 100%;
+  }
+  .strata-rule > span {
+    display: block;
+    background: currentColor;
+    width: 100%;
+  }
+  .strata-rule > span:nth-child(1) { height: 6px; opacity: 0.95; }
+  .strata-rule > span:nth-child(2) { height: 2px; opacity: 0.6; }
+  .strata-rule > span:nth-child(3) { height: 1px; opacity: 0.35; }
+
+  /* Parchment band — alternating section background */
+  .band-parchment {
+    background-color: var(--parchment);
+    color: var(--parchment-foreground);
+    --foreground: var(--parchment-foreground);
+    --muted-foreground: var(--parchment-muted);
+    --border: var(--parchment-rule);
+    --card: oklch(0.96 0.02 80);
+    --card-foreground: var(--parchment-foreground);
+  }
+
+  /* Film grain overlay — applied via single pseudo on body */
+  .grain {
+    position: relative;
+  }
+  .grain::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 60;
+    opacity: 0.045;
+    mix-blend-mode: overlay;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160' viewBox='0 0 160 160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.9 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+  }
+
+  /* Vertical side-stamp text */
+  .sidestamp {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    letter-spacing: 0.4em;
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    color: var(--muted-foreground);
+  }
+
+  /* Editorial drop cap */
+  .dropcap::first-letter {
+    font-family: var(--font-serif);
+    font-weight: 600;
+    font-size: 4.5em;
+    line-height: 0.85;
+    float: left;
+    margin: 0.12em 0.12em 0 0;
+    color: var(--primary);
+  }
+
+  /* Tight tracking for headlines */
+  .tracking-stratum { letter-spacing: -0.02em; }
+
+  /* Diagonal hatch — used sparingly */
+  .hatch {
+    background-image: repeating-linear-gradient(
+      45deg,
+      currentColor 0,
+      currentColor 1px,
+      transparent 1px,
+      transparent 6px
+    );
+    opacity: 0.18;
+  }
+
+  /* Reveal animation primitives */
+  @keyframes stratum-rise {
+    from { transform: translateY(18px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+  @keyframes rule-extend {
+    from { transform: scaleX(0); }
+    to { transform: scaleX(1); }
+  }
+  .reveal {
+    animation: stratum-rise 0.9s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+  }
+  .reveal-rule {
+    transform-origin: left center;
+    animation: rule-extend 1.2s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+  }
+}
+
+@layer utilities {
+  .font-serif { font-family: var(--font-serif); }
 }

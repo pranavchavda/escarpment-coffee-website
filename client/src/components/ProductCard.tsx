@@ -1,11 +1,17 @@
-import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
 import { cn } from "@/lib/utils";
 import { parseCoffeeAttributes, shouldDisplayTag } from "@/lib/tags";
-import { Flame, Droplets, MapPin, ShoppingBag } from "lucide-react";
 import { useState } from "react";
 import ProductDetailModal from "./ProductDetailModal";
+
+function ImageFallback({ title }: { title: string }) {
+  const seed = title.replace(/[^A-Za-z]/g, "").slice(0, 2).toUpperCase() || "EC";
+  return (
+    <div className="absolute inset-0 flex flex-col items-center justify-center gap-3 bg-muted/30 text-muted-foreground">
+      <div className="font-sans text-5xl tracking-tight text-foreground/60">{seed}</div>
+      <div className="font-mono text-[0.625rem] uppercase tracking-[0.3em]">No Image</div>
+    </div>
+  );
+}
 
 interface ProductCardProps {
   title: string;
@@ -14,140 +20,131 @@ interface ProductCardProps {
   description?: string;
   tags?: string[];
   isNew?: boolean;
-  onAddToCart?: () => void;
   className?: string;
   productUrl?: string;
+  index?: number;
 }
 
-export default function ProductCard({ 
-  title, 
-  price, 
-  image, 
-  description, 
-  tags = [], 
-  isNew, 
-  onAddToCart,
+export default function ProductCard({
+  title,
+  price,
+  image,
+  description,
+  tags = [],
+  isNew,
   className,
-  productUrl = "https://idrinkcoffee.com/collections/coffee"
+  productUrl = "https://idrinkcoffee.com/collections/coffee",
+  index,
 }: ProductCardProps) {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [imageBroken, setImageBroken] = useState(false);
   const attributes = parseCoffeeAttributes(tags);
-  const displayTags = tags.filter(shouldDisplayTag).slice(0, 3);
+
+  const specRows: { label: string; value?: string }[] = [
+    { label: "Origin", value: attributes.region },
+    { label: "Process", value: attributes.processing },
+    { label: "Elev.", value: attributes.elevation },
+    { label: "Roast", value: attributes.roast },
+  ].filter((r) => Boolean(r.value)) as { label: string; value: string }[];
+
+  const notes = attributes.notes?.slice(0, 3);
+  const productType = shouldDisplayTag(tags[0] ?? "") ? tags[0] : undefined;
 
   return (
     <>
-    <Card 
-      onClick={() => setIsModalOpen(true)}
-      className={cn("group overflow-hidden border-border bg-card transition-all duration-300 hover:shadow-lg hover:border-primary/50 flex flex-col h-full cursor-pointer", className)}
-    >
-      <div className="relative aspect-square overflow-hidden bg-muted">
-        {isNew && (
-          <Badge className="absolute top-3 left-3 z-10 bg-primary text-primary-foreground hover:bg-primary/90 font-sans uppercase tracking-wider text-xs rounded-none px-2 py-1">
-            New Arrival
-          </Badge>
+      <article
+        onClick={() => setIsModalOpen(true)}
+        className={cn(
+          "group relative flex flex-col h-full bg-card text-card-foreground border border-border hover:border-primary/70 transition-colors duration-300 cursor-pointer overflow-hidden",
+          className,
         )}
-        <img
-          src={image}
-          alt={title}
-          loading="lazy"
-          decoding="async"
-          className="h-full w-full object-contain transition-transform duration-500 group-hover:scale-105"
-        />
-        
-        {/* Overlay Attributes on Image Hover */}
-        <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center p-4 text-white space-y-3 z-20 pointer-events-none">
-          {attributes.roast && (
-            <div className="flex items-center gap-2">
-              <Flame className="h-4 w-4 text-primary" />
-              <span className="font-mono text-xs uppercase tracking-wider">{attributes.roast} Roast</span>
-            </div>
-          )}
-          {attributes.processing && (
-            <div className="flex items-center gap-2">
-              <Droplets className="h-4 w-4 text-primary" />
-              <span className="font-mono text-xs uppercase tracking-wider">{attributes.processing} Process</span>
-            </div>
-          )}
-          {attributes.region && (
-            <div className="flex items-center gap-2 text-center">
-              <MapPin className="h-4 w-4 text-primary flex-shrink-0" />
-              <span className="font-mono text-xs uppercase tracking-wider">{attributes.region}</span>
-            </div>
-          )}
+      >
+        {/* Index + status meta strip */}
+        <div className="flex items-center justify-between px-4 pt-3 pb-2 font-mono text-[0.625rem] uppercase tracking-[0.2em] text-muted-foreground">
+          <span className="tabular-nums">
+            {typeof index === "number"
+              ? `№ ${String(index + 1).padStart(2, "0")}`
+              : "№ —"}
+          </span>
+          {isNew ? (
+            <span className="text-primary tracking-[0.25em]">● New</span>
+          ) : productType ? (
+            <span className="opacity-80">{productType}</span>
+          ) : null}
         </div>
 
-        {/* Quick Add Overlay */}
-        <div className="absolute bottom-0 left-0 right-0 translate-y-full transition-transform duration-300 group-hover:translate-y-0 p-4 bg-background/90 backdrop-blur-sm border-t border-border z-30">
-          <Button 
-            className="w-full font-sans uppercase tracking-wider text-xs font-bold" 
-          >
-            View Details
-          </Button>
+        {/* Image */}
+        <div className="relative aspect-[4/5] overflow-hidden bg-muted/40 mx-4 border border-border/60">
+          {image && !imageBroken ? (
+            <img
+              src={image}
+              alt={title}
+              loading="lazy"
+              decoding="async"
+              onError={() => setImageBroken(true)}
+              className="absolute inset-0 h-full w-full object-contain p-4 transition-transform duration-700 ease-out group-hover:scale-[1.03]"
+            />
+          ) : (
+            <ImageFallback title={title} />
+          )}
+          {/* Hover stamp */}
+          <div className="absolute bottom-2 right-2 font-mono text-[0.6rem] uppercase tracking-[0.25em] text-foreground bg-background/85 backdrop-blur-sm px-2 py-1 opacity-0 translate-y-1 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
+            View Specs →
+          </div>
         </div>
-      </div>
-      
-      <CardHeader className="p-4 pb-2">
-        <div className="flex justify-between items-start gap-2">
-          <h3 className="font-sans font-bold text-lg leading-tight group-hover:text-primary transition-colors line-clamp-2">
+
+        {/* Title row */}
+        <div className="px-4 pt-5 pb-2">
+          <h3 className="font-sans uppercase text-[1.05rem] leading-[1.05] tracking-[0.01em] text-foreground group-hover:text-primary transition-colors line-clamp-2 min-h-[2.5rem]">
             {title}
           </h3>
         </div>
-      </CardHeader>
-      
-      <CardContent className="p-4 pt-0 flex-1 flex flex-col">
-        {/* Tasting Notes Highlight */}
-        {attributes.notes && attributes.notes.length > 0 && (
-          <div className="mb-2 bg-secondary text-secondary-foreground rounded-md px-2 py-1 shadow-2xl text-xs font-mono uppercase tracking-tight font-bold">
-            {attributes.notes.slice(0, 3).join(" • ")}
-          </div>
+
+        {/* Tasting notes (editorial italic) */}
+        {notes && notes.length > 0 && (
+          <p className="px-4 pb-3 font-serif italic text-[0.95rem] leading-snug text-muted-foreground line-clamp-2">
+            {notes.join(", ")}.
+          </p>
         )}
 
-        {description && (
-          <p className="text-sm text-muted-foreground line-clamp-2 mb-3 font-mono leading-relaxed">
+        {/* Spec rail */}
+        {specRows.length > 0 && (
+          <dl className="mx-4 mb-3 border-t border-border/70 pt-3 grid grid-cols-2 gap-x-3 gap-y-1.5 font-mono text-[0.7rem] uppercase tracking-wider">
+            {specRows.map((row) => (
+              <div key={row.label} className="flex items-baseline justify-between gap-2">
+                <dt className="text-muted-foreground/80 tracking-[0.18em]">
+                  {row.label}
+                </dt>
+                <dd className="text-foreground truncate">{row.value}</dd>
+              </div>
+            ))}
+          </dl>
+        )}
+
+        {/* Description (compact) */}
+        {description && !notes?.length && (
+          <p className="px-4 pb-3 text-xs text-muted-foreground line-clamp-2 font-mono leading-relaxed">
             {description}
           </p>
         )}
-        
-        {/* <div className="flex flex-wrap gap-1 mt-auto">
-          {displayTags.length > 0 ? (
-            displayTags.map((tag) => (
-              <span 
-                key={tag} 
-                className="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-secondary text-secondary-foreground font-mono uppercase tracking-tight"
-              >
-                {tag}
-              </span>
-            ))
-          ) : (
-            <>
-              {attributes.roast && (
-                <span className="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium border border-border text-muted-foreground font-mono uppercase tracking-tight">
-                  {attributes.roast}
-                </span>
-              )}
-              {attributes.region && (
-                <span className="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium border border-border text-muted-foreground font-mono uppercase tracking-tight">
-                  {attributes.region}
-                </span>
-              )}
-            </>
-          )}
-        </div> */}
-      </CardContent>
-    </Card>
 
-    <ProductDetailModal 
-      isOpen={isModalOpen}
-      onClose={() => setIsModalOpen(false)}
-      product={{
-        title,
-        price,
-        image,
-        description,
-        tags,
-        productUrl
-      }}
-    />
+        {/* Spacer pushes price strip to bottom */}
+        <div className="flex-1" />
+
+        {/* Bottom price + cta strip */}
+        <div className="border-t border-border/70 px-4 py-3 flex items-baseline justify-between gap-3 mt-auto">
+          <span className="font-sans text-xl tracking-tight text-foreground">{price}</span>
+          <span className="font-mono text-[0.625rem] uppercase tracking-[0.25em] text-muted-foreground group-hover:text-primary transition-colors">
+            Details →
+          </span>
+        </div>
+      </article>
+
+      <ProductDetailModal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+        product={{ title, price, image, description, tags, productUrl }}
+      />
     </>
   );
 }

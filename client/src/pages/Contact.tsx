@@ -1,81 +1,164 @@
 import Layout from "@/components/Layout";
-import { MapPin, Mail, Phone } from "lucide-react";
+import StrataRule from "@/components/StrataRule";
+import CoordinateStamp from "@/components/CoordinateStamp";
 
 export default function Contact() {
   return (
     <Layout>
-      <div className="bg-background min-h-screen">
-        {/* Hero Section */}
-        <div className="relative h-[40vh] bg-muted overflow-hidden">
-          <div className="absolute inset-0 bg-black/40 z-10" />
-          <img
-            src="/images/hero-escarpment.webp"
-            alt="Contact Us"
-            className="w-full h-full object-cover"
-          />
-          <div className="absolute inset-0 z-20 flex items-center justify-center">
-            <h1 className="font-sans font-bold text-4xl md:text-6xl text-white uppercase tracking-widest text-center">
-              Get in Touch
+      {/* Hero */}
+      <section className="relative overflow-hidden">
+        <div className="container grid grid-cols-1 lg:grid-cols-12 gap-y-10 lg:gap-x-10 pt-14 lg:pt-24 pb-12 lg:pb-16">
+          <div className="lg:col-span-8">
+            <div className="font-mono text-[0.7rem] uppercase tracking-[0.3em] text-primary reveal">
+              Correspondence · Contact Card
+            </div>
+            <h1
+              className="mt-4 font-sans uppercase text-foreground tracking-stratum leading-[0.9] reveal"
+              style={{ fontSize: "clamp(2.5rem, 6vw, 5rem)", animationDelay: "60ms" }}
+            >
+              Write to the
+              <br />
+              <span className="font-serif italic font-normal normal-case text-primary lowercase tracking-normal">
+                roastery.
+              </span>
             </h1>
+            <p
+              className="mt-6 font-serif text-xl md:text-2xl text-muted-foreground max-w-2xl leading-snug reveal"
+              style={{ animationDelay: "160ms" }}
+            >
+              Questions about a roast, brewing notes, or wholesale enquiries — the inbox is
+              open. We answer in the order they arrive, usually within a working day.
+            </p>
           </div>
+
+          <aside className="lg:col-span-4 lg:border-l lg:border-border lg:pl-8 flex flex-col justify-end">
+            <CoordinateStamp meta="MILTON · ONTARIO" />
+          </aside>
         </div>
 
-        <div className="container py-16 md:py-24">
-          <div className="max-w-2xl mx-auto">
-            {/* Contact Info */}
-            <div className="space-y-8">
-              <div className="text-center">
-                <h2 className="font-sans font-bold text-2xl mb-4 uppercase tracking-wide text-primary">
-                  We'd Love to Hear From You
-                </h2>
-                <p className="text-muted-foreground leading-relaxed font-mono">
-                  Whether you have a question about our roasts, need brewing advice, or just want to say hello, we're here to help.
-                </p>
-              </div>
+        <StrataRule className="text-border" />
+      </section>
 
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-8 pt-8">
-                <div className="flex flex-col items-center text-center gap-4">
-                  <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
-                    <MapPin className="h-6 w-6 text-primary" />
-                  </div>
-                  <div>
-                    <h3 className="font-sans font-bold text-lg uppercase tracking-wide mb-2">Visit Us</h3>
-                    <p className="text-muted-foreground font-mono text-sm">
-                      1-312 Alliance Road<br />
-                      Milton, ON L9T 2V2<br />
-                      Canada
-                    </p>
-                  </div>
-                </div>
+      {/* Contact card */}
+      <section className="py-16 md:py-24">
+        <div className="container">
+          <div className="max-w-5xl mx-auto border border-border bg-card">
+            {/* Header strip */}
+            <div className="flex items-center justify-between px-6 md:px-10 py-4 border-b border-border font-mono text-[0.625rem] uppercase tracking-[0.3em]">
+              <span className="text-muted-foreground">№ 01 / Contact Card</span>
+              <span className="text-primary">Form 04-A</span>
+            </div>
 
-                <div className="flex flex-col items-center text-center gap-4">
-                  <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
-                    <Mail className="h-6 w-6 text-primary" />
-                  </div>
-                  <div>
-                    <h3 className="font-sans font-bold text-lg uppercase tracking-wide mb-2">Email Us</h3>
-                    <a href="mailto:sales@idrinkcoffee.com" className="text-muted-foreground font-mono text-sm hover:text-primary transition-colors">
-                      sales@idrinkcoffee.com
-                    </a>
-                  </div>
-                </div>
+            {/* Three channels */}
+            <div className="grid grid-cols-1 md:grid-cols-3">
+              <Channel
+                label="Visit"
+                heading="The Roastery"
+                lines={["1-312 Alliance Road", "Milton, ON · L9T 2V2", "Canada"]}
+              />
+              <Channel
+                label="Write"
+                heading="By Email"
+                lines={[
+                  <a
+                    key="email"
+                    href="mailto:sales@idrinkcoffee.com"
+                    className="hover:text-primary transition-colors underline-offset-4 hover:underline"
+                  >
+                    sales@idrinkcoffee.com
+                  </a>,
+                  "We respond within a working day.",
+                ]}
+                middle
+              />
+              <Channel
+                label="Call"
+                heading="By Phone"
+                lines={[
+                  <a
+                    key="phone"
+                    href="tel:1-800-425-5405"
+                    className="hover:text-primary transition-colors underline-offset-4 hover:underline tabular-nums"
+                  >
+                    1-800-425-5405
+                  </a>,
+                  "Mon–Fri · 9:00–17:00 ET",
+                ]}
+              />
+            </div>
 
-                <div className="flex flex-col items-center text-center gap-4">
-                  <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
-                    <Phone className="h-6 w-6 text-primary" />
-                  </div>
-                  <div>
-                    <h3 className="font-sans font-bold text-lg uppercase tracking-wide mb-2">Call Us</h3>
-                    <a href="tel:1-800-425-5405" className="text-muted-foreground font-mono text-sm hover:text-primary transition-colors">
-                      1-800-425-5405
-                    </a>
-                  </div>
-                </div>
+            {/* Footer strip */}
+            <div className="px-6 md:px-10 py-5 border-t border-border bg-background/40">
+              <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-3 font-mono text-[0.625rem] uppercase tracking-[0.3em] text-muted-foreground">
+                <CoordinateStamp meta="CONTACT CARD ISSUED MAY 2026" />
+                <span>Wholesale enquiries: wholesale@idrinkcoffee.com</span>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
+
+      {/* Wholesale callout */}
+      <section className="band-parchment py-16 md:py-20">
+        <div className="container grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          <div className="lg:col-span-8 space-y-3">
+            <div className="font-mono text-[0.7rem] uppercase tracking-[0.3em] text-primary">
+              ¶ Wholesale
+            </div>
+            <h2 className="font-sans uppercase text-3xl md:text-4xl tracking-stratum leading-tight">
+              Cafés, restaurants, offices.
+            </h2>
+            <p className="font-serif text-lg md:text-xl leading-relaxed max-w-2xl">
+              We supply small-batch coffee at wholesale through iDrinkCoffee. Same beans,
+              same roast schedule, business-friendly logistics.
+            </p>
+          </div>
+          <div className="lg:col-span-4 lg:flex lg:justify-end">
+            <a
+              href="https://wholesale.idrinkcoffee.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group inline-flex items-center gap-3 bg-primary text-primary-foreground px-6 py-4 font-sans uppercase tracking-[0.18em] text-sm hover:bg-primary/90 transition-colors"
+            >
+              Open Wholesale
+              <span className="transition-transform group-hover:translate-x-1">↗</span>
+            </a>
+          </div>
+        </div>
+      </section>
     </Layout>
+  );
+}
+
+function Channel({
+  label,
+  heading,
+  lines,
+  middle = false,
+}: {
+  label: string;
+  heading: string;
+  lines: React.ReactNode[];
+  middle?: boolean;
+}) {
+  return (
+    <div
+      className={
+        "p-6 md:p-10 space-y-3 " +
+        (middle ? "md:border-x border-border" : "border-t md:border-t-0 border-border")
+      }
+    >
+      <div className="font-mono text-[0.625rem] uppercase tracking-[0.3em] text-primary">
+        {label}
+      </div>
+      <h3 className="font-sans uppercase text-2xl tracking-stratum leading-tight">
+        {heading}
+      </h3>
+      <ul className="space-y-1 font-mono text-sm text-muted-foreground leading-relaxed">
+        {lines.map((line, i) => (
+          <li key={i}>{line}</li>
+        ))}
+      </ul>
+    </div>
   );
 }

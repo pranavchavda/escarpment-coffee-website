@@ -1,11 +1,13 @@
-import puppeteer from 'puppeteer';
-import { preview } from 'vite';
-import fs from 'fs';
-import path from 'path';
-import { fileURLToPath } from 'url';
+import fs from 'node:fs';
+import path from 'node:path';
+import { fileURLToPath, pathToFileURL } from 'node:url';
+import { build } from 'vite';
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+const ROOT = path.resolve(__dirname, '..');
+const CLIENT_ROOT = path.join(ROOT, 'client');
+const DIST_PUBLIC = path.join(ROOT, 'dist', 'public');
+const DIST_SERVER = path.join(ROOT, 'dist', 'server');
 
 const ROUTES = [
   '/',
@@ -15,67 +17,61 @@ const ROUTES = [
   '/contact',
   '/privacy',
   '/terms',
+  '/404',
 ];
 
 async function prerender() {
-  console.log('Starting prerender...');
-
-  // Start Vite preview server (serves the built dist)
-  const server = await preview({
-    root: path.resolve(__dirname, '../client'),
-    preview: { port: 4173, strictPort: true },
-    build: { outDir: path.resolve(__dirname, '../dist/public') },
+  console.log('Building SSR bundle...');
+  await build({
+    configFile: path.join(ROOT, 'vite.config.ts'),
+    root: CLIENT_ROOT,
+    logLevel: 'warn',
+    build: {
+      ssr: path.join(CLIENT_ROOT, 'src/entry-server.tsx'),
+      outDir: DIST_SERVER,
+      emptyOutDir: true,
+      rollupOptions: {
+        input: path.join(CLIENT_ROOT, 'src/entry-server.tsx'),
+        output: { format: 'esm', entryFileNames: 'entry-server.mjs' },
+      },
+      ssrEmitAssets: false,
+      copyPublicDir: false,
+    },
   });
 
-  const port = 4173;
-  console.log(`Vite preview server running on port ${port}`);
+  const templatePath = path.join(DIST_PUBLIC, 'index.html');
+  if (!fs.existsSync(templatePath)) {
+    throw new Error(`Client build missing: ${templatePath}. Run 'vite build' first.`);
+  }
+  const template = fs.readFileSync(templatePath, 'utf-8');
 
-  // Launch browser
-  const browser = await puppeteer.launch({
-    headless: true,
-    args: ['--no-sandbox', '--disable-setuid-sandbox'],
-  });
+  const serverEntry = path.join(DIST_SERVER, 'entry-server.mjs');
+  const { render } = await import(pathToFileURL(serverEntry).href);
 
-  const distDir = path.resolve(__dirname, '../dist/public');
-
+  let success = 0;
   for (const route of ROUTES) {
-    console.log(`Prerendering ${route}...`);
+    try {
+      const appHtml = render(route);
+      const html = template.includes('<!--ssr-outlet-->')
+        ? template.replace('<!--ssr-outlet-->', appHtml)
+        : template.replace('<div id="root">', `<div id="root">${appHtml}`);
 
-    const page = await browser.newPage();
-    await page.goto(`http://localhost:${port}${route}`, {
-      waitUntil: 'networkidle0',
-      timeout: 30000,
-    });
+      const outPath =
+        route === '/'
+          ? path.join(DIST_PUBLIC, 'index.html')
+          : path.join(DIST_PUBLIC, route, 'index.html');
 
-    // Wait a bit for any dynamic content
-    await page.waitForSelector('#root', { timeout: 5000 });
-    await new Promise(resolve => setTimeout(resolve, 1000));
-
-    // Get the full HTML
-    const html = await page.content();
-
-    // Determine output path
-    const outputPath = route === '/'
-      ? path.join(distDir, 'index.html')
-      : path.join(distDir, route, 'index.html');
-
-    // Ensure directory exists
-    const outputDir = path.dirname(outputPath);
-    if (!fs.existsSync(outputDir)) {
-      fs.mkdirSync(outputDir, { recursive: true });
+      fs.mkdirSync(path.dirname(outPath), { recursive: true });
+      fs.writeFileSync(outPath, html);
+      console.log(`  ✓ ${route} → ${path.relative(ROOT, outPath)}`);
+      success++;
+    } catch (err) {
+      console.error(`  ✗ ${route} failed:`, err.message);
+      throw err;
     }
-
-    // Write HTML file
-    fs.writeFileSync(outputPath, html);
-    console.log(`  Written to ${outputPath}`);
-
-    await page.close();
   }
 
-  await browser.close();
-  await server.close();
-
-  console.log('Prerendering complete!');
+  console.log(`Prerendered ${success}/${ROUTES.length} routes.`);
 }
 
 prerender().catch((err) => {

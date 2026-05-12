@@ -6,93 +6,8 @@
     "description": "",
     "descriptionHtml": "",
     "image": null,
-    "productCount": 42,
+    "productCount": 40,
     "products": [
-      {
-        "id": "gid://shopify/Product/7694059077666",
-        "title": "Bolivia La Paz",
-        "handle": "bolivia-la-paz",
-        "description": "La Cooperativa Corpus Cristhy Illampu R.L, located in the Caranavi province of La Paz, Bolivia, produces Fair Trade and Organic certified coffees. The cooperative, founded in 2001, consists of around 40 farms covering 120 hectares. The coffee is grown at elevations of 1250-1700 MASL and undergoes a washed process similar to Colombian specialty producers. The result is a clean cup with fresh apple, mild caramel, and fresh green grape flavours, offering a smooth mouthfeel and fruit-like sweetness. The cooperative focuses on ecological and organic cultivation, ensuring high-quality production.",
-        "vendor": "Escarpment Coffee Roasters",
-        "productType": "Fresh Coffee",
-        "tags": [
-          "bfcm2024-15",
-          "bfcm2025-15",
-          "bw2024-10",
-          "cd202415",
-          "coffeeday2025",
-          "consumer",
-          "easter2025",
-          "ELEVATION-1250-1700 MASL",
-          "eos225",
-          "escarpment-coffee-roasters",
-          "espresso-bean",
-          "freecoffeeday2025",
-          "HARVESTING-December-February",
-          "NC_",
-          "NC_CoffeeandTea",
-          "NC_EspressoCoffee",
-          "NC_FreshCoffee",
-          "ncd2024",
-          "NOTES-Fresh apple#mild caramel#fresh green grape#clean fruit-like sweetness#smooth mouthfeel",
-          "origin-Bolivia",
-          "prime2024",
-          "PROCESSING-Washed",
-          "REGION-La Paz",
-          "ROAST-Medium",
-          "tg24wptt",
-          "VARIETAL-Catuai#Typica",
-          "WAR-CON"
-        ],
-        "availableForSale": true,
-        "featuredImage": {
-          "id": "gid://shopify/ProductImage/33441848688674",
-          "url": "https://cdn.shopify.com/s/files/1/1201/3604/files/118EscarpmentCoffeeJune2024_4NewSeasonalCoffeeLabels-BoliviaLaPaz.png?v=1718802546",
-          "altText": null,
-          "width": 3000,
-          "height": 3000
-        },
-        "priceRange": {
-          "minVariantPrice": {
-            "amount": "18.0",
-            "currencyCode": "CAD"
-          },
-          "maxVariantPrice": {
-            "amount": "18.0",
-            "currencyCode": "CAD"
-          }
-        },
-        "compareAtPriceRange": {
-          "minVariantPrice": {
-            "amount": "0.0",
-            "currencyCode": "CAD"
-          },
-          "maxVariantPrice": {
-            "amount": "0.0",
-            "currencyCode": "CAD"
-          }
-        },
-        "variants": {
-          "totalCount": 1,
-          "nodes": [
-            {
-              "id": "gid://shopify/ProductVariant/42718368923682",
-              "title": "Default Title",
-              "sku": "CF-BOL-LP",
-              "availableForSale": true,
-              "price": {
-                "amount": "18.0",
-                "currencyCode": "CAD"
-              },
-              "compareAtPrice": null
-            }
-          ]
-        },
-        "metafields": {
-          "reviewsAverage": "4.8",
-          "reviewsCount": "17"
-        }
-      },
       {
         "id": "gid://shopify/Product/5430912641",
         "title": "Brazilian Santos",
@@ -118,6 +33,7 @@
           "bw2024-10",
           "canadaday2023",
           "cd202415",
+          "cinco2026",
           "coffeeday2023",
           "coffeeday2025",
           "coffeedelete",
@@ -196,7 +112,7 @@
         },
         "metafields": {
           "reviewsAverage": "4.7",
-          "reviewsCount": "285"
+          "reviewsCount": "314"
         }
       },
       {
@@ -217,6 +133,7 @@
           "bw2024-10",
           "canadaday2023",
           "cd202415",
+          "cinco2026",
           "coffeeday2023",
           "coffeeday2025",
           "consumer",
@@ -241,7 +158,7 @@
           "under-100",
           "WAR-CON"
         ],
-        "availableForSale": true,
+        "availableForSale": false,
         "featuredImage": {
           "id": "gid://shopify/ProductImage/32017252122658",
           "url": "https://cdn.shopify.com/s/files/1/1201/3604/files/Burundi021.jpg?v=1709579996",
@@ -276,7 +193,7 @@
               "id": "gid://shopify/ProductVariant/40643948347426",
               "title": "Default Title",
               "sku": "CF-BUR",
-              "availableForSale": true,
+              "availableForSale": false,
               "price": {
                 "amount": "20.0",
                 "currencyCode": "CAD"
@@ -287,50 +204,48 @@
         },
         "metafields": {
           "reviewsAverage": "4.7",
-          "reviewsCount": "36"
+          "reviewsCount": "37"
         }
       },
       {
-        "id": "gid://shopify/Product/8052144570402",
-        "title": "Coffea Diversa Maragogype",
-        "handle": "coffea-diversa-maragogype",
-        "description": "Founded in 2003 by Mr. Gonzalo Hernandez, Coffea Diversa represents a revolutionary approach to coffee cultivation - a botanical coffee garden maintaining consistent terroir across multiple coffee variants. Unlike traditional mono-varietal plantations, Coffea Diversa cultivates the world's largest private coffee collection with over 800 coffee species, botanical varieties, mutants, and cultivars in one garden. This particular Maragogype varietal from Jutiapa, Suchitan, grown at 1500 meters above sea level, undergoes a unique fully washed hybrid cherry fermentation process with 72 hours of aerobic fermentation. The result is a coffee with sweet and chocolaty aromas, velvety body, and delicate but assertive acidity. Beautifully balanced with hints of apricot and peach, this rare offering showcases the exceptional possibilities when biodiversity meets expert cultivation.",
+        "id": "gid://shopify/Product/7124007747618",
+        "title": "Coffeea Diversa Liberica - 150g",
+        "handle": "coffeea-diversa-liberica-150g",
+        "description": "",
         "vendor": "Escarpment Coffee Roasters",
         "productType": "Fresh Coffee",
         "tags": [
-          "bfcm2025-15",
-          "coffee",
-          "coffeeday2025",
-          "ELEVATION-1500m",
-          "escarpment coffee roasters",
-          "freecoffeeday2025",
-          "fresh-coffee",
+          "5xpoints",
+          "bfcm2024-15",
+          "canadaday2023",
+          "cd202415",
+          "cinco2026",
+          "eos225",
+          "escarpment-coffee-roasters",
+          "is-us-eg",
+          "NC_CofffeeandTea",
           "NC_FreshCoffee",
-          "newcoffeeaug25",
-          "NOTES-Chocolate#Apricot#Peach",
-          "origin-guatemala",
-          "PROCESSING-Washed Hybrid Cherry Fermentation",
-          "REGION-Jutiapa Suchitan",
-          "ROAST-Light",
+          "ncd2024",
           "seasonal",
-          "twonewcoffees",
-          "VARIETAL-Maragogype"
+          "tg24wptt",
+          "under-100",
+          "WAR-CON"
         ],
-        "availableForSale": true,
+        "availableForSale": false,
         "featuredImage": {
-          "id": "gid://shopify/ProductImage/36264638218274",
-          "url": "https://cdn.shopify.com/s/files/1/1201/3604/files/133New_20Coffee_20Aug_2022_Coffea_20Diversa_20Maragogype_RESHOT-1755903088613.webp?v=1755903897",
-          "altText": "133New Coffee Aug 22_Coffea Diversa Maragogype_RESHOT.webp",
-          "width": 4000,
-          "height": 3999
+          "id": "gid://shopify/ProductImage/38993709137954",
+          "url": "https://cdn.shopify.com/s/files/1/1201/3604/files/clipboard-image_2_ee290dc2-8079-4140-8674-0995511e9717.png?v=1771424438",
+          "altText": null,
+          "width": 2048,
+          "height": 2048
         },
         "priceRange": {
           "minVariantPrice": {
-            "amount": "30.0",
+            "amount": "0.0",
             "currencyCode": "CAD"
           },
           "maxVariantPrice": {
-            "amount": "30.0",
+            "amount": "0.0",
             "currencyCode": "CAD"
           }
         },
@@ -348,12 +263,12 @@
           "totalCount": 1,
           "nodes": [
             {
-              "id": "gid://shopify/ProductVariant/44123479244834",
+              "id": "gid://shopify/ProductVariant/40842647994402",
               "title": "Default Title",
-              "sku": "CF-CD-MAR",
-              "availableForSale": true,
+              "sku": "CF-CD-LI",
+              "availableForSale": false,
               "price": {
-                "amount": "30.0",
+                "amount": "0.0",
                 "currencyCode": "CAD"
               },
               "compareAtPrice": null
@@ -361,8 +276,8 @@
           ]
         },
         "metafields": {
-          "reviewsAverage": "4.0",
-          "reviewsCount": "2"
+          "reviewsAverage": "4.4",
+          "reviewsCount": "18"
         }
       },
       {
@@ -388,6 +303,7 @@
           "bw2024-10",
           "canadaday2023",
           "cd202415",
+          "cinco2026",
           "coffeeday2023",
           "coffeeday2025",
           "consumer",
@@ -464,7 +380,7 @@
         },
         "metafields": {
           "reviewsAverage": "4.6",
-          "reviewsCount": "68"
+          "reviewsCount": "74"
         }
       },
       {
@@ -491,6 +407,7 @@
           "bw2024-10",
           "canadaday2023",
           "cd202415",
+          "cinco2026",
           "coffeeday2023",
           "coffeeday2025",
           "consumer",
@@ -568,14 +485,14 @@
         },
         "metafields": {
           "reviewsAverage": "4.7",
-          "reviewsCount": "157"
+          "reviewsCount": "171"
         }
       },
       {
         "id": "gid://shopify/Product/7921901961250",
         "title": "Colombian Mujeres en Cafe",
         "handle": "colombian-mujeres-en-cafe",
-        "description": "High in the mountains of Caldas, Colombia (1500–1900 masl), a remarkable coffee is cultivated by Mujeres en Café, a collective of 770 women farmers dedicated to crafting exceptional coffee while empowering female producers. This fully washed coffee delivers a smooth, balanced cup with rich notes of roasted nuts, creamy chocolate, and a sweet hint of vanilla. A touch of subtle citrus brightness adds vibrancy, leading to a clean, lingering finish. With its versatile profile, this medium roast is just as delightful brewed as a bold espresso as it is as a gentle pour-over. More than just a coffee, this is a movement. 100% of proceeds from this special edition will go to CARE CANADA, a global leader in fighting poverty with a focus on empowering women and girls. With approximately 300 bags available, we aim to raise $7,500 to support this important cause. Enjoy a remarkable coffee that not only tastes incredible but also makes a real difference.",
+        "description": "High in the mountains of Caldas, Colombia (1500 - 1900 masl), a remarkable coffee is cultivated by Mujeres en Café, a collective of 770 women farmers dedicated to crafting exceptional coffee while empowering female producers. This fully washed coffee delivers a smooth, balanced cup with rich notes of roasted nuts, creamy chocolate, and a sweet hint of vanilla. A touch of subtle citrus brightness adds vibrancy, leading to a clean, lingering finish. With its versatile profile, this medium roast is just as delightful brewed as a bold espresso as it is as a gentle pour-over. More than just a coffee, this is a movement. 100% of proceeds from this special edition will go to CARE CANADA, a global leader in fighting poverty with a focus on empowering women and girls. With approximately 300 bags available, we aim to raise $7,500 to support this important cause. Enjoy a remarkable coffee that not only tastes incredible but also makes a real difference.",
         "vendor": "Escarpment Coffee Roasters",
         "productType": "Fresh Coffee",
         "tags": [
@@ -584,6 +501,7 @@
           "BLEND-Single Origin",
           "BREW-All Methods",
           "CARE-CANADA",
+          "cinco2026",
           "coffee",
           "coffeeday2025",
           "easter2025",
@@ -643,8 +561,8 @@
           ]
         },
         "metafields": {
-          "reviewsAverage": "4.6",
-          "reviewsCount": "10"
+          "reviewsAverage": "4.5",
+          "reviewsCount": "11"
         }
       },
       {
@@ -669,6 +587,7 @@
           "bw2024-10",
           "canadaday2023",
           "cd202415",
+          "cinco2026",
           "coffeeday2023",
           "coffeeday2025",
           "consumer",
@@ -746,7 +665,7 @@
         },
         "metafields": {
           "reviewsAverage": "4.6",
-          "reviewsCount": "63"
+          "reviewsCount": "66"
         }
       },
       {
@@ -773,6 +692,7 @@
           "bw2024-10",
           "canadaday2023",
           "cd202415",
+          "cinco2026",
           "coffeeday2023",
           "coffeeday2025",
           "consumer",
@@ -794,7 +714,7 @@
           "origin-costa-rica",
           "oversell_active",
           "prime2024",
-          "PROCESSING-Honey",
+          "PROCESSING-Natural",
           "REGION-Costa Rica",
           "ROAST-Medium",
           "tg24wptt",
@@ -804,13 +724,13 @@
           "WAR-CON",
           "YGroup_tar"
         ],
-        "availableForSale": false,
+        "availableForSale": true,
         "featuredImage": {
-          "id": "gid://shopify/ProductImage/32017261789218",
-          "url": "https://cdn.shopify.com/s/files/1/1201/3604/files/CostaRicanTarrazu045.jpg?v=1709580118",
-          "altText": null,
-          "width": 2058,
-          "height": 3010
+          "id": "gid://shopify/ProductImage/38585489326114",
+          "url": "https://cdn.shopify.com/s/files/1/1201/3604/files/generated_1768323402791_e051fb64.jpg?v=1768323527",
+          "altText": "Costa Rican Tarrazu Coffee",
+          "width": 1696,
+          "height": 2496
         },
         "priceRange": {
           "minVariantPrice": {
@@ -839,7 +759,7 @@
               "id": "gid://shopify/ProductVariant/31480447795234",
               "title": "Default Title",
               "sku": "CF-CR-TAR",
-              "availableForSale": false,
+              "availableForSale": true,
               "price": {
                 "amount": "20.0",
                 "currencyCode": "CAD"
@@ -850,7 +770,7 @@
         },
         "metafields": {
           "reviewsAverage": "4.6",
-          "reviewsCount": "200"
+          "reviewsCount": "213"
         }
       },
       {
@@ -869,6 +789,7 @@
           "bw2024-10",
           "canadaday2023",
           "cd202415",
+          "cinco2026",
           "coffeeday2023",
           "coffeeday2025",
           "consumer",
@@ -962,6 +883,7 @@
           "bw2024-10",
           "canadaday2023",
           "cd202415",
+          "cinco2026",
           "coffeeday2023",
           "coffeeday2025",
           "consumer",
@@ -995,7 +917,7 @@
           "WAR-CON",
           "YGroup_tatbc"
         ],
-        "availableForSale": false,
+        "availableForSale": true,
         "featuredImage": {
           "id": "gid://shopify/ProductImage/32017278107682",
           "url": "https://cdn.shopify.com/s/files/1/1201/3604/files/DaterraFarmsBourbonCollection007.jpg?v=1762457610",
@@ -1005,11 +927,11 @@
         },
         "priceRange": {
           "minVariantPrice": {
-            "amount": "22.0",
+            "amount": "24.0",
             "currencyCode": "CAD"
           },
           "maxVariantPrice": {
-            "amount": "22.0",
+            "amount": "24.0",
             "currencyCode": "CAD"
           }
         },
@@ -1030,9 +952,9 @@
               "id": "gid://shopify/ProductVariant/26849882049",
               "title": "Default Title",
               "sku": "CF-DAT-BC",
-              "availableForSale": false,
+              "availableForSale": true,
               "price": {
-                "amount": "22.0",
+                "amount": "24.0",
                 "currencyCode": "CAD"
               },
               "compareAtPrice": null
@@ -1041,7 +963,7 @@
         },
         "metafields": {
           "reviewsAverage": "4.7",
-          "reviewsCount": "388"
+          "reviewsCount": "396"
         }
       },
       {
@@ -1067,6 +989,7 @@
           "bw2024-10",
           "canadaday2023",
           "cd202415",
+          "cinco2026",
           "coffeeday2023",
           "coffeeday2025",
           "COFFEENOSTOCK",
@@ -1111,11 +1034,11 @@
         },
         "priceRange": {
           "minVariantPrice": {
-            "amount": "22.0",
+            "amount": "24.0",
             "currencyCode": "CAD"
           },
           "maxVariantPrice": {
-            "amount": "22.0",
+            "amount": "24.0",
             "currencyCode": "CAD"
           }
         },
@@ -1138,7 +1061,7 @@
               "sku": "CF-DAT-YELLOW",
               "availableForSale": true,
               "price": {
-                "amount": "22.0",
+                "amount": "24.0",
                 "currencyCode": "CAD"
               },
               "compareAtPrice": null
@@ -1147,7 +1070,7 @@
         },
         "metafields": {
           "reviewsAverage": "4.8",
-          "reviewsCount": "777"
+          "reviewsCount": "798"
         }
       },
       {
@@ -1173,6 +1096,7 @@
           "bw2024-10",
           "canadaday2023",
           "cd202415",
+          "cinco2026",
           "coffeeday2023",
           "coffeeday2025",
           "consumer",
@@ -1215,11 +1139,11 @@
         },
         "priceRange": {
           "minVariantPrice": {
-            "amount": "19.0",
+            "amount": "21.0",
             "currencyCode": "CAD"
           },
           "maxVariantPrice": {
-            "amount": "19.0",
+            "amount": "21.0",
             "currencyCode": "CAD"
           }
         },
@@ -1242,7 +1166,7 @@
               "sku": "CF-DAT-FB",
               "availableForSale": false,
               "price": {
-                "amount": "19.0",
+                "amount": "21.0",
                 "currencyCode": "CAD"
               },
               "compareAtPrice": null
@@ -1252,207 +1176,6 @@
         "metafields": {
           "reviewsAverage": "4.7",
           "reviewsCount": "242"
-        }
-      },
-      {
-        "id": "gid://shopify/Product/6539159601186",
-        "title": "Daterra Farms Low Caf Reserve",
-        "handle": "daterra-farms-low-caf-reserve",
-        "description": "This coffee is part of the Daterra Masterpieces collection and features two varietals that are naturally lower in caffeine - Laurina and Aramosa. It has less than half the caffeine of normal Arabica and brews a delightful cup suitable for the late afternoon or evening.",
-        "vendor": "Escarpment Coffee Roasters",
-        "productType": "Fresh Coffee",
-        "tags": [
-          "13tiersale",
-          "5xcincopromo",
-          "5xpoints",
-          "75box",
-          "bfcm2024-15",
-          "bfcm2025-15",
-          "bts2021",
-          "bw2024-10",
-          "canadaday2023",
-          "cd202415",
-          "coffeeday2023",
-          "coffeeday2025",
-          "consumer",
-          "easter2025",
-          "eos225",
-          "escarpment-coffee-roasters",
-          "fathersday2021",
-          "fathersday2022",
-          "fd2022incl",
-          "freecoffeeday2025",
-          "is-us-eg",
-          "NC_",
-          "NC_CoffeeandTea",
-          "NC_FreshCoffee",
-          "ncd2024",
-          "newcoffee2021",
-          "NOTES-Floral character# red berries# tropical fruits and grapes",
-          "origin-brazil",
-          "oversell_active",
-          "prime2024",
-          "PROCESSING-Blend of Natural# Honey and Anaerobic",
-          "ROAST-Medium",
-          "tg24wptt",
-          "tgwptt2021",
-          "tierincluded",
-          "under-100",
-          "WAR-CON"
-        ],
-        "availableForSale": true,
-        "featuredImage": {
-          "id": "gid://shopify/ProductImage/32017288527906",
-          "url": "https://cdn.shopify.com/s/files/1/1201/3604/files/DaterraFarmsLowCafReserve010.jpg?v=1709580483",
-          "altText": null,
-          "width": 2064,
-          "height": 2989
-        },
-        "priceRange": {
-          "minVariantPrice": {
-            "amount": "25.0",
-            "currencyCode": "CAD"
-          },
-          "maxVariantPrice": {
-            "amount": "25.0",
-            "currencyCode": "CAD"
-          }
-        },
-        "compareAtPriceRange": {
-          "minVariantPrice": {
-            "amount": "0.0",
-            "currencyCode": "CAD"
-          },
-          "maxVariantPrice": {
-            "amount": "0.0",
-            "currencyCode": "CAD"
-          }
-        },
-        "variants": {
-          "totalCount": 1,
-          "nodes": [
-            {
-              "id": "gid://shopify/ProductVariant/39261227614242",
-              "title": "Default Title",
-              "sku": "CF-DF-LCR",
-              "availableForSale": true,
-              "price": {
-                "amount": "25.0",
-                "currencyCode": "CAD"
-              },
-              "compareAtPrice": null
-            }
-          ]
-        },
-        "metafields": {
-          "reviewsAverage": "4.7",
-          "reviewsCount": "39"
-        }
-      },
-      {
-        "id": "gid://shopify/Product/3770882359330",
-        "title": "Daterra Farms Monte Cristo",
-        "handle": "daterra-farms-monte-cristo",
-        "description": "Monte Cristo translates to “Mount of Christ”. This coffee is named after Corcovado in Rio de Janeiro that has a statue of Jesus overlooking the city. It’s a symbol of Brazilian culture. This coffee is a classic Brazilian, it’s naturally Processed so it yields a sweet, full bodied and easy to drink cup",
-        "vendor": "Escarpment Coffee Roasters",
-        "productType": "Fresh Coffee",
-        "tags": [
-          "13tiersale",
-          "35days",
-          "5xcincopromo",
-          "5xpoints",
-          "68box",
-          "75box",
-          "bfcm202015",
-          "bfcm2024-15",
-          "bfcm2025-15",
-          "boxtier2",
-          "boxtier3",
-          "BREW-Filter",
-          "bts2021",
-          "bw2024-10",
-          "canadaday2023",
-          "cd202415",
-          "coffeeday2023",
-          "coffeeday2025",
-          "consumer",
-          "easter2025",
-          "ECMNOSALE",
-          "ELEVATION-3800 feet",
-          "eos225",
-          "escarpment-coffee-roasters",
-          "espresso-bean",
-          "fathersday2021",
-          "fathersday2022",
-          "fd2022incl",
-          "freecoffeeday2025",
-          "HARVESTING-Selective mechanical",
-          "is-us-eg",
-          "NC_",
-          "NC_CoffeeandTea",
-          "NC_EspressoCoffee",
-          "NC_FreshCoffee",
-          "ncd2024",
-          "NOTES-stone fruits# semi-sweet chocolate# smooth",
-          "origin-brazil",
-          "oversell_active",
-          "prime2024",
-          "PROCESSING-Natural",
-          "REGION-Brazil (Minas Gerais)",
-          "ROAST-Medium-Dark",
-          "tgwptt2021",
-          "tierincluded",
-          "under-100",
-          "WAR-CON",
-          "YGroup_datmc"
-        ],
-        "availableForSale": false,
-        "featuredImage": {
-          "id": "gid://shopify/ProductImage/32017290592290",
-          "url": "https://cdn.shopify.com/s/files/1/1201/3604/files/DaterraFarmsMonteCristo041.jpg?v=1762458208",
-          "altText": null,
-          "width": 2032,
-          "height": 3000
-        },
-        "priceRange": {
-          "minVariantPrice": {
-            "amount": "20.0",
-            "currencyCode": "CAD"
-          },
-          "maxVariantPrice": {
-            "amount": "20.0",
-            "currencyCode": "CAD"
-          }
-        },
-        "compareAtPriceRange": {
-          "minVariantPrice": {
-            "amount": "0.0",
-            "currencyCode": "CAD"
-          },
-          "maxVariantPrice": {
-            "amount": "0.0",
-            "currencyCode": "CAD"
-          }
-        },
-        "variants": {
-          "totalCount": 1,
-          "nodes": [
-            {
-              "id": "gid://shopify/ProductVariant/28897620983842",
-              "title": "Default Title",
-              "sku": "CF-DAT-MC",
-              "availableForSale": false,
-              "price": {
-                "amount": "20.0",
-                "currencyCode": "CAD"
-              },
-              "compareAtPrice": null
-            }
-          ]
-        },
-        "metafields": {
-          "reviewsAverage": "4.7",
-          "reviewsCount": "187"
         }
       },
       {
@@ -1478,6 +1201,7 @@
           "bw2024-10",
           "canadaday2023",
           "cd202415",
+          "cinco2026",
           "coffeeday2023",
           "coffeeday2025",
           "consumer",
@@ -1513,7 +1237,7 @@
           "WAR-CON",
           "YGroup_swblue"
         ],
-        "availableForSale": false,
+        "availableForSale": true,
         "featuredImage": {
           "id": "gid://shopify/ProductImage/32017264050210",
           "url": "https://cdn.shopify.com/s/files/1/1201/3604/files/DateraFarmsSweetBlue001.jpg?v=1762457446",
@@ -1523,11 +1247,11 @@
         },
         "priceRange": {
           "minVariantPrice": {
-            "amount": "22.0",
+            "amount": "24.0",
             "currencyCode": "CAD"
           },
           "maxVariantPrice": {
-            "amount": "22.0",
+            "amount": "24.0",
             "currencyCode": "CAD"
           }
         },
@@ -1548,9 +1272,9 @@
               "id": "gid://shopify/ProductVariant/26849983553",
               "title": "Default Title",
               "sku": "CF-DAT-SWBLUE",
-              "availableForSale": false,
+              "availableForSale": true,
               "price": {
-                "amount": "22.0",
+                "amount": "24.0",
                 "currencyCode": "CAD"
               },
               "compareAtPrice": null
@@ -1559,7 +1283,7 @@
         },
         "metafields": {
           "reviewsAverage": "4.7",
-          "reviewsCount": "569"
+          "reviewsCount": "575"
         }
       },
       {
@@ -1584,6 +1308,7 @@
           "bw2024-10",
           "canadaday2023",
           "cd202415",
+          "cinco2026",
           "coffeeday2023",
           "coffeeday2025",
           "COFFEENOSTOCK",
@@ -1618,7 +1343,7 @@
           "WAR-CON",
           "YGroup_sweet"
         ],
-        "availableForSale": false,
+        "availableForSale": true,
         "featuredImage": {
           "id": "gid://shopify/ProductImage/32017291608098",
           "url": "https://cdn.shopify.com/s/files/1/1201/3604/files/DaterraFarmsSweetCollection030.jpg?v=1762457446",
@@ -1628,11 +1353,11 @@
         },
         "priceRange": {
           "minVariantPrice": {
-            "amount": "22.0",
+            "amount": "24.0",
             "currencyCode": "CAD"
           },
           "maxVariantPrice": {
-            "amount": "22.0",
+            "amount": "24.0",
             "currencyCode": "CAD"
           }
         },
@@ -1653,9 +1378,9 @@
               "id": "gid://shopify/ProductVariant/26850006657",
               "title": "Default Title",
               "sku": "CF-DAT-SWEET",
-              "availableForSale": false,
+              "availableForSale": true,
               "price": {
-                "amount": "22.0",
+                "amount": "24.0",
                 "currencyCode": "CAD"
               },
               "compareAtPrice": null
@@ -1664,7 +1389,7 @@
         },
         "metafields": {
           "reviewsAverage": "4.8",
-          "reviewsCount": "663"
+          "reviewsCount": "666"
         }
       },
       {
@@ -1676,6 +1401,7 @@
         "productType": "Fresh Coffee",
         "tags": [
           "bfcm2025-15",
+          "cinco2026",
           "coffee",
           "coffeeday2025",
           "consumer",
@@ -1737,8 +1463,8 @@
           ]
         },
         "metafields": {
-          "reviewsAverage": "5.0",
-          "reviewsCount": "2"
+          "reviewsAverage": "4.8",
+          "reviewsCount": "8"
         }
       },
       {
@@ -1753,6 +1479,7 @@
           "75box",
           "bfcm2025-15",
           "BREW-Espresso",
+          "cinco2026",
           "coffee",
           "coffeeday2025",
           "consumer",
@@ -1810,8 +1537,8 @@
           ]
         },
         "metafields": {
-          "reviewsAverage": "4.9",
-          "reviewsCount": "36"
+          "reviewsAverage": "4.7",
+          "reviewsCount": "85"
         }
       },
       {
@@ -1826,6 +1553,7 @@
           "75box",
           "bfcm2025-15",
           "BREW-Espresso",
+          "cinco2026",
           "coffee",
           "coffeeday2025",
           "consumer",
@@ -1841,11 +1569,11 @@
         ],
         "availableForSale": true,
         "featuredImage": {
-          "id": "gid://shopify/ProductImage/37979728674850",
-          "url": "https://cdn.shopify.com/s/files/1/1201/3604/files/trimmed-essential-1765911539897_50bc81c2-b545-4fc8-9971-8e08b08eb9b6.webp?v=1765911650",
+          "id": "gid://shopify/ProductImage/38770732105762",
+          "url": "https://cdn.shopify.com/s/files/1/1201/3604/files/essential-espresso-decaf.jpg?v=1769278279",
           "altText": "Essential Espresso Decaf coffee bag",
-          "width": 1877,
-          "height": 2620
+          "width": 1760,
+          "height": 2432
         },
         "priceRange": {
           "minVariantPrice": {
@@ -1884,8 +1612,8 @@
           ]
         },
         "metafields": {
-          "reviewsAverage": "0.0",
-          "reviewsCount": "32"
+          "reviewsAverage": "4.8",
+          "reviewsCount": "9"
         }
       },
       {
@@ -1913,6 +1641,7 @@
           "bw2024-10",
           "canadaday2023",
           "cd202415",
+          "cinco2026",
           "coffeeday2023",
           "coffeeday2025",
           "consumer",
@@ -1992,13 +1721,13 @@
         },
         "metafields": {
           "reviewsAverage": "4.6",
-          "reviewsCount": "213"
+          "reviewsCount": "222"
         }
       },
       {
         "id": "gid://shopify/Product/4415390941218",
-        "title": "Ethiopian Sidama Guji",
-        "handle": "ethiopian-sidama-guji",
+        "title": "Ethiopian Sidama",
+        "handle": "ethiopian-sidama",
         "description": "This coffee is lesser known than its very famous neighbour Yirgacheffe but it deserves attention in its own right. It has the rare combination of great acidity and a very full body and yields a lovely cup of coffee for anytime of day.",
         "vendor": "Escarpment Coffee Roasters",
         "productType": "Fresh Coffee",
@@ -2020,6 +1749,7 @@
           "bw2024-10",
           "canadaday2023",
           "cd202415",
+          "cinco2026",
           "coffeeday2023",
           "coffeeday2025",
           "consumer",
@@ -2040,6 +1770,7 @@
           "NOTES-Smooth# Sweet# Full Bodied# Exotic Fruit# Gentle Acidity",
           "origin-ethiopia",
           "oversell_active",
+          "preorder-2-weeks",
           "prime2024",
           "PROCESSING-Washed",
           "REGION-Ethiopia (Guji# Sidama)",
@@ -2052,13 +1783,13 @@
           "WAR-CON",
           "YGroup_sidamo"
         ],
-        "availableForSale": false,
+        "availableForSale": true,
         "featuredImage": {
-          "id": "gid://shopify/ProductImage/32017377230882",
-          "url": "https://cdn.shopify.com/s/files/1/1201/3604/files/EthiopianSidamaGuji012.jpg?v=1709581867",
-          "altText": null,
-          "width": 2064,
-          "height": 2992
+          "id": "gid://shopify/ProductImage/38936911216674",
+          "url": "https://cdn.shopify.com/s/files/1/1201/3604/files/sidama.webp?v=1770820338",
+          "altText": "sidama.png",
+          "width": 1696,
+          "height": 2496
         },
         "priceRange": {
           "minVariantPrice": {
@@ -2087,7 +1818,7 @@
               "id": "gid://shopify/ProductVariant/31480447959074",
               "title": "Default Title",
               "sku": "CF-ETH-SID",
-              "availableForSale": false,
+              "availableForSale": true,
               "price": {
                 "amount": "20.0",
                 "currencyCode": "CAD"
@@ -2098,13 +1829,13 @@
         },
         "metafields": {
           "reviewsAverage": "4.7",
-          "reviewsCount": "91"
+          "reviewsCount": "92"
         }
       },
       {
         "id": "gid://shopify/Product/4415390973986",
-        "title": "Ethiopian Yirgacheffe FTO",
-        "handle": "ethiopian-yirgacheffe-fto",
+        "title": "Ethiopian Yirgacheffe",
+        "handle": "ethiopian-yirgacheffe",
         "description": "It was in Ethiopia that the first coffee trees flourished centuries ago and even today the breadth of its flavour experience is profound. Yirgacheffe is a town in the Sidamo region of Ethiopia, and the coffees produced in this area will amaze you with their citrus and floral notes.",
         "vendor": "Escarpment Coffee Roasters",
         "productType": "Fresh Coffee",
@@ -2124,6 +1855,7 @@
           "bw2024-10",
           "canadaday2023",
           "cd202415",
+          "cinco2026",
           "coffeeday2023",
           "coffeeday2025",
           "consumer",
@@ -2202,7 +1934,7 @@
         },
         "metafields": {
           "reviewsAverage": "4.8",
-          "reviewsCount": "220"
+          "reviewsCount": "223"
         }
       },
       {
@@ -2214,6 +1946,7 @@
         "productType": "Fresh Coffee",
         "tags": [
           "bfcm2025-15",
+          "cinco2026",
           "coffee",
           "coffeeday2025",
           "ELEVATION-1370-1500m",
@@ -2276,8 +2009,8 @@
           ]
         },
         "metafields": {
-          "reviewsAverage": "5.0",
-          "reviewsCount": "5"
+          "reviewsAverage": "4.6",
+          "reviewsCount": "7"
         }
       },
       {
@@ -2306,6 +2039,7 @@
           "bw2024-10",
           "canadaday2023",
           "cd202415",
+          "cinco2026",
           "coffeeday2023",
           "coffeeday2025",
           "consumer",
@@ -2383,7 +2117,7 @@
         },
         "metafields": {
           "reviewsAverage": "4.6",
-          "reviewsCount": "79"
+          "reviewsCount": "83"
         }
       },
       {
@@ -2409,6 +2143,7 @@
           "bw2024-10",
           "canadaday2023",
           "cd202415",
+          "cinco2026",
           "coffeeday2023",
           "coffeeday2025",
           "consumer",
@@ -2439,7 +2174,7 @@
           "WAR-CON",
           "YGroup_guaswp"
         ],
-        "availableForSale": true,
+        "availableForSale": false,
         "featuredImage": {
           "id": "gid://shopify/ProductImage/32017379852322",
           "url": "https://cdn.shopify.com/s/files/1/1201/3604/files/GuatemalanSWPDecaf033.jpg?v=1709581917",
@@ -2474,7 +2209,7 @@
               "id": "gid://shopify/ProductVariant/40077317046306",
               "title": "Default Title",
               "sku": "CF-GUA-SWP",
-              "availableForSale": true,
+              "availableForSale": false,
               "price": {
                 "amount": "25.0",
                 "currencyCode": "CAD"
@@ -2485,7 +2220,7 @@
         },
         "metafields": {
           "reviewsAverage": "4.4",
-          "reviewsCount": "33"
+          "reviewsCount": "35"
         }
       },
       {
@@ -2511,6 +2246,7 @@
           "bw2024-10",
           "canadaday2023",
           "cd202415",
+          "cinco2026",
           "coffeeday2023",
           "coffeeday2025",
           "consumer",
@@ -2589,7 +2325,7 @@
         },
         "metafields": {
           "reviewsAverage": "4.6",
-          "reviewsCount": "212"
+          "reviewsCount": "231"
         }
       },
       {
@@ -2614,6 +2350,7 @@
           "bw2024-10",
           "canadaday2023",
           "cd202415",
+          "cinco2026",
           "coffeeday2023",
           "coffeeday2025",
           "consumer",
@@ -2692,7 +2429,7 @@
         },
         "metafields": {
           "reviewsAverage": "4.8",
-          "reviewsCount": "81"
+          "reviewsCount": "83"
         }
       },
       {
@@ -2722,6 +2459,7 @@
           "bw2024-10",
           "canadaday2023",
           "cd202415",
+          "cinco2026",
           "coffeeday2023",
           "coffeeday2025",
           "consumer",
@@ -2741,7 +2479,6 @@
           "ncd2024",
           "NOTES-Earthy# No Acidity# Smokey# Very Full and Rich Body",
           "origin-india",
-          "oversell_active",
           "prime2024",
           "PROCESSING-Monsoon",
           "REGION-India (Malabar)",
@@ -2754,7 +2491,7 @@
           "WAR-CON",
           "YGroup_indmon"
         ],
-        "availableForSale": true,
+        "availableForSale": false,
         "featuredImage": {
           "id": "gid://shopify/ProductImage/32017382408226",
           "url": "https://cdn.shopify.com/s/files/1/1201/3604/files/IndianMonsoonedMalabar005.jpg?v=1709581972",
@@ -2789,7 +2526,7 @@
               "id": "gid://shopify/ProductVariant/31480448385058",
               "title": "Default Title",
               "sku": "CF-IND-MON",
-              "availableForSale": true,
+              "availableForSale": false,
               "price": {
                 "amount": "20.0",
                 "currencyCode": "CAD"
@@ -2825,6 +2562,7 @@
           "bw2024-10",
           "canadaday2023",
           "cd202415",
+          "cinco2026",
           "coffeeday2023",
           "coffeeday2025",
           "consumer",
@@ -2903,7 +2641,7 @@
         },
         "metafields": {
           "reviewsAverage": "4.6",
-          "reviewsCount": "84"
+          "reviewsCount": "86"
         }
       },
       {
@@ -2930,6 +2668,7 @@
           "bw2024-10",
           "canadaday2023",
           "cd202415",
+          "cinco2026",
           "coffeeday2023",
           "coffeeday2025",
           "consumer",
@@ -3006,7 +2745,7 @@
         },
         "metafields": {
           "reviewsAverage": "4.6",
-          "reviewsCount": "147"
+          "reviewsCount": "160"
         }
       },
       {
@@ -3034,6 +2773,7 @@
           "bw2024-10",
           "canadaday2023",
           "cd202415",
+          "cinco2026",
           "coffeeday2023",
           "coffeeday2025",
           "consumer",
@@ -3112,7 +2852,7 @@
         },
         "metafields": {
           "reviewsAverage": "4.6",
-          "reviewsCount": "125"
+          "reviewsCount": "136"
         }
       },
       {
@@ -3136,6 +2876,7 @@
           "bw2024-10",
           "canadaday2023",
           "cd202415",
+          "cinco2026",
           "coffeeday2023",
           "coffeeday2025",
           "consumer",
@@ -3207,7 +2948,7 @@
         },
         "metafields": {
           "reviewsAverage": "4.8",
-          "reviewsCount": "34"
+          "reviewsCount": "36"
         }
       },
       {
@@ -3223,6 +2964,7 @@
           "bfcm2025-15",
           "bw2024-10",
           "cd202415",
+          "cinco2026",
           "coffee-aficionado",
           "coffeeday2023",
           "coffeeday2025",
@@ -3245,7 +2987,7 @@
           "VARIETAL-Maragogipe (19+ bean size)",
           "WAR-CON"
         ],
-        "availableForSale": true,
+        "availableForSale": false,
         "featuredImage": {
           "id": "gid://shopify/ProductImage/32017403412514",
           "url": "https://cdn.shopify.com/s/files/1/1201/3604/files/NicaraguanCafeDiegoPremiumMaragogipe022.jpg?v=1709582154",
@@ -3280,7 +3022,7 @@
               "id": "gid://shopify/ProductVariant/41086567186466",
               "title": "Default Title",
               "sku": "CF-NICD",
-              "availableForSale": true,
+              "availableForSale": false,
               "price": {
                 "amount": "30.0",
                 "currencyCode": "CAD"
@@ -3290,8 +3032,8 @@
           ]
         },
         "metafields": {
-          "reviewsAverage": "4.8",
-          "reviewsCount": "17"
+          "reviewsAverage": "0.0",
+          "reviewsCount": "18"
         }
       },
       {
@@ -3320,6 +3062,7 @@
           "bw2024-10",
           "canadaday2023",
           "cd202415",
+          "cinco2026",
           "coffeeday2023",
           "coffeeday2025",
           "consumer",
@@ -3396,7 +3139,7 @@
         },
         "metafields": {
           "reviewsAverage": "4.5",
-          "reviewsCount": "94"
+          "reviewsCount": "103"
         }
       },
       {
@@ -3420,6 +3163,7 @@
           "bw2024-10",
           "canadaday2023",
           "cd202415",
+          "cinco2026",
           "coffeeday2023",
           "coffeeday2025",
           "consumer",
@@ -3492,36 +3236,29 @@
         },
         "metafields": {
           "reviewsAverage": "4.6",
-          "reviewsCount": "60"
+          "reviewsCount": "68"
         }
       },
       {
-        "id": "gid://shopify/Product/4601890963490",
-        "title": "Rwanda Gakenke",
-        "handle": "rwanda-gakenke",
-        "description": "Gakenke washing station was established in 2015 and has about 1,000 smallholder members who deliver coffee to it. This is a very high grown coffee at 1900 masl (6200 feet) and it is everything that is great about African coffee. Its sweet with a lively citrus brightness.",
-        "vendor": "Escarpment Coffee Roasters",
+        "id": "gid://shopify/Product/5430899265",
+        "title": "Segafredo Extra Strong - 2.2lb",
+        "handle": "segafredo-extra-strong-2-2lb",
+        "description": "Segafredo Zanetti- the leading Italian Espresso producer represents the passion to spread the Italian taste in every corner of the world. Their coffee blends are created using the top class Arabica and Robusta beans, which give unmistakable aroma and body to the Italian Espresso. Besides coffee, the Segafredo Zanetti produces cocoa, tea and spices to satisfy the various taste needs of their clients.Segafredo Extra Strong Italian coffee beans give you the aromatic espresso you take pride in. Segafredo Extra Strong is an exclusive blend of top quality Brazilian Arabica and Robusta coffee creating a balanced, smooth and velvety texture with intense toasted-bread and chocolate notes which has to be tasted to be appreciated. Its suitable to create cappuccino, latte or espresso because of its richness. Composition: Arabica & Robusta coffee Intense and chocolaty Smooth and velvety texture 2.2 lbs (1 kg) whole beans",
+        "vendor": "Segafredo",
         "productType": "Fresh Coffee",
         "tags": [
           "13tiersale",
           "5xcincopromo",
           "5xpoints",
-          "68box",
-          "75box",
-          "bfcm202015",
-          "bfcm2024-15",
-          "bfcm2025-15",
-          "boxtier3",
+          "bfcm2024-notadvertised",
+          "blitz2025-15",
           "bts2021",
-          "bw2024-10",
-          "canadaday2023",
-          "cd202415",
+          "cd202410",
+          "cinco2026",
           "coffeeday2023",
           "coffeeday2025",
-          "consumer",
           "easter2025",
           "eos225",
-          "escarpment-coffee-roasters",
           "fathersday2021",
           "fathersday2022",
           "fd2022incl",
@@ -3529,36 +3266,33 @@
           "is-us-eg",
           "NC_",
           "NC_CoffeeandTea",
+          "NC_EspressoCoffee",
           "NC_FreshCoffee",
           "ncd2024",
-          "newcoffee2020",
-          "NOTES-Sweet# savory and citric with melon and cedar flavors",
-          "origin-rwanda",
           "oversell_active",
-          "prime2024",
-          "PROCESSING-Washed",
-          "ROAST-Light",
+          "segafredo",
           "tg24wptt",
           "tgwptt2021",
           "tierincluded",
           "under-100",
-          "WAR-CON"
+          "WAR-CON",
+          "YGroup_seges"
         ],
         "availableForSale": true,
         "featuredImage": {
-          "id": "gid://shopify/ProductImage/32017442766882",
-          "url": "https://cdn.shopify.com/s/files/1/1201/3604/files/RwandaGakenke017.jpg?v=1709582637",
-          "altText": null,
-          "width": 2064,
-          "height": 3008
+          "id": "gid://shopify/ProductImage/23269327681",
+          "url": "https://cdn.shopify.com/s/files/1/1201/3604/products/cart2cart-segafredo-extra-strong-2-2lb-1.jpg?v=1762457436",
+          "altText": "Cart2cart - Segafredo Extra Strong - 2.2lb",
+          "width": 300,
+          "height": 300
         },
         "priceRange": {
           "minVariantPrice": {
-            "amount": "20.0",
+            "amount": "47.99",
             "currencyCode": "CAD"
           },
           "maxVariantPrice": {
-            "amount": "20.0",
+            "amount": "47.99",
             "currencyCode": "CAD"
           }
         },
@@ -3576,12 +3310,12 @@
           "totalCount": 1,
           "nodes": [
             {
-              "id": "gid://shopify/ProductVariant/32237958463522",
+              "id": "gid://shopify/ProductVariant/16687537217",
               "title": "Default Title",
-              "sku": "CF-RWA-G",
+              "sku": "CF-SEG-ES",
               "availableForSale": true,
               "price": {
-                "amount": "20.0",
+                "amount": "47.99",
                 "currencyCode": "CAD"
               },
               "compareAtPrice": null
@@ -3589,8 +3323,97 @@
           ]
         },
         "metafields": {
-          "reviewsAverage": "4.4",
-          "reviewsCount": "62"
+          "reviewsAverage": "4.9",
+          "reviewsCount": "50"
+        }
+      },
+      {
+        "id": "gid://shopify/Product/5430898945",
+        "title": "Segafredo Extra Strong - Box",
+        "handle": "segafredo-extra-strong-box",
+        "description": "Segafredo Zanetti- the leading Italian Espresso producer represents the passion to spread the Italian taste in every corner of the world. Their coffee blends are created using the top class Arabica and Robusta beans, which give unmistakable aroma and body to the Italian Espresso. Besides coffee, the Segafredo Zanetti produces cocoa, tea and spices to satisfy the various taste needs of their clients.Segafredo Extra Strong Italian coffee beans give you the aromatic espresso you take pride in. Segafredo Extra Strong is an exclusive blend of top quality Brazilian Arabica and Robusta coffee creating a balanced, smooth and velvety texture with intense toasted-bread and chocolate notes which has to be tasted to be appreciated. Its suitable to create cappuccino, latte or espresso because of its richness. Composition: Arabica & Robusta coffee Intense and chocolaty Smooth and velvety texture Box contains 6 x 2.2 lbs=13.2 lbs (6 kg) whole beans",
+        "vendor": "Segafredo",
+        "productType": "Fresh Coffee",
+        "tags": [
+          "100-200",
+          "100-300",
+          "13tiersale",
+          "5xcincopromo",
+          "5xpoints",
+          "bfcm2024-notadvertised",
+          "blitz2025-15",
+          "bts2021",
+          "cd202410",
+          "cinco2026",
+          "coffeeday2023",
+          "coffeeday2025",
+          "easter2025",
+          "eos225",
+          "fathersday2021",
+          "fathersday2022",
+          "fd2022incl",
+          "freecoffeeday2025",
+          "is-us-eg",
+          "NC_",
+          "NC_CoffeeandTea",
+          "NC_EspressoCoffee",
+          "NC_FreshCoffee",
+          "ncd2024",
+          "oversell_active",
+          "segafredo",
+          "tg24wptt",
+          "tgwptt2021",
+          "tierincluded",
+          "WAR-CON",
+          "YGroup_seges"
+        ],
+        "availableForSale": true,
+        "featuredImage": {
+          "id": "gid://shopify/ProductImage/23269327041",
+          "url": "https://cdn.shopify.com/s/files/1/1201/3604/products/cart2cart-segafredo-extra-strong-box-1.jpg?v=1762457434",
+          "altText": "Cart2cart - Segafredo Extra Strong - Box",
+          "width": 476,
+          "height": 308
+        },
+        "priceRange": {
+          "minVariantPrice": {
+            "amount": "287.94",
+            "currencyCode": "CAD"
+          },
+          "maxVariantPrice": {
+            "amount": "287.94",
+            "currencyCode": "CAD"
+          }
+        },
+        "compareAtPriceRange": {
+          "minVariantPrice": {
+            "amount": "0.0",
+            "currencyCode": "CAD"
+          },
+          "maxVariantPrice": {
+            "amount": "0.0",
+            "currencyCode": "CAD"
+          }
+        },
+        "variants": {
+          "totalCount": 1,
+          "nodes": [
+            {
+              "id": "gid://shopify/ProductVariant/16687536385",
+              "title": "Default Title",
+              "sku": "CF-SEG-ES-BOX",
+              "availableForSale": true,
+              "price": {
+                "amount": "287.94",
+                "currencyCode": "CAD"
+              },
+              "compareAtPrice": null
+            }
+          ]
+        },
+        "metafields": {
+          "reviewsAverage": "4.9",
+          "reviewsCount": "50"
         }
       },
       {
@@ -3618,6 +3441,7 @@
           "bw2024-10",
           "canadaday2023",
           "cd202415",
+          "cinco2026",
           "coffeeday2023",
           "coffeeday2025",
           "consumer",
@@ -3694,7 +3518,7 @@
         },
         "metafields": {
           "reviewsAverage": "4.4",
-          "reviewsCount": "53"
+          "reviewsCount": "59"
         }
       },
       {
@@ -3723,6 +3547,7 @@
           "bw2024-10",
           "canadaday2023",
           "cd202415",
+          "cinco2026",
           "coffeeday2023",
           "coffeeday2025",
           "consumer",
@@ -3798,15 +3623,15 @@
           ]
         },
         "metafields": {
-          "reviewsAverage": "4.6",
-          "reviewsCount": "111"
+          "reviewsAverage": "4.7",
+          "reviewsCount": "115"
         }
       },
       {
         "id": "gid://shopify/Product/4415391367202",
         "title": "Sumatran Mandheling SWP Decaf",
         "handle": "sumatran-swp-decaf",
-        "description": "Sumatran Mandheling SWP Decaf - Grown on the island of Sumatra, Mandheling is known for its smooth, full body, and its rich, complex taste. This coffee is named after north Sumatra’s Mandailing people – an ethnic group and not so much a region.",
+        "description": "Sumatran Mandheling SWP Decaf - Grown on the island of Sumatra, Mandheling is known for its smooth, full body, and its rich, complex taste. This coffee is named after north Sumatra’s Mandailing people - an ethnic group and not so much a region.",
         "vendor": "Escarpment Coffee Roasters",
         "productType": "Fresh Coffee",
         "tags": [
@@ -3826,6 +3651,7 @@
           "bw2024-10",
           "canadaday2023",
           "cd202415",
+          "cinco2026",
           "coffeeday2023",
           "coffeeday2025",
           "consumer",
@@ -3904,7 +3730,7 @@
         },
         "metafields": {
           "reviewsAverage": "4.7",
-          "reviewsCount": "102"
+          "reviewsCount": "104"
         }
       },
       {
@@ -3933,6 +3759,7 @@
           "bw2024-10",
           "canadaday2023",
           "cd202415",
+          "cinco2026",
           "coffeeday2023",
           "coffeeday2025",
           "consumer",
@@ -4010,7 +3837,7 @@
         },
         "metafields": {
           "reviewsAverage": "4.7",
-          "reviewsCount": "131"
+          "reviewsCount": "139"
         }
       },
       {
@@ -4025,6 +3852,7 @@
           "bfcm2025-15",
           "bw2024-10",
           "cd202415",
+          "cinco2026",
           "coffeeday2025",
           "consumer",
           "easter2025",
@@ -4095,14 +3923,14 @@
         },
         "metafields": {
           "reviewsAverage": "4.5",
-          "reviewsCount": "18"
+          "reviewsCount": "23"
         }
       }
     ],
     "pagination": {
       "currentPage": 1,
       "itemsPerPage": 50,
-      "totalItems": 42,
+      "totalItems": 40,
       "totalPages": 1,
       "hasNextPage": false,
       "hasPreviousPage": false

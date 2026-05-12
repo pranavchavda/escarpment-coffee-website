@@ -1,57 +1,85 @@
 import { Link, useLocation } from "wouter";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
-import { Menu, X, Search, Instagram, Facebook, Twitter, TwitterIcon, XIcon, FacebookIcon, InstagramIcon, YoutubeIcon } from "lucide-react";
+import { Menu, X, FacebookIcon, InstagramIcon, XIcon, YoutubeIcon } from "lucide-react";
 import { useState } from "react";
+import StrataRule from "./StrataRule";
+import CoordinateStamp from "./CoordinateStamp";
+
+const NAV_ITEMS: { index: string; label: string; href: string }[] = [
+  { index: "01", label: "Index", href: "/" },
+  { index: "02", label: "Coffees", href: "/coffees" },
+  { index: "03", label: "Subscriptions", href: "/subscriptions" },
+  { index: "04", label: "Field Notes", href: "/about" },
+  { index: "05", label: "Contact", href: "/contact" },
+];
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   const [location] = useLocation();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-  const navItems = [
-    { label: "Home", href: "/" },
-    { label: "Our Coffees", href: "/coffees" },
-    { label: "Subscriptions", href: "/subscriptions" },
-    { label: "About", href: "/about" },
-  ];
-
   return (
-    <div className="min-h-screen flex flex-col bg-background text-foreground font-mono selection:bg-primary selection:text-primary-foreground">
-      {/* Navigation */}
-      <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+    <div className="min-h-screen flex flex-col bg-background text-foreground font-mono selection:bg-primary selection:text-primary-foreground grain">
+      {/* Header */}
+      <header className="sticky top-0 z-50 w-full bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/80">
+        {/* top hairline + coords row */}
+        <div className="hidden md:block border-b border-border/60">
+          <div className="container flex items-center justify-between h-7 text-[0.625rem] font-mono uppercase tracking-[0.25em] text-muted-foreground">
+            <CoordinateStamp meta="EST. NIAGARA ESCARPMENT" className="text-[0.625rem]" />
+            <span className="opacity-70">SMALL-BATCH · SHIPPED ACROSS CANADA</span>
+          </div>
+        </div>
+
         <div className="container flex h-20 items-center justify-between">
-          {/* Logo */}
-          <Link href="/" className="flex items-center gap-2 group">
-              <img 
-                src="/images/logo-wide.png" 
-                alt="Escarpment Coffee Roasters" 
-                className="h-10 px-4 w-auto object-contain transition-opacity duration-300 hover:opacity-90"
-              />
+          <Link href="/" className="flex items-center gap-3 group">
+            <img
+              src="/images/logo-wide.png"
+              alt="Escarpment Coffee Roasters"
+              className="h-9 w-auto object-contain transition-opacity duration-300 group-hover:opacity-90"
+            />
           </Link>
 
-          {/* Desktop Nav */}
-          <nav className="hidden md:flex items-center gap-8">
-            {navItems.map((item) => (
-              <Link 
-                key={item.href} 
-                href={item.href}
-                className={cn(
-                  "text-sm font-medium transition-colors hover:text-primary uppercase tracking-wider",
-                  location === item.href
-                    ? "text-primary border-b-2 border-primary"
-                    : "text-muted-foreground"
-                )}
-              >
-                {item.label}
-              </Link>
-            ))}
+          <nav className="hidden md:flex items-stretch gap-7">
+            {NAV_ITEMS.map((item) => {
+              const active = location === item.href;
+              return (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  className={cn(
+                    "group relative flex items-baseline gap-2 text-sm font-medium uppercase tracking-[0.18em] transition-colors py-2",
+                    active ? "text-foreground" : "text-muted-foreground hover:text-foreground",
+                  )}
+                >
+                  <span
+                    className={cn(
+                      "font-mono text-[0.625rem] tabular-nums",
+                      active ? "text-primary" : "text-muted-foreground/60",
+                    )}
+                  >
+                    {item.index}
+                  </span>
+                  <span className="font-sans">{item.label}</span>
+                  <span
+                    className={cn(
+                      "absolute -bottom-0.5 left-0 h-[2px] bg-primary transition-transform duration-500 origin-left",
+                      active ? "w-full scale-x-100" : "w-full scale-x-0 group-hover:scale-x-100",
+                    )}
+                  />
+                </Link>
+              );
+            })}
           </nav>
 
-          {/* Actions */}
-          <div className="hidden md:flex items-center gap-4">
-          </div>
+          <a
+            href="https://idrinkcoffee.com/collections/coffee"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hidden md:inline-flex items-center gap-2 font-sans uppercase tracking-[0.2em] text-xs font-medium border border-border px-3.5 py-2 hover:border-primary hover:text-primary transition-colors"
+          >
+            Shop <span aria-hidden="true">→</span>
+          </a>
 
-          {/* Mobile Menu Toggle */}
           <button
             className="md:hidden p-2 text-muted-foreground hover:text-primary"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -62,73 +90,92 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           </button>
         </div>
 
-        {/* Mobile Menu */}
+        <StrataRule className="text-border" />
+
         {isMobileMenuOpen && (
-          <div className="md:hidden border-t border-border bg-background p-4 animate-in slide-in-from-top-5">
-            <nav className="flex flex-col gap-4">
-              {navItems.map((item) => (
-                <Link 
-                    key={item.href} 
+          <div className="md:hidden bg-background/98 backdrop-blur animate-in slide-in-from-top-5">
+            <nav className="container flex flex-col py-4">
+              {NAV_ITEMS.map((item) => {
+                const active = location === item.href;
+                return (
+                  <Link
+                    key={item.href}
                     href={item.href}
                     className={cn(
-                      "text-lg font-medium transition-colors hover:text-primary uppercase tracking-wider py-2",
-                      location === item.href ? "text-primary" : "text-muted-foreground"
+                      "flex items-baseline gap-3 py-3 uppercase tracking-[0.18em] border-b border-border/40 last:border-b-0",
+                      active ? "text-foreground" : "text-muted-foreground",
                     )}
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
-                    {item.label}
+                    <span
+                      className={cn(
+                        "font-mono text-xs tabular-nums",
+                        active ? "text-primary" : "text-muted-foreground/60",
+                      )}
+                    >
+                      {item.index}
+                    </span>
+                    <span className="font-sans text-lg">{item.label}</span>
                   </Link>
-              ))}
-
+                );
+              })}
             </nav>
           </div>
         )}
       </header>
 
-      {/* Main Content */}
-      <main className="flex-1">
-        {children}
-      </main>
+      <main className="flex-1">{children}</main>
 
       {/* Footer */}
-      <footer className="border-t border-border bg-card text-card-foreground">
-        <div className="container py-12 md:py-16">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
-            <div className="space-y-4">
-              <div className="flex items-center gap-2">
-                <div className="w-8 h-8 rounded-full border border-primary flex items-center justify-center">
-                  <span className="font-sans font-bold text-primary">E</span>
-                </div>
-                <span className="font-sans font-bold text-lg uppercase tracking-wide">Escarpment Coffee</span>
+      <footer className="bg-card text-card-foreground">
+        <StrataRule className="text-border/60" />
+
+        <div className="container py-16 md:py-24">
+          {/* Footer manifesto strip */}
+          <div className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 mb-16">
+            <div className="md:col-span-5 space-y-5">
+              <div className="font-mono text-[0.625rem] uppercase tracking-[0.3em] text-primary">
+                ¶ Colophon
               </div>
-              <p className="text-sm text-muted-foreground leading-relaxed">
-                Roasted fresh in Milton, Ontario. We share the best of what we find on our journeys with you.
+              <p className="font-serif text-2xl md:text-3xl leading-tight text-foreground">
+                Roasted in <em>small batches</em> in Milton, Ontario — the town the
+                Niagara Escarpment runs through. A modest catalogue, deliberately
+                maintained.
               </p>
-            </div>
-            
-            <div>
-              <h3 className="font-sans font-bold text-lg mb-4 uppercase tracking-wider text-primary">Shop</h3>
-              <ul className="space-y-2 text-sm text-muted-foreground">
-                <li><a href="/coffees" className="hover:text-primary transition-colors">All Coffees</a></li>
-                <li><a href="/subscriptions" className="hover:text-primary transition-colors">Subscriptions</a></li>
-
-              </ul>
+              <CoordinateStamp meta="ROASTERY" />
             </div>
 
-            <div>
-              <h3 className="font-sans font-bold text-lg mb-4 uppercase tracking-wider text-primary">Company</h3>
-              <ul className="space-y-2 text-sm text-muted-foreground">
-                <li><a href="/about" className="hover:text-primary transition-colors">Our Story</a></li>
-                <li><a href="https://wholesale.idrinkcoffee.com/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">Wholesale</a></li>
- 
-                <li><a href="/contact" className="hover:text-primary transition-colors">Contact</a></li>
-              </ul>
+            <div className="md:col-span-2">
+              <FooterHeading index="01">Shop</FooterHeading>
+              <FooterLinks
+                items={[
+                  { label: "All Coffees", href: "/coffees" },
+                  { label: "Subscriptions", href: "/subscriptions" },
+                  {
+                    label: "Wholesale ↗",
+                    href: "https://wholesale.idrinkcoffee.com/",
+                    external: true,
+                  },
+                ]}
+              />
             </div>
 
-            <div>
-              <h3 className="font-sans font-bold text-lg mb-4 uppercase tracking-wider text-primary">Newsletter</h3>
-              <p className="text-sm text-muted-foreground mb-4">
-                Be the first to know about new roasts and exclusive offers.
+            <div className="md:col-span-2">
+              <FooterHeading index="02">Studio</FooterHeading>
+              <FooterLinks
+                items={[
+                  { label: "Field Notes", href: "/about" },
+                  { label: "Contact", href: "/contact" },
+                  { label: "Privacy", href: "/privacy" },
+                  { label: "Terms", href: "/terms" },
+                ]}
+              />
+            </div>
+
+            <div className="md:col-span-3 space-y-4">
+              <FooterHeading index="03">Dispatch</FooterHeading>
+              <p className="text-xs text-muted-foreground leading-relaxed">
+                Occasional letters about new roasts and arrivals from origin.
               </p>
               <form
                 className="flex flex-col gap-2"
@@ -142,42 +189,104 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                   placeholder="EMAIL ADDRESS"
                   aria-label="Email address for newsletter"
                   required
-                  className="w-full md:max-w-[240px] bg-background border border-input px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                  className="w-full bg-transparent border-b border-border focus:border-primary px-0 py-2 text-sm font-mono uppercase tracking-wider placeholder:text-muted-foreground/70 focus-visible:outline-none transition-colors"
                 />
-                <Button type="submit" className="w-full md:max-w-[240px]">
-                  JOIN
+                <Button
+                  type="submit"
+                  className="w-fit font-sans uppercase tracking-[0.18em] text-xs px-0 bg-transparent text-foreground hover:bg-transparent hover:text-primary shadow-none group"
+                >
+                  Subscribe <span className="ml-2 transition-transform group-hover:translate-x-0.5">→</span>
                 </Button>
               </form>
-              
-              <div className="mt-6">
-                <h3 className="font-sans font-bold text-lg mb-4 uppercase tracking-wider text-primary">Follow Us</h3>
-                <div className="flex gap-4">
-                  <a href="https://www.instagram.com/idrinkcoffeecanada/" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Instagram" className="text-muted-foreground hover:text-primary transition-colors">
-                    <InstagramIcon className="h-6 w-6" />
-                  </a>
-                  <a href="https://www.facebook.com/iDrinkCoffeecom/" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Facebook" className="text-muted-foreground hover:text-primary transition-colors">
-                    <FacebookIcon className="h-6 w-6" />
-                  </a>
-                  <a href="https://twitter.com/idrinkcoffee" target="_blank" rel="noopener noreferrer" aria-label="Follow us on X (Twitter)" className="text-muted-foreground hover:text-primary transition-colors">
-                    <XIcon className="h-6 w-6" />
-                  </a>
-                  <a href="https://youtube.com/idrinkcoffeecanada" target="_blank" rel="noopener noreferrer" aria-label="Subscribe to our YouTube channel" className="text-muted-foreground hover:text-primary transition-colors">
-                    <YoutubeIcon className="h-6 w-6" />
-                  </a>
-                </div>
+
+              <div className="flex gap-4 pt-3">
+                <SocialLink href="https://www.instagram.com/idrinkcoffeecanada/" label="Instagram">
+                  <InstagramIcon className="h-4 w-4" />
+                </SocialLink>
+                <SocialLink href="https://www.facebook.com/iDrinkCoffeecom/" label="Facebook">
+                  <FacebookIcon className="h-4 w-4" />
+                </SocialLink>
+                <SocialLink href="https://twitter.com/idrinkcoffee" label="X (Twitter)">
+                  <XIcon className="h-4 w-4" />
+                </SocialLink>
+                <SocialLink href="https://youtube.com/idrinkcoffeecanada" label="YouTube">
+                  <YoutubeIcon className="h-4 w-4" />
+                </SocialLink>
               </div>
             </div>
           </div>
-          
-          <div className="mt-12 pt-8 border-t border-border flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-muted-foreground uppercase tracking-widest">
-            <p>&copy; {new Date().getFullYear()} Escarpment Coffee Roasters.</p>
-            <div className="flex gap-6">
-              <a href="/privacy" className="hover:text-primary transition-colors">Privacy</a>
-              <a href="/terms" className="hover:text-primary transition-colors">Terms</a>
-            </div>
+
+          <StrataRule className="text-border/60" />
+
+          <div className="mt-8 flex flex-col md:flex-row md:items-center md:justify-between gap-4 text-[0.625rem] font-mono uppercase tracking-[0.25em] text-muted-foreground">
+            <p>© {new Date().getFullYear()} · Escarpment Coffee Roasters · A Roastery of iDrinkCoffee.com</p>
+            <p className="opacity-70">SET IN OSWALD, ROBOTO MONO, FRAUNCES · BUILT IN ONTARIO</p>
           </div>
         </div>
       </footer>
     </div>
+  );
+}
+
+function FooterHeading({ index, children }: { index: string; children: React.ReactNode }) {
+  return (
+    <h3 className="font-sans uppercase tracking-[0.2em] text-sm text-foreground mb-4 flex items-baseline gap-2">
+      <span className="font-mono text-[0.625rem] text-primary tabular-nums">{index}</span>
+      {children}
+    </h3>
+  );
+}
+
+function FooterLinks({
+  items,
+}: {
+  items: { label: string; href: string; external?: boolean }[];
+}) {
+  return (
+    <ul className="space-y-2 text-sm text-muted-foreground font-mono">
+      {items.map((item) => (
+        <li key={item.href}>
+          {item.external ? (
+            <a
+              href={item.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-primary transition-colors uppercase tracking-wider text-xs"
+            >
+              {item.label}
+            </a>
+          ) : (
+            <Link
+              href={item.href}
+              className="hover:text-primary transition-colors uppercase tracking-wider text-xs"
+            >
+              {item.label}
+            </Link>
+          )}
+        </li>
+      ))}
+    </ul>
+  );
+}
+
+function SocialLink({
+  href,
+  label,
+  children,
+}: {
+  href: string;
+  label: string;
+  children: React.ReactNode;
+}) {
+  return (
+    <a
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label={label}
+      className="w-8 h-8 inline-flex items-center justify-center border border-border text-muted-foreground hover:border-primary hover:text-primary transition-colors"
+    >
+      {children}
+    </a>
   );
 }

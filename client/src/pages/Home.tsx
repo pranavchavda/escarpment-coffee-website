@@ -1,249 +1,374 @@
 import Layout from "@/components/Layout";
 import ProductCard from "@/components/ProductCard";
-import { Button } from "@/components/ui/button";
-import { ArrowRight, Coffee, Package, Truck, Award } from "lucide-react";
+import StrataRule from "@/components/StrataRule";
+import CoordinateStamp from "@/components/CoordinateStamp";
 import { Link } from "wouter";
 import { useEffect, useState } from "react";
 import { fetchCoffeeProducts, type Product } from "@/lib/api";
+
+// Handles to pull from the live JSON so image URLs stay current.
+const FEATURED_HANDLES = ["essential-espresso", "essential-espresso-decaf"] as const;
+
+// Subscription products live outside the coffee collection — pin them here.
+const PINNED_FEATURED = [
+  {
+    id: "pinned-sub-1",
+    title: "Coffee Subscription — Tier 1",
+    price: "$68.00",
+    image:
+      "https://cdn.shopify.com/s/files/1/1201/3604/files/Coffee-Tier-2_8128fd45-89c7-424e-a908-69a83b50d32c.jpg?v=1690212268",
+    description: "Select 4 coffees out of 18. Save up to $11 on every order.",
+    tags: ["Subscription"],
+    isNew: true,
+    productUrl: "https://idrinkcoffee.com/products/new-coffee-subscription-tier-1",
+  },
+  {
+    id: "pinned-sub-2",
+    title: "Coffee Subscription — Tier 2",
+    price: "$75.00",
+    image:
+      "https://cdn.shopify.com/s/files/1/1201/3604/files/Coffee-Tier-3_48159031-7656-4893-9922-c8ecba482880.jpg?v=1694025476",
+    description: "Select 4 coffees out of 30. Save up to $18 on every order.",
+    tags: ["Subscription"],
+    isNew: true,
+    productUrl: "https://idrinkcoffee.com/products/new-coffee-subscription-tier-2",
+  },
+];
+
+function productToCard(p: Product) {
+  return {
+    id: p.id,
+    title: p.title,
+    price: `$${p.priceRange.minVariantPrice.amount}`,
+    image: p.featuredImage?.url || "",
+    description: p.description.replace(/<[^>]*>?/gm, "").substring(0, 100) + "…",
+    tags: p.tags,
+    isNew: false,
+    productUrl: `https://idrinkcoffee.com/products/${p.handle}`,
+  };
+}
 
 export default function Home() {
   const [products, setProducts] = useState<Product[]>([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    async function loadProducts() {
+    let cancelled = false;
+    (async () => {
       const data = await fetchCoffeeProducts();
-      setProducts(data);
-      setLoading(false);
-    }
-    loadProducts();
+      if (!cancelled) {
+        setProducts(data);
+        setLoading(false);
+      }
+    })();
+    return () => {
+      cancelled = true;
+    };
   }, []);
 
-  // Featured items that must always be shown first
-  const featuredItems = [
-    {
-      id: "featured-1",
-      title: "Essential Espresso",
-      price: "$18.00",
-      image: "https://cdn.shopify.com/s/files/1/1201/3604/files/essential-espresso-1758898738151.webp?v=1758899441",
-      description: "Rich, velvety crema with a nutty taste and dark chocolate finish. 100% Arabica blend.",
-      tags: ["Espresso", "Dark Roast", "Blend"],
-      isNew: false,
-      productUrl: "https://idrinkcoffee.com/products/essential-espresso"
-    },
-    {
-      id: "featured-2",
-      title: "Essential Espresso Decaf",
-      price: "$22.00",
-      image: "https://cdn.shopify.com/s/files/1/1201/3604/files/trimmed-essential-1765911539897_50bc81c2-b545-4fc8-9971-8e08b08eb9b6.webp?v=1765911650",
-      description: "Swiss Water Process decaf. Smooth, balanced flavour with hints of citrus fruit.",
-      tags: ["Decaf", "Espresso", "SWP"],
-      isNew: false,
-      productUrl: "https://idrinkcoffee.com/products/essential-espresso-decaf"
-    },
-    {
-      id: "featured-3",
-      title: "Coffee Subscription - Tier 1",
-      price: "$68.00",
-      image: "https://cdn.shopify.com/s/files/1/1201/3604/files/Coffee-Tier-2_8128fd45-89c7-424e-a908-69a83b50d32c.jpg?v=1690212268",
-      description: "Select 4 coffees out of 18. Save up to $11 on every order.",
-      tags: ["Subscription", "Bundle", "Save"],
-      isNew: true,
-      productUrl: "https://idrinkcoffee.com/products/new-coffee-subscription-tier-1"
-    },
-    {
-      id: "featured-4",
-      title: "Coffee Subscription - Tier 2",
-      price: "$75.00",
-      image: "https://cdn.shopify.com/s/files/1/1201/3604/files/Coffee-Tier-3_48159031-7656-4893-9922-c8ecba482880.jpg?v=1694025476",
-      description: "Select 4 coffees out of 30. Save up to $18 on every order.",
-      tags: ["Subscription", "Premium", "Save"],
-      isNew: true,
-      productUrl: "https://idrinkcoffee.com/products/new-coffee-subscription-tier-2"
-    }
-  ];
+  const featuredFromJson = FEATURED_HANDLES
+    .map((handle) => products.find((p) => p.handle === handle))
+    .filter((p): p is Product => Boolean(p))
+    .map(productToCard);
 
-  // Filter out featured items from the fetched list to avoid duplicates if they exist
-  const dynamicProducts = products.filter(p =>
-    !featuredItems.some(f => f.title === p.title)
-  ).slice(0, 8); // Show top 8 new arrivals
+  const featured = [...featuredFromJson, ...PINNED_FEATURED];
 
-
+  const featuredHandles = new Set(FEATURED_HANDLES);
+  const dynamicProducts = products
+    .filter((p) => !featuredHandles.has(p.handle as (typeof FEATURED_HANDLES)[number]))
+    .slice(0, 8);
 
   return (
     <Layout>
-      {/* Hero Section */}
-      <section className="relative h-[85vh] w-full overflow-hidden flex items-center justify-center">
-        <div className="absolute inset-0 z-0">
-          <img
-            src="/images/hero-bg-2.webp"
-            alt="Niagara Escarpment in Autumn"
-            className="h-full w-full object-cover"
-          />
-          <div className="absolute inset-0 bg-black/40 mix-blend-multiply" />
-          <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent" />
-        </div>
-
-        <div className="container relative z-10 text-center text-white max-w-4xl mx-auto px-4">
-          <h1 className="font-sans font-bold text-5xl md:text-7xl lg:text-8xl mb-6 tracking-tight uppercase drop-shadow-lg animate-in slide-in-from-bottom-10 duration-1000">
-            Roasted Fresh in <br /><span className="text-primary drop-shadow-lg shadow-black/50">Milton, Ontario</span>
-          </h1>
-          <p className="font-mono text-lg md:text-xl mb-10 max-w-2xl mx-auto text-gray-200 leading-relaxed animate-in slide-in-from-bottom-10 duration-1000 delay-200">
-            We share the best of what we find on our journeys with you.
-            From the rugged escarpment to your morning cup.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center animate-in slide-in-from-bottom-10 duration-1000 delay-300">
-            <a href="https://idrinkcoffee.com/collections/coffee" target="_blank" rel="noopener noreferrer">
-              <Button size="lg" className="font-sans uppercase tracking-widest text-base px-8 py-6 bg-primary hover:bg-primary/90 text-white border-none rounded-none">
-                Shop Coffees
-              </Button>
-            </a>
-            <Link href="/about">
-              <Button size="lg" variant="outline" className="font-sans uppercase tracking-widest text-base px-8 py-6 bg-transparent hover:bg-white/10 text-white border-2 border-white rounded-none backdrop-blur-sm">
-                Our Story
-              </Button>
-            </Link>
+      {/* HERO — typographic, asymmetric 7/5 split */}
+      <section className="relative overflow-hidden">
+        <div className="container relative grid grid-cols-1 lg:grid-cols-12 gap-y-12 lg:gap-x-10 pt-12 lg:pt-20 pb-20 lg:pb-32">
+          {/* Sidestamp */}
+          <div className="hidden lg:block absolute right-2 top-24 sidestamp">
+            ISSUE 03 · LATE SPRING · NIAGARA ESCARPMENT
           </div>
-        </div>
-      </section>
 
-      {/* Mission Section */}
-      <section className="py-20 md:py-32 bg-background relative overflow-hidden">
-        <div className="container max-w-5xl mx-auto text-center">
-          <span className="font-mono text-primary text-sm uppercase tracking-[0.2em] mb-4 block">Our Mission</span>
-          <h2 className="font-sans font-bold text-4xl md:text-5xl mb-8 text-foreground uppercase">A Quality Cup of Coffee</h2>
-          <div className="w-24 h-1 bg-primary mx-auto mb-10"></div>
-          <p className="text-lg md:text-xl text-muted-foreground leading-loose font-light max-w-3xl mx-auto">
-            We think that an excellent cup of coffee should be easy to come by. Whether you're a coffee aficionado,
-            cafe owner, or simply looking to refine your morning brew, Escarpment Coffee Roasters delivers
-            everything you need to brew superb coffee anywhere.
-          </p>
-        </div>
-
-        {/* Decorative Elements */}
-        <div className="absolute top-0 left-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2"></div>
-        <div className="absolute bottom-0 right-0 w-96 h-96 bg-accent/5 rounded-full blur-3xl translate-x-1/3 translate-y-1/3"></div>
-      </section>
-
-      {/* Featured Coffees - Masonry-ish Grid */}
-      <section className="py-20 bg-muted/30">
-        <div className="container">
-          <div className="flex justify-between items-end mb-12">
-            <div>
-              <h2 className="font-sans font-bold text-3xl md:text-4xl uppercase text-foreground mb-2">Fresh Roasts</h2>
-              <p className="font-mono text-muted-foreground">Small batch, ethically sourced.</p>
+          {/* Left column: editorial type */}
+          <div className="lg:col-span-7 flex flex-col gap-6 lg:gap-8 relative z-10">
+            <div className="font-mono text-[0.7rem] uppercase tracking-[0.3em] text-primary reveal">
+              Vol. 01 · Issue 03 · Roastery dispatch
             </div>
-            <a href="https://idrinkcoffee.com/collections/coffee" target="_blank" rel="noopener noreferrer">
-              <Button variant="link" className="hidden md:flex gap-2 text-primary hover:text-accent uppercase font-bold tracking-wider">
-                View All Coffees <ArrowRight className="h-4 w-4" />
-              </Button>
+
+            <h1
+              className="font-sans font-medium uppercase text-foreground tracking-stratum leading-[0.9] reveal"
+              style={{ fontSize: "clamp(2.75rem, 7vw, 6rem)", animationDelay: "60ms" }}
+            >
+              Roasted at the
+              <br />
+              edge of an
+              <br />
+              <span className="text-primary">ancient sea.</span>
+            </h1>
+
+            <p
+              className="font-serif text-xl md:text-2xl leading-snug text-muted-foreground max-w-xl reveal"
+              style={{ animationDelay: "180ms" }}
+            >
+              An independent roastery in Milton, Ontario — the town the Niagara Escarpment runs
+              through — sourcing and roasting coffees in <em>modest batches</em>, for the
+              people who pay attention.
+            </p>
+
+            <div
+              className="flex flex-wrap items-center gap-3 pt-2 reveal"
+              style={{ animationDelay: "260ms" }}
+            >
+              <a
+                href="https://idrinkcoffee.com/collections/coffee"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group inline-flex items-center gap-3 bg-primary text-primary-foreground px-6 py-3.5 font-sans uppercase tracking-[0.18em] text-sm hover:bg-primary/90 transition-colors"
+              >
+                Shop the Catalogue
+                <span className="transition-transform group-hover:translate-x-1">→</span>
+              </a>
+              <Link
+                href="/about"
+                className="inline-flex items-center gap-3 border border-border px-6 py-3.5 font-sans uppercase tracking-[0.18em] text-sm hover:border-primary hover:text-primary transition-colors"
+              >
+                Field Notes
+              </Link>
+            </div>
+
+            <div className="pt-6">
+              <CoordinateStamp meta="EST. SMALL-BATCH ROASTERY" />
+            </div>
+          </div>
+
+          {/* Right column: image with caption block */}
+          <div className="lg:col-span-5 relative">
+            <div className="relative aspect-[4/5] w-full overflow-hidden border border-border">
+              <img
+                src="/images/hero-bg-2.webp"
+                alt="The Niagara Escarpment in autumn"
+                fetchPriority="high"
+                className="absolute inset-0 h-full w-full object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-background/85 via-background/10 to-background/20" />
+
+              {/* Top-left ID stamp */}
+              <div className="absolute top-3 left-3 flex flex-col gap-1 font-mono text-[0.625rem] uppercase tracking-[0.25em] text-foreground/90">
+                <span className="opacity-80">PLATE_001</span>
+                <span className="opacity-60">N. ESCARPMENT · 540M</span>
+              </div>
+
+              {/* Bottom data block */}
+              <div className="absolute bottom-0 left-0 right-0 p-4 grid grid-cols-3 gap-2 font-mono text-[0.625rem] uppercase tracking-[0.2em] text-foreground/90">
+                <div className="border-t border-foreground/40 pt-2">
+                  <div className="text-muted-foreground/70">Stratum</div>
+                  <div>Limestone</div>
+                </div>
+                <div className="border-t border-foreground/40 pt-2">
+                  <div className="text-muted-foreground/70">Age</div>
+                  <div>~430 Ma</div>
+                </div>
+                <div className="border-t border-foreground/40 pt-2">
+                  <div className="text-muted-foreground/70">Length</div>
+                  <div>725 km</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <StrataRule className="text-border" />
+      </section>
+
+      {/* MANIFESTO — parchment band */}
+      <section className="band-parchment py-20 md:py-28 relative">
+        <div className="container grid grid-cols-1 lg:grid-cols-12 gap-10">
+          <div className="lg:col-span-3">
+            <div className="font-mono text-[0.7rem] uppercase tracking-[0.3em] text-primary">
+              ¶ 01 — Method
+            </div>
+            <h2 className="font-sans uppercase mt-3 text-3xl md:text-4xl leading-tight tracking-stratum">
+              What we do.
+            </h2>
+            <div className="mt-4">
+              <StrataRule className="text-border w-24" />
+            </div>
+          </div>
+
+          <div className="lg:col-span-9 grid md:grid-cols-2 gap-10 md:gap-14">
+            <p className="font-serif text-lg md:text-xl leading-relaxed dropcap">
+              We source green coffee with deliberate restraint — fewer farms, longer
+              relationships. Each lot is cupped, roasted in test batches, then released only
+              when the cup matches the intent on the bag.
+            </p>
+            <p className="font-serif text-lg md:text-xl leading-relaxed">
+              <em>Industrial in approach, agrarian in patience.</em> We use a small
+              production roaster and a methodical schedule — no rush, no shortcuts, no
+              "ethically sourced" platitudes. The work is the proof.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* CATALOGUE STRIP */}
+      <section className="py-20 md:py-28">
+        <div className="container">
+          <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-10">
+            <div>
+              <div className="font-mono text-[0.7rem] uppercase tracking-[0.3em] text-primary">
+                ¶ 02 — Catalogue
+              </div>
+              <h2 className="font-sans uppercase mt-3 text-4xl md:text-5xl leading-[0.95] tracking-stratum">
+                Currently
+                <br />
+                <span className="font-serif italic font-normal normal-case text-primary lowercase tracking-normal">
+                  roasting.
+                </span>
+              </h2>
+            </div>
+            <a
+              href="https://idrinkcoffee.com/collections/coffee"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group inline-flex items-center gap-2 font-mono uppercase tracking-[0.25em] text-xs text-muted-foreground hover:text-primary transition-colors self-start md:self-end"
+            >
+              Full catalogue
+              <span className="transition-transform group-hover:translate-x-1">→</span>
             </a>
           </div>
+
+          <StrataRule className="text-border mb-8" />
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {/* Featured Items First */}
-            {featuredItems.map((item) => (
-              <ProductCard
-                key={item.id}
-                {...item}
-              />
+            {featured.map((item, i) => (
+              <ProductCard key={item.id} {...item} index={i} />
             ))}
 
-            {/* Dynamic Items */}
-            {!loading && dynamicProducts.map((product) => (
-              <ProductCard
-                key={product.id}
-                title={product.title}
-                price={`$${product.priceRange.minVariantPrice.amount}`}
-                image={product.featuredImage?.url || ""}
-                description={product.description.replace(/<[^>]*>?/gm, '').substring(0, 100) + "..."}
-                tags={product.tags}
-                isNew={false}
-                productUrl={`https://idrinkcoffee.com/products/${product.handle}`}
-              />
-            ))}
+            {!loading &&
+              dynamicProducts.map((product, i) => {
+                const card = productToCard(product);
+                return <ProductCard key={card.id} {...card} index={featured.length + i} />;
+              })}
           </div>
 
           {loading && (
             <div className="flex justify-center py-12">
-              <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary"></div>
+              <div className="h-1 w-32 bg-primary/30 overflow-hidden">
+                <div className="h-full w-1/3 bg-primary animate-pulse" />
+              </div>
             </div>
           )}
-
-          <div className="mt-12 text-center md:hidden">
-            <a href="https://idrinkcoffee.com/collections/coffee" target="_blank" rel="noopener noreferrer">
-              <Button variant="outline" className="w-full uppercase tracking-wider">View All Coffees</Button>
-            </a>
-          </div>
         </div>
       </section>
 
-
-
-      {/* Features Grid */}
-      <section className="py-20 bg-secondary/20 border-y border-border">
+      {/* SPECIFICATIONS — three "stamps" on charcoal */}
+      <section className="border-t border-border bg-card/40 py-20 md:py-24">
         <div className="container">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-            <div className="flex flex-col items-center text-center space-y-4">
-              <div className="w-16 h-16 rounded-full bg-background border-2 border-primary flex items-center justify-center mb-2">
-                <Truck className="h-8 w-8 text-primary" />
-              </div>
-              <h3 className="font-sans font-bold text-xl uppercase">Free Shipping</h3>
-              <p className="text-sm text-muted-foreground font-mono px-8">
-                On all orders over $75 across Canada. Fresh to your door.
-              </p>
-            </div>
-            <div className="flex flex-col items-center text-center space-y-4">
-              <div className="w-16 h-16 rounded-full bg-background border-2 border-primary flex items-center justify-center mb-2">
-                <Award className="h-8 w-8 text-primary" />
-              </div>
-              <h3 className="font-sans font-bold text-xl uppercase">Quality Guaranteed</h3>
-              <p className="text-sm text-muted-foreground font-mono px-8">
-                {/* // no idea what to write here, don't want ethically sourced */}
-                Highest quality specialty coffee
-              </p>
-            </div>
-            <div className="flex flex-col items-center text-center space-y-4">
-              <div className="w-16 h-16 rounded-full bg-background border-2 border-primary flex items-center justify-center mb-2">
-                <Package className="h-8 w-8 text-primary" />
-              </div>
-              <h3 className="font-sans font-bold text-xl uppercase">Freshness First</h3>
-              <p className="text-sm text-muted-foreground font-mono px-8">
-                Roasted in small batches to ensure peak flavour profile.
-              </p>
-            </div>
+          <div className="font-mono text-[0.7rem] uppercase tracking-[0.3em] text-primary mb-3">
+            ¶ 03 — Specifications
+          </div>
+          <h2 className="font-sans uppercase text-3xl md:text-4xl tracking-stratum mb-12 max-w-2xl leading-tight">
+            How we get it to your kitchen.
+          </h2>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-0 border border-border">
+            <SpecStamp
+              index="S/01"
+              label="Shipping"
+              title="$75+ ships free"
+              body="Across Canada. Bagged within days of roast, dispatched with care."
+            />
+            <SpecStamp
+              index="S/02"
+              label="Standard"
+              title="Specialty coffee only"
+              body="No commodity-grade beans. Sourced through long-relationship importers and the farms behind them."
+              accent
+            />
+            <SpecStamp
+              index="S/03"
+              label="Freshness"
+              title="Small-batch cadence"
+              body="No stockpiling. Bags rest seven days off-roast — then they're yours."
+            />
           </div>
         </div>
       </section>
 
-      {/* Newsletter Parallax */}
-      {/* <section className="relative py-32 flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 z-0">
-          <img 
-            src="/images/coffee-beans-texture.jpg" 
-            alt="Coffee Beans Texture" 
-            className="h-full w-full object-cover opacity-30 grayscale"
-          />
-          <div className="absolute inset-0 bg-background/80" />
+      {/* CLOSING DISPATCH */}
+      <section className="band-parchment py-24 md:py-32 relative overflow-hidden">
+        <div className="container relative">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-end">
+            <div className="lg:col-span-8 space-y-6">
+              <div className="font-mono text-[0.7rem] uppercase tracking-[0.3em] text-primary">
+                ¶ 04 — Subscriptions
+              </div>
+              <h2 className="font-sans uppercase text-4xl md:text-6xl leading-[0.95] tracking-stratum max-w-3xl">
+                A standing order for
+                <span className="font-serif italic font-normal normal-case text-primary lowercase tracking-normal">
+                  {" "}
+                  the people who pay attention.
+                </span>
+              </h2>
+              <p className="font-serif text-lg md:text-xl max-w-2xl leading-relaxed">
+                Choose your tier. Choose your coffees. We send a different selection every
+                cycle — single origins, blends, and the occasional rare lot we couldn't help
+                ourselves with.
+              </p>
+            </div>
+            <div className="lg:col-span-4 flex lg:justify-end">
+              <Link
+                href="/subscriptions"
+                className="group inline-flex items-center gap-3 bg-primary text-primary-foreground px-6 py-4 font-sans uppercase tracking-[0.18em] text-sm hover:bg-primary/90 transition-colors"
+              >
+                See the tiers
+                <span className="transition-transform group-hover:translate-x-1">→</span>
+              </Link>
+            </div>
+          </div>
         </div>
-        
-        <div className="container relative z-10 max-w-2xl text-center">
-          <h2 className="font-sans font-bold text-4xl md:text-5xl mb-6 uppercase text-foreground">Join Our Community</h2>
-          <p className="text-lg text-muted-foreground mb-10 font-light">
-            Be the first to know when we add a new coffee to our collection and get exclusive discounts from time to time.
-          </p>
-          <form className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto" onSubmit={(e) => e.preventDefault()}>
-            <input 
-              type="email" 
-              placeholder="ENTER YOUR EMAIL" 
-              className="flex-1 bg-background border-2 border-border px-6 py-4 text-base font-mono focus:outline-none focus:border-primary transition-colors"
-            />
-            <Button size="lg" className="font-sans uppercase tracking-widest px-8 py-6 rounded-none">
-              Subscribe
-            </Button>
-          </form>
-        </div>
-      </section> */}
+      </section>
     </Layout>
+  );
+}
+
+function SpecStamp({
+  index,
+  label,
+  title,
+  body,
+  accent = false,
+}: {
+  index: string;
+  label: string;
+  title: string;
+  body: string;
+  accent?: boolean;
+}) {
+  return (
+    <div
+      className={[
+        "relative p-8 md:p-10 border-border",
+        "md:[&:not(:last-child)]:border-r border-b md:border-b-0",
+      ].join(" ")}
+    >
+      <div className="flex items-baseline justify-between mb-6">
+        <span className="font-mono text-[0.625rem] uppercase tracking-[0.25em] text-muted-foreground">
+          {index}
+        </span>
+        <span
+          className={`font-mono text-[0.625rem] uppercase tracking-[0.3em] ${
+            accent ? "text-primary" : "text-muted-foreground/70"
+          }`}
+        >
+          {label}
+        </span>
+      </div>
+      <h3 className="font-sans uppercase text-2xl md:text-3xl leading-tight tracking-stratum mb-3">
+        {title}
+      </h3>
+      <p className="font-serif italic text-base text-muted-foreground leading-relaxed">
+        {body}
+      </p>
+    </div>
   );
 }
