@@ -9,32 +9,6 @@ import { fetchCoffeeProducts, type Product } from "@/lib/api";
 // Handles to pull from the live JSON so image URLs stay current.
 const FEATURED_HANDLES = ["essential-espresso", "essential-espresso-decaf"] as const;
 
-// Subscription products live outside the coffee collection — pin them here.
-const PINNED_FEATURED = [
-  {
-    id: "pinned-sub-1",
-    title: "Coffee Subscription — Tier 1",
-    price: "$68.00",
-    image:
-      "https://cdn.shopify.com/s/files/1/1201/3604/files/Coffee-Tier-2_8128fd45-89c7-424e-a908-69a83b50d32c.jpg?v=1690212268",
-    description: "Select 4 coffees out of 18. Save up to $11 on every order.",
-    tags: ["Subscription"],
-    isNew: true,
-    productUrl: "https://idrinkcoffee.com/products/new-coffee-subscription-tier-1",
-  },
-  {
-    id: "pinned-sub-2",
-    title: "Coffee Subscription — Tier 2",
-    price: "$75.00",
-    image:
-      "https://cdn.shopify.com/s/files/1/1201/3604/files/Coffee-Tier-3_48159031-7656-4893-9922-c8ecba482880.jpg?v=1694025476",
-    description: "Select 4 coffees out of 30. Save up to $18 on every order.",
-    tags: ["Subscription"],
-    isNew: true,
-    productUrl: "https://idrinkcoffee.com/products/new-coffee-subscription-tier-2",
-  },
-];
-
 function productToCard(p: Product) {
   return {
     id: p.id,
@@ -66,12 +40,10 @@ export default function Home() {
     };
   }, []);
 
-  const featuredFromJson = FEATURED_HANDLES
+  const featured = FEATURED_HANDLES
     .map((handle) => products.find((p) => p.handle === handle))
     .filter((p): p is Product => Boolean(p))
     .map(productToCard);
-
-  const featured = [...featuredFromJson, ...PINNED_FEATURED];
 
   const featuredHandles = new Set(FEATURED_HANDLES);
   const dynamicProducts = products

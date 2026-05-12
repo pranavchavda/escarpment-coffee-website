@@ -28,6 +28,21 @@ export interface CollectionResponse {
   };
 }
 
+function isListable(p: Product): boolean {
+  const price = parseFloat(p.priceRange?.minVariantPrice?.amount ?? "0");
+  if (!isFinite(price) || price <= 0) return false;
+
+  const title = p.title.toLowerCase();
+  if (title.includes("subscription")) return false;
+
+  const tagsLower = p.tags.map((t) => t.toLowerCase());
+  if (tagsLower.some((t) => t === "subscription" || t.startsWith("subscription-"))) {
+    return false;
+  }
+
+  return true;
+}
+
 export async function fetchCoffeeProducts(): Promise<Product[]> {
   try {
     // Fetch from statically generated JSON file
@@ -36,7 +51,7 @@ export async function fetchCoffeeProducts(): Promise<Product[]> {
       throw new Error('Failed to fetch coffee products');
     }
     const data: CollectionResponse = await response.json();
-    return data.collection.products;
+    return data.collection.products.filter(isListable);
   } catch (error) {
     console.error('Error fetching coffee products:', error);
     return [];
